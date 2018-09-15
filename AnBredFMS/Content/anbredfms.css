@@ -1,0 +1,294 @@
+﻿/*---------- All AnBredFMS stylesheet here (overwrite the original Adminlte's css) ----------*/
+body {
+    font-family: 'Tahoma', 'Segoe UI', Arial, Geneva, Verdana, sans-serif !important
+}
+
+
+/**************************************************************  Control panel  (Master page)  ***************************************************************/
+
+
+h3.box-title.abfms-font,
+h1.abfms-font {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important
+}
+
+hr.abfms-white-line {
+    padding-bottom: 0px;
+    padding-top: 0px;
+    margin-bottom: 0px;
+    margin-top: 0px
+}
+
+sup.abfms-shortcut {
+    font-size: 22px;
+    font-weight: bolder
+}
+
+.logo.anbred-logo-bg {
+    background-color: rgb(0, 166, 90) !important;
+}
+
+.navbar.anbred-mini-sidebar-bg {
+    background-color: #008d4c !important
+}
+
+.user-panel.anbred-farm-panel {
+    background-color: #008d4c !important;
+    padding-top: 14px !important;
+    padding-bottom: 14px !important;
+    margin-bottom: 0px !important;
+    margin-top: 0px !important
+}
+
+.nav.navbar-nav.anbred-search-ear-tag {
+    width: 250px !important;
+    position: relative !important;
+    display: inline-block !important;
+    padding-top: 9px !important;
+    padding-right: 30px !important;
+    padding-left: 15px !important
+}
+
+.anbred-box-bg {
+    background-color: #36bc99 !important
+}
+
+.anbred-box-border {
+    border-color: #36bc99 !important;
+    border-style: solid !important;
+    border-width: 1px !important
+}
+
+.user-header.anbred-box-bg.anbred-box-border-top,
+.header.anbred-box-bg.anbred-box-border-top {
+    border-top-left-radius: 4px !important;
+    border-top-right-radius: 4px !important;
+}
+
+.anbred-box-border-rl {
+    border-right: #36bc99 solid 1px !important;
+    border-left: #36bc99 solid 1px !important;
+}
+
+.user-footer.anbred-box-border-bottom,
+.footer.anbred-box-border-bottom {
+    border-bottom-right-radius: 4px !important;
+    border-bottom-left-radius: 4px !important;
+    border-right: #36bc99 solid 1px !important;
+    border-left: #36bc99 solid 1px !important;
+    border-bottom: #36bc99 solid 1px !important
+}
+
+.dropdown-menu.anbred-box-list-border {
+    margin-top: 1px !important;
+    border: 1px solid #36bc99 !important;
+    border-top-left-radius: 4px !important;
+    border-top-right-radius: 4px !important;
+    border-bottom-right-radius: 4px !important;
+    border-bottom-left-radius: 4px !important
+}
+
+.sidebar-menu.anbred-controlpanel {
+    height: 900px !important;
+    overflow: inherit !important
+}
+
+
+.box.box-default.anbred-box-simple {
+    background-color: #f7f7f7 !important;
+    padding-left: 15px !important;
+    padding-right: 15px !important
+}
+
+.box-header.anbred-box-report-bg,
+.box.box-footer.anbred-box-report-bg {
+    background-color: #f7f7f7 !important;
+}
+
+.box-header.with-border.anbred-box-simple-title {
+    margin-bottom: 5px !important;
+    border-bottom: 1px solid #d2d6de !important
+}
+
+.box-tools.pull-right.abfms-label-margin {
+    margin-top: 5px;
+}
+
+.label.abfms-font-label {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+    font-size: small;
+    font-weight: normal;
+    padding: 5px 10px;
+    text-align: justify
+}
+
+.control-label.anbred-toolbox-font {
+    padding-top: 9px !important;
+    font-weight: normal !important
+}
+
+
+/******************************************************************  Content page   ******************************************************************/
+
+
+.datepicker {
+    background-color: rgba(54, 188, 153, 0.10) !important
+}
+
+/******************************************************************  Report Daily   ******************************************************************/
+
+
+td.anbred-tbl-report-border {
+    display: table-cell;
+    border: 1px solid #808080 !important;
+}
+
+.table.table-bordered {
+    border: 2px solid #ddd !important;
+}
+
+.table-bordered {
+    border: 1px solid #ddd;
+}
+
+    .table-bordered > thead > tr > th, .table-bordered > tbody > tr > th, .table-bordered > tfoot > tr > th, .table-bordered > thead > tr > td, .table-bordered > tbody > tr > td, .table-bordered > tfoot > tr > td {
+        border: 1px solid #ddd;
+        padding-bottom: 3px !important;
+        padding-top: 3px !important
+    }
+
+    .table-bordered > thead > tr > th, .table-bordered > thead > tr > td {
+        border-bottom-width: 2px !important
+    }
+
+    .table-bordered > thead > tr.anbred-tblReport-txt-center > th {
+        text-align: center !important;
+        vertical-align: middle !important;
+        font-weight: normal;
+        padding-top: 10px !important;
+        padding-bottom: 10px !important
+    }
+
+    .table-bordered > tbody > tr.anbred-tblReport-row-highlight-center > td {
+        background-color: #f2f2f2 !important;
+        text-align: center !important;
+        vertical-align: middle !important;
+        font-weight: normal;
+        padding-top: 8px !important;
+        padding-bottom: 8px !important
+    }
+
+    .table-bordered > thead > tr.anbred-tblReport-txt-center.header-text-bold > th {
+        font-weight: bold !important;
+    }
+
+    .table-bordered > tbody > tr.anbred-highlight-row > td {
+        background-color: #f2f2f2;
+        padding-right: 20px !important;
+        text-align: right !important
+    }
+
+    .table-bordered > tbody > tr.anbred-highlight-row.header-align-center > td {
+        text-align: center !important;
+        vertical-align: middle !important
+    }
+
+    .table-bordered > tbody > tr.anbred-tblrow-align-right > td {
+        padding-right: 20px !important;
+        text-align: right !important
+    }
+
+        .table-bordered > tbody > tr.anbred-tblrow-align-right > td.align-center {
+            font-weight: bold;
+            text-align: center !important
+        }
+
+.cell-bg-disable {
+    background-color: #ddd;
+    background-image: repeating-linear-gradient(135deg, transparent, transparent 1px, white 1px, white 4px);
+}
+
+.table-bordered > thead > tr > th.cell-border-left,
+.table-bordered > thead > tr > th.col-md-1.cell-border-left,
+.table-bordered > thead > tr > td.cell-border-left,
+.table-bordered > thead > tr > td.cell-bg-disable.cell-border-left,
+.table-bordered > tbody > tr > th.cell-border-left,
+.table-bordered > tbody > tr > th.col-md-1.cell-border-left,
+.table-bordered > tbody > tr > th.cell-bg-disable.cell-border-left,
+.table-bordered > tbody > tr > td.cell-border-left,
+.table-bordered > tbody > tr > td.align-center.cell-border-left,
+.table-bordered > tfoot > tr > th.cell-border-left,
+.table-bordered > tfoot > tr > td.cell-border-left {
+    border-left: 2px solid #ddd !important;
+}
+
+
+
+/******************************************************************  Report Mating  ******************************************************************/
+
+.table-bordered > thead > tr.anbred-tblReport-row-header > th {
+    background-color: #f2f2f2 !important;
+    text-align: center !important;
+    vertical-align: middle !important;
+    font-weight: normal;
+    padding-top: 10px !important;
+    padding-bottom: 10px !important
+}
+
+.table-bordered > tbody > tr.anbred-tblReport-row-footer > td {
+    background-color: #f2f2f2 !important;
+    vertical-align: middle !important;
+    font-weight: normal;
+    padding-top: 8px !important;
+    padding-bottom: 8px !important
+}
+
+.table-bordered > thead > tr > th.report-tbl-col-stt {
+    table-layout: fixed !important;
+    width: 5% !important;
+}
+
+blockquote.info-default-right {
+}
+
+    blockquote.info-default-right > p > code {
+        background-color: #f7f7f7 !important
+    }
+
+        blockquote.info-default-right > p > code.titleReport {
+            padding: 8px 5px 8px 25px !important;
+            font-weight: bold !important;
+            font-size: medium !important;
+            color: #808080
+        }
+
+blockquote.info-success {
+    border-left-color: #00a65a;
+}
+
+    blockquote.info-success > p > code {
+        background-color: rgba(54, 188, 153, 0.10) !important
+    }
+
+        blockquote.info-success > p > code.titleReport {
+            padding: 8px 25px 8px 5px !important;
+            font-weight: bold !important;
+            font-size: medium !important;
+            color: #00a65a
+        }
+
+
+blockquote > p > code.titleReport {
+    padding: 8px 25px 8px 5px !important;
+    font-weight: bold !important;
+}
+
+blockquote.info-title {
+    border-left-color: #d25071 !important;
+}
+
+.an-box-border-top {
+    border-top: 2px solid #f4f4f4;
+    padding-top: 18px;
+    background-color: #fff
+}

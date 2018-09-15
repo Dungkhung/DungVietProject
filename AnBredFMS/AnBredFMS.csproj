@@ -179,7 +179,12 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="About.aspx" />
+    <Content Include="An_Manager\DashBoard.aspx" />
+    <Content Include="An_Manager\ReportDaily.aspx" />
+    <Content Include="An_Manager\ReportFarrowing.aspx" />
+    <Content Include="An_Manager\ReportMating.aspx" />
     <Content Include="Contact.aspx" />
+    <Content Include="Content\anbredfms.css" />
     <Content Include="Content\bootstrap-grid.css" />
     <Content Include="Content\bootstrap-grid.min.css" />
     <Content Include="Content\bootstrap-reboot.css" />
@@ -196,6 +201,7 @@
     <Content Include="Content\bootstrap-reboot.css.map" />
     <Content Include="Content\bootstrap-grid.min.css.map" />
     <Content Include="Content\bootstrap-grid.css.map" />
+    <Content Include="An_Manager\ControlPanel.Master" />
     <None Include="Properties\PublishProfiles\AnBredFMS - Web Deploy.pubxml" />
     <Content Include="Scripts\AdminLTE-2.4.5\.gitignore" />
     <Content Include="Scripts\AdminLTE-2.4.5\bower_components\bootstrap-colorpicker\dist\css\bootstrap-colorpicker.css" />
@@ -6547,6 +6553,7 @@
     <Content Include="Scripts\AdminLTE-2.4.5\dist\img\credit\paypal2.png" />
     <Content Include="Scripts\AdminLTE-2.4.5\dist\img\credit\visa.png" />
     <Content Include="Scripts\AdminLTE-2.4.5\dist\img\default-50x50.gif" />
+    <Content Include="Scripts\AdminLTE-2.4.5\dist\img\Dung 15x21.jpg" />
     <Content Include="Scripts\AdminLTE-2.4.5\dist\img\icons.png" />
     <Content Include="Scripts\AdminLTE-2.4.5\dist\img\photo1.png" />
     <Content Include="Scripts\AdminLTE-2.4.5\dist\img\photo2.png" />
@@ -6770,6 +6777,9 @@
     <Content Include="Scripts\bootstrap.js.map" />
     <Content Include="Scripts\bootstrap.bundle.min.js.map" />
     <Content Include="Scripts\bootstrap.bundle.js.map" />
+    <Content Include="Scripts\daterangepicker\daterangepicker.css" />
+    <Content Include="Scripts\daterangepicker\daterangepicker.min.js" />
+    <Content Include="Scripts\daterangepicker\moment.min.js" />
     <Content Include="Scripts\esm\popper-utils.js" />
     <Content Include="Scripts\esm\popper-utils.min.js" />
     <Content Include="Scripts\esm\popper.js" />
@@ -7449,6 +7459,41 @@
     <Content Include="Scripts\popper-utils.js.map" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="An_Manager\ControlPanel.Master.cs">
+      <DependentUpon>ControlPanel.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="An_Manager\ControlPanel.Master.designer.cs">
+      <DependentUpon>ControlPanel.Master</DependentUpon>
+    </Compile>
+    <Compile Include="An_Manager\DashBoard.aspx.cs">
+      <DependentUpon>DashBoard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="An_Manager\DashBoard.aspx.designer.cs">
+      <DependentUpon>DashBoard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="An_Manager\ReportDaily.aspx.cs">
+      <DependentUpon>ReportDaily.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="An_Manager\ReportDaily.aspx.designer.cs">
+      <DependentUpon>ReportDaily.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="An_Manager\ReportFarrowing.aspx.cs">
+      <DependentUpon>ReportFarrowing.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="An_Manager\ReportFarrowing.aspx.designer.cs">
+      <DependentUpon>ReportFarrowing.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="An_Manager\ReportMating.aspx.cs">
+      <DependentUpon>ReportMating.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="An_Manager\ReportMating.aspx.designer.cs">
+      <DependentUpon>ReportMating.aspx</DependentUpon>
+    </Compile>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="About.aspx.cs">
       <DependentUpon>About.aspx</DependentUpon>
