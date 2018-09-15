@@ -29,6 +29,7 @@
                                     <blockquote class="info-title">
                                         <p><code class="titleReport">&gt;&gt; NÁI ĐẺ </code></p>
                                         <footer>Tuần 39</footer>
+                                        <footer>Chuồng đẻ 2</footer>
                                     </blockquote>
                                 </div>
                                 <div class="col-md-4" style="padding-top: 20px">
@@ -43,8 +44,8 @@
                                     <div class="btn-group">
                                         <button type="button" class="btn btn-default" data-toggle="dropdown" style="background-color: white">Hiển thị&nbsp 30 dòng</button>
                                         <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-                                            &nbsp <span class="caret"></span>
-                                            &nbsp <span class="sr-only">Toggle Dropdown</span>
+                                            <span class="caret"></span>
+                                            <span class="sr-only">Toggle Dropdown</span>
                                         </button>
                                         <ul class="dropdown-menu" role="menu">
                                             <li><a href="#">Hiển thị&nbsp 30 dòng</a></li>
@@ -290,6 +291,26 @@
                                     </tbody>
                                 </table>
                             </div>
+                            <div class="row" style="margin-bottom: 20px; margin-top: 5px">
+                                <div class="col-md-6">
+                                    <h5>Heo con sinh ra: D = chết, M = Khô thai, A = Bất thường, S = Nhỏ</h5>
+                                </div>
+                                <div class="col-md-6">
+                                    <ul class="pagination pagination-sm no-margin pull-right">
+                                        <li><a href="#">&nbsp«&nbsp</a></li>
+                                        <li><a href="#">&nbsp1&nbsp</a></li>
+                                        <li><a href="#">&nbsp2&nbsp</a></li>
+                                        <li><a href="#">&nbsp3&nbsp</a></li>
+                                        <li><a href="#">&nbsp4&nbsp</a></li>
+                                        <li><a href="#">&nbsp5&nbsp</a></li>
+                                        <li><a href="#">&nbsp6&nbsp</a></li>
+                                        <li><a href="#">&nbsp7&nbsp</a></li>
+                                        <li><a href="#">&nbsp9&nbsp</a></li>
+                                        <li><a href="#">&nbsp»&nbsp</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
                             <div class="an-box-border-top">
                                 <div class="row">
                                     <div class="col-md-6">
@@ -305,35 +326,20 @@
                                         </blockquote>
                                     </div>
                                     <div class="col-md-6">
-                                        <ul class="pagination pagination-sm no-margin pull-right">
-                                            <li><a href="#">&nbsp«&nbsp</a></li>
-                                            <li><a href="#">&nbsp1&nbsp</a></li>
-                                            <li><a href="#">&nbsp2&nbsp</a></li>
-                                            <li><a href="#">&nbsp3&nbsp</a></li>
-                                            <li><a href="#">&nbsp4&nbsp</a></li>
-                                            <li><a href="#">&nbsp5&nbsp</a></li>
-                                            <li><a href="#">&nbsp6&nbsp</a></li>
-                                            <li><a href="#">&nbsp7&nbsp</a></li>
-                                            <li><a href="#">&nbsp9&nbsp</a></li>
-                                            <li><a href="#">&nbsp»&nbsp</a></li>
-                                        </ul>
-                                        <div style="clear: both"></div>
-                                        <br />
                                         <blockquote class="blockquote-reverse info-default-right">
                                             <p><code class="titleReport">XUẤT BÁO CÁO &lt; <sup></sup></code></p>
-                                            <footer><a href="#"><i class="fa fa-file-pdf-o"></i>&nbsp Định dạng  pdf</a></footer>
                                             <div style="height: 10px"></div>
-                                            <footer><a href="#"><i class="fa fa-file-excel-o"></i>&nbsp Định dạng excel</a></footer>
+                                            <footer><a href="#"><i class="fa fa-file-pdf-o"></i>&nbsp Định dạng  PDF</a></footer>
+                                            <div style="height: 10px"></div>
+                                            <footer><a href="#"><i class="fa fa-file-excel-o"></i>&nbsp Định dạng Excel</a></footer>
+                                            <div style="height: 20px"></div>
+                                            <footer><a href="#"><i class="fa fa-print"></i>&nbsp Bản In</a></footer>
                                         </blockquote>
                                     </div>
                                 </div>
                             </div>
-
-
-
                         </div>
                         <!-- /.box-body -->
-
                     </div>
                 </div>
                 <!-- /.col -->
@@ -350,6 +356,7 @@
                 maxDate: moment().add(1, 'month').endOf('month'),
                 showISOWeekNumbers: true,
                 applyButtonClasses: "btn-success",
+                opens: "center",
                 locale: {
                     format: "DD/MM/YYYY",
                     separator: " - ",

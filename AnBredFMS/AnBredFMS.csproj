@@ -183,6 +183,7 @@
     <Content Include="An_Manager\ReportDaily.aspx" />
     <Content Include="An_Manager\ReportFarrowing.aspx" />
     <Content Include="An_Manager\ReportMating.aspx" />
+    <Content Include="An_Manager\ReportWeaning.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\anbredfms.css" />
     <Content Include="Content\bootstrap-grid.css" />
@@ -7493,6 +7494,13 @@
     </Compile>
     <Compile Include="An_Manager\ReportMating.aspx.designer.cs">
       <DependentUpon>ReportMating.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="An_Manager\ReportWeaning.aspx.cs">
+      <DependentUpon>ReportWeaning.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="An_Manager\ReportWeaning.aspx.designer.cs">
+      <DependentUpon>ReportWeaning.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="About.aspx.cs">
