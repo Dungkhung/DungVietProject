@@ -182,6 +182,19 @@
                                             <td>&nbsp;</td>
                                             <td class="cell-border-left">&nbsp;</td>
                                         </tr>
+                                        <tr class="anbred-highlight-row">
+                                            <td>Chuyển gia công</td>
+                                            <td class="cell-border-left">&nbsp;</td>
+                                            <td>&nbsp;</td>
+                                            <td>&nbsp;</td>
+                                            <td>&nbsp;</td>
+                                            <td>&nbsp;</td>
+                                            <td>&nbsp;</td>
+                                            <td class="cell-border-left">&nbsp;</td>
+                                            <td>&nbsp;</td>
+                                            <td>&nbsp;</td>
+                                            <td class="cell-border-left">&nbsp;</td>
+                                        </tr>
                                         <tr class="anbred-tblrow-align-right">
                                             <td>Nhập đàn giống</td>
                                             <td class="cell-bg-disable cell-border-left">&nbsp;</td>

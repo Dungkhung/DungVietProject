@@ -1,12 +1,19 @@
 ﻿/*---------- All AnBredFMS stylesheet here (overwrite the original Adminlte's css) ----------*/
 body {
-    font-family: 'Tahoma', 'Segoe UI', Arial, Geneva, Verdana, sans-serif !important
+    font-family: 'Tahoma', 'Segoe UI', Arial, Geneva, Verdana, sans-serif !important;
+}
+
+a.anbred-link-default {
+    color: green;
+    text-decoration-style: none;
+}
+
+a:hover.anbred-link-default {
+    text-decoration: underline
 }
 
 
 /**************************************************************  Control panel  (Master page)  ***************************************************************/
-
-
 h3.box-title.abfms-font,
 h1.abfms-font {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important
@@ -89,8 +96,8 @@ sup.abfms-shortcut {
 }
 
 .sidebar-menu.anbred-controlpanel {
-    height: 900px !important;
-    overflow: inherit !important
+    height: 950px !important;
+    /*overflow: inherit !important*/
 }
 
 
@@ -131,17 +138,14 @@ sup.abfms-shortcut {
 /******************************************************************  Content page   ******************************************************************/
 
 
-.datepicker {
-    background-color: rgba(54, 188, 153, 0.10) !important
+select > option.anbred-option-box {
+    margin-top: 15px !important;
+    padding:20px !important;
+    color:rebeccapurple;
 }
 
-/******************************************************************  Report Daily   ******************************************************************/
 
-
-td.anbred-tbl-report-border {
-    display: table-cell;
-    border: 1px solid #808080 !important;
-}
+/******************************************************************  .table bootstrap   ******************************************************************/
 
 .table.table-bordered {
     border: 2px solid #ddd !important;
@@ -154,80 +158,24 @@ td.anbred-tbl-report-border {
     .table-bordered > thead > tr > th, .table-bordered > tbody > tr > th, .table-bordered > tfoot > tr > th, .table-bordered > thead > tr > td, .table-bordered > tbody > tr > td, .table-bordered > tfoot > tr > td {
         border: 1px solid #ddd;
         padding-bottom: 3px !important;
-        padding-top: 3px !important
+        padding-top: 3px !important;
+        vertical-align: middle
     }
 
-    .table-bordered > thead > tr > th, .table-bordered > thead > tr > td {
-        border-bottom-width: 2px !important
-    }
-
-    .table-bordered > thead > tr.anbred-tblReport-txt-center > th {
-        text-align: center !important;
-        vertical-align: middle !important;
-        font-weight: normal;
-        padding-top: 10px !important;
-        padding-bottom: 10px !important
-    }
-
-    .table-bordered > tbody > tr.anbred-tblReport-row-highlight-center > td {
-        background-color: #f2f2f2 !important;
-        text-align: center !important;
-        vertical-align: middle !important;
-        font-weight: normal;
-        padding-top: 8px !important;
-        padding-bottom: 8px !important
-    }
-
-    .table-bordered > thead > tr.anbred-tblReport-txt-center.header-text-bold > th {
-        font-weight: bold !important;
-    }
-
-    .table-bordered > tbody > tr.anbred-highlight-row > td {
-        background-color: #f2f2f2;
-        padding-right: 20px !important;
-        text-align: right !important
-    }
-
-    .table-bordered > tbody > tr.anbred-highlight-row.header-align-center > td {
-        text-align: center !important;
-        vertical-align: middle !important
-    }
-
-    .table-bordered > tbody > tr.anbred-tblrow-align-right > td {
-        padding-right: 20px !important;
-        text-align: right !important
-    }
-
-        .table-bordered > tbody > tr.anbred-tblrow-align-right > td.align-center {
-            font-weight: bold;
-            text-align: center !important
-        }
-
-.cell-bg-disable {
-    background-color: #ddd;
-    background-image: repeating-linear-gradient(135deg, transparent, transparent 1px, white 1px, white 4px);
+.table-hover > thead > tr > th, .table-hover > tbody > tr > th, .table-hover > tfoot > tr > th, .table-hover > thead > tr > td, .table-hover > tbody > tr > td, .table-hover > tfoot > tr > td {
+    border-color: #ddd;
+    padding-bottom: 3px !important;
+    padding-top: 3px !important;
+    vertical-align: middle
 }
 
-.table-bordered > thead > tr > th.cell-border-left,
-.table-bordered > thead > tr > th.col-md-1.cell-border-left,
-.table-bordered > thead > tr > td.cell-border-left,
-.table-bordered > thead > tr > td.cell-bg-disable.cell-border-left,
-.table-bordered > tbody > tr > th.cell-border-left,
-.table-bordered > tbody > tr > th.col-md-1.cell-border-left,
-.table-bordered > tbody > tr > th.cell-bg-disable.cell-border-left,
-.table-bordered > tbody > tr > td.cell-border-left,
-.table-bordered > tbody > tr > td.align-center.cell-border-left,
-.table-bordered > tfoot > tr > th.cell-border-left,
-.table-bordered > tfoot > tr > td.cell-border-left {
-    border-left: 2px solid #ddd !important;
+.table-hover > thead > tr > th, .table-hover > thead > tr > td,
+.table-bordered > thead > tr > th, .table-bordered > thead > tr > td {
+    border-bottom-width: 2px !important
 }
 
-
-
-/******************************************************************  Report Mating  ******************************************************************/
-
-.table-bordered > thead > tr.anbred-tblReport-row-header > th {
-    background-color: #f2f2f2 !important;
+.table-hover > thead > tr.anbred-tblReport-txt-center > th.
+.table-bordered > thead > tr.anbred-tblReport-txt-center > th {
     text-align: center !important;
     vertical-align: middle !important;
     font-weight: normal;
@@ -235,6 +183,112 @@ td.anbred-tbl-report-border {
     padding-bottom: 10px !important
 }
 
+.table-hover > tbody > tr.anbred-tblReport-row-highlight-center > td,
+.table-bordered > tbody > tr.anbred-tblReport-row-highlight-center > td {
+    background-color: #f2f2f2 !important;
+    text-align: center !important;
+    vertical-align: middle !important;
+    font-weight: normal;
+    padding-top: 8px !important;
+    padding-bottom: 8px !important
+}
+
+.table-hover > thead > tr.anbred-tblReport-txt-center.header-text-bold > th,
+.table-bordered > thead > tr.anbred-tblReport-txt-center.header-text-bold > th {
+    font-weight: bold !important;
+}
+
+.table-hover > tbody > tr.anbred-highlight-row > td,
+.table-bordered > tbody > tr.anbred-highlight-row > td {
+    background-color: #f2f2f2;
+    padding-right: 20px;
+    text-align: right
+}
+
+.table-hover > tbody > tr.anbred-highlight-row.header-align-center > td,
+.table-bordered > tbody > tr.anbred-highlight-row.header-align-center > td {
+    text-align: center !important;
+    vertical-align: middle !important
+}
+
+.table-hover > tbody > tr.anbred-highlight-row.row-header > td,
+.table-bordered > tbody > tr.anbred-highlight-row.row-header > td {
+    padding: 6px 0px !important;
+    text-align: center
+}
+
+.table-hover > tbody > tr.anbred-tblrow-align-right > td,
+.table-bordered > tbody > tr.anbred-tblrow-align-right > td {
+    padding-right: 20px;
+    text-align: right
+}
+
+.table-hover > tbody > tr.anbred-tblrow-align-right.border-top,
+.table-bordered > tbody > tr.anbred-tblrow-align-right.border-top {
+    border-top: 2px solid #ddd
+}
+
+.table-hover > tbody > tr.separator-row > td,
+.table-bordered > tbody > tr.separator-row > td {
+    height: 2px;
+    padding: 0px !important;
+}
+
+.table-hover > tbody > tr.anbred-tblrow-align-right > td.align-center,
+.table-bordered > tbody > tr.anbred-tblrow-align-right > td.align-center {
+    font-weight: bold;
+    text-align: center !important
+}
+
+.table-hover > tbody > tr.anbred-tblrow-align-left > td,
+.table-bordered > tbody > tr.anbred-tblrow-align-left > td {
+    padding-left: 10px;
+    text-align: left
+}
+
+    .table-hover > tbody > tr.anbred-tblrow-align-left > td.align-center,
+    .table-bordered > tbody > tr.anbred-tblrow-align-left > td.align-center {
+        padding-left: 0px;
+        padding-right: 0px;
+        text-align: center !important
+    }
+
+    .table-hover > tbody > tr.anbred-tblrow-align-left > td.align-right,
+    .table-bordered > tbody > tr.anbred-tblrow-align-left > td.align-right {
+        text-align: right
+    }
+
+.table-hover > thead > tr > th.cell-border-left, .table-hover > thead > tr > th.col-md-1.cell-border-left,
+.table-hover > thead > tr > td.cell-border-left, .table-hover > thead > tr > td.cell-bg-disable.cell-border-left,
+.table-hover > tbody > tr > th.cell-border-left, .table-hover > tbody > tr > th.col-md-1.cell-border-left,
+.table-hover > tbody > tr > th.cell-bg-disable.cell-border-left, .table-hover > tbody > tr > td.cell-border-left,
+.table-hover > tbody > tr > td.align-center.cell-border-left, .table-hover > tfoot > tr > th.cell-border-left,
+.table-hover > tfoot > tr > td.cell-border-left, .table-bordered > thead > tr > th.cell-border-left,
+.table-bordered > thead > tr > th.col-md-1.cell-border-left, .table-bordered > thead > tr > td.cell-border-left,
+.table-bordered > thead > tr > td.cell-bg-disable.cell-border-left, .table-bordered > tbody > tr > th.cell-border-left,
+.table-bordered > tbody > tr > th.col-md-1.cell-border-left, .table-bordered > tbody > tr > th.cell-bg-disable.cell-border-left,
+.table-bordered > tbody > tr > td.cell-border-left, .table-bordered > tbody > tr > td.align-center.cell-border-left,
+.table-bordered > tfoot > tr > th.cell-border-left, .table-bordered > tfoot > tr > td.cell-border-left {
+    border-left: 2px solid #ddd !important;
+}
+
+/*.table-hover > thead > tr.anbred-tblReport-row-header > th,*/
+.table-bordered > thead > tr.anbred-tblReport-row-header > th {
+    background-color: #f2f2f2 !important;
+    text-align: center;
+    vertical-align: middle !important;
+    font-weight: normal;
+    padding-top: 10px !important;
+    padding-bottom: 10px !important
+}
+
+    .table-hover > thead > tr.anbred-tblReport-row-header > th.txt-left,
+    .table-bordered > thead > tr.anbred-tblReport-row-header > th.txt-left {
+        text-align: left;
+        padding-left: 10px
+    }
+
+/*.table-hover > tbody > tr.anbred-tblReport-row-footer > td,*/
 .table-bordered > tbody > tr.anbred-tblReport-row-footer > td {
     background-color: #f2f2f2 !important;
     vertical-align: middle !important;
@@ -243,10 +297,52 @@ td.anbred-tbl-report-border {
     padding-bottom: 8px !important
 }
 
+.table-hover > thead > tr > th.report-tbl-col-stt,
 .table-bordered > thead > tr > th.report-tbl-col-stt {
     table-layout: fixed !important;
     width: 5% !important;
 }
+
+.table-hover > tbody > tr.anbred-tblrow-align-right.has-col-rate > td:last-child,
+.table-bordered > tbody > tr.anbred-tblrow-align-right.has-col-rate > td:last-child {
+    padding-right: 0px;
+}
+
+.table-hover > tbody > tr.anbred-tblrow-align-right.sub-info > td,
+.table-bordered > tbody > tr.anbred-tblrow-align-right.sub-info > td {
+    color: #777;
+    font-size: 12px
+}
+
+td.anbred-tbl-report-border {
+    display: table-cell;
+    border: 1px solid #808080 !important;
+}
+
+.cell-border-left.txt-center {
+    vertical-align: central !important;
+    text-align: center !important;
+    padding-right: 0px !important;
+}
+
+.cell-bg-disable {
+    background-color: #ddd;
+    background-image: repeating-linear-gradient(135deg, transparent, transparent 1px, white 1px, white 4px);
+}
+
+/******************************************************************  Report Mating  ******************************************************************/
+
+
+blockquote.anbred-tblcaption {
+    margin: 4px 3px 4px 15px;
+    height: 38px;
+}
+
+    blockquote.anbred-tblcaption > h5 {
+        color: #9b9999;
+        font-weight: bold;
+        margin: 0px
+    }
 
 blockquote.info-default-right {
 }
@@ -277,15 +373,24 @@ blockquote.info-success {
             color: #00a65a
         }
 
-
-blockquote > p > code.titleReport {
-    padding: 8px 25px 8px 5px !important;
-    font-weight: bold !important;
+blockquote > h5 {
+    color: green;
+    font-size: 16px
 }
 
 blockquote.info-title {
-    border-left-color: #d25071 !important;
+    border-left-color: #f39c12;
 }
+
+    blockquote.info-title > p > code {
+        background-color: #f39c12;
+    }
+
+        blockquote.info-title > p > code.titleReport {
+            padding: 8px 25px 8px 5px;
+            font-weight: bold;
+            color: white
+        }
 
 .an-box-border-top {
     border-top: 2px solid #f4f4f4;
@@ -293,4 +398,12 @@ blockquote.info-title {
     background-color: #fff
 }
 
+td > div.col-rate-value {
+    text-align: left;
+}
 
+    td > div.col-rate-value > h3 {
+        color: green;
+        text-align: center;
+        font-weight: bold;
+    }

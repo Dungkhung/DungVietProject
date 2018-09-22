@@ -179,11 +179,19 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="About.aspx" />
+    <Content Include="An_Farm\FarmAdd.aspx" />
+    <Content Include="An_Farm\FarmDelete.aspx" />
+    <Content Include="An_Farm\FarmDetails.aspx" />
+    <Content Include="An_Farm\FarmsList.aspx" />
     <Content Include="An_Manager\DashBoard.aspx" />
     <Content Include="An_Manager\ReportDaily.aspx" />
     <Content Include="An_Manager\ReportFarrowing.aspx" />
     <Content Include="An_Manager\ReportMating.aspx" />
+    <Content Include="An_Manager\ReportMonthly.aspx" />
+    <Content Include="An_Manager\ReportProblem.aspx" />
     <Content Include="An_Manager\ReportWeaning.aspx" />
+    <Content Include="An_Manager\ReportWeekly.aspx" />
+    <Content Include="An_Manager\ReportWeeklyDetails.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\anbredfms.css" />
     <Content Include="Content\bootstrap-grid.css" />
@@ -204,6 +212,7 @@
     <Content Include="Content\bootstrap-grid.css.map" />
     <Content Include="An_Manager\ControlPanel.Master" />
     <None Include="Properties\PublishProfiles\AnBredFMS - Web Deploy.pubxml" />
+    <Content Include="Register.aspx" />
     <Content Include="Scripts\AdminLTE-2.4.5\.gitignore" />
     <Content Include="Scripts\AdminLTE-2.4.5\bower_components\bootstrap-colorpicker\dist\css\bootstrap-colorpicker.css" />
     <Content Include="Scripts\AdminLTE-2.4.5\bower_components\bootstrap-colorpicker\dist\css\bootstrap-colorpicker.min.css" />
@@ -6541,6 +6550,7 @@
     <Content Include="Scripts\AdminLTE-2.4.5\dist\css\skins\skin-yellow.min.css" />
     <Content Include="Scripts\AdminLTE-2.4.5\dist\css\skins\_all-skins.css" />
     <Content Include="Scripts\AdminLTE-2.4.5\dist\css\skins\_all-skins.min.css" />
+    <Content Include="Scripts\AdminLTE-2.4.5\dist\img\avatar.jpg" />
     <Content Include="Scripts\AdminLTE-2.4.5\dist\img\avatar.png" />
     <Content Include="Scripts\AdminLTE-2.4.5\dist\img\avatar04.png" />
     <Content Include="Scripts\AdminLTE-2.4.5\dist\img\avatar2.png" />
@@ -6554,12 +6564,12 @@
     <Content Include="Scripts\AdminLTE-2.4.5\dist\img\credit\paypal2.png" />
     <Content Include="Scripts\AdminLTE-2.4.5\dist\img\credit\visa.png" />
     <Content Include="Scripts\AdminLTE-2.4.5\dist\img\default-50x50.gif" />
-    <Content Include="Scripts\AdminLTE-2.4.5\dist\img\Dung 15x21.jpg" />
     <Content Include="Scripts\AdminLTE-2.4.5\dist\img\icons.png" />
     <Content Include="Scripts\AdminLTE-2.4.5\dist\img\photo1.png" />
     <Content Include="Scripts\AdminLTE-2.4.5\dist\img\photo2.png" />
     <Content Include="Scripts\AdminLTE-2.4.5\dist\img\photo3.jpg" />
     <Content Include="Scripts\AdminLTE-2.4.5\dist\img\photo4.jpg" />
+    <Content Include="Scripts\AdminLTE-2.4.5\dist\img\piggybank.png" />
     <Content Include="Scripts\AdminLTE-2.4.5\dist\img\user1-128x128.jpg" />
     <Content Include="Scripts\AdminLTE-2.4.5\dist\img\user2-160x160.jpg" />
     <Content Include="Scripts\AdminLTE-2.4.5\dist\img\user3-128x128.jpg" />
@@ -7460,6 +7470,34 @@
     <Content Include="Scripts\popper-utils.js.map" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="An_Farm\FarmAdd.aspx.cs">
+      <DependentUpon>FarmAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="An_Farm\FarmAdd.aspx.designer.cs">
+      <DependentUpon>FarmAdd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="An_Farm\FarmDelete.aspx.cs">
+      <DependentUpon>FarmDelete.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="An_Farm\FarmDelete.aspx.designer.cs">
+      <DependentUpon>FarmDelete.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="An_Farm\FarmDetails.aspx.cs">
+      <DependentUpon>FarmDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="An_Farm\FarmDetails.aspx.designer.cs">
+      <DependentUpon>FarmDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="An_Farm\FarmsList.aspx.cs">
+      <DependentUpon>FarmsList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="An_Farm\FarmsList.aspx.designer.cs">
+      <DependentUpon>FarmsList.aspx</DependentUpon>
+    </Compile>
     <Compile Include="An_Manager\ControlPanel.Master.cs">
       <DependentUpon>ControlPanel.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -7495,12 +7533,40 @@
     <Compile Include="An_Manager\ReportMating.aspx.designer.cs">
       <DependentUpon>ReportMating.aspx</DependentUpon>
     </Compile>
+    <Compile Include="An_Manager\ReportMonthly.aspx.cs">
+      <DependentUpon>ReportMonthly.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="An_Manager\ReportMonthly.aspx.designer.cs">
+      <DependentUpon>ReportMonthly.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="An_Manager\ReportProblem.aspx.cs">
+      <DependentUpon>ReportProblem.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="An_Manager\ReportProblem.aspx.designer.cs">
+      <DependentUpon>ReportProblem.aspx</DependentUpon>
+    </Compile>
     <Compile Include="An_Manager\ReportWeaning.aspx.cs">
       <DependentUpon>ReportWeaning.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="An_Manager\ReportWeaning.aspx.designer.cs">
       <DependentUpon>ReportWeaning.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="An_Manager\ReportWeekly.aspx.cs">
+      <DependentUpon>ReportWeekly.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="An_Manager\ReportWeekly.aspx.designer.cs">
+      <DependentUpon>ReportWeekly.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="An_Manager\ReportWeeklyDetails.aspx.cs">
+      <DependentUpon>ReportWeeklyDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="An_Manager\ReportWeeklyDetails.aspx.designer.cs">
+      <DependentUpon>ReportWeeklyDetails.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="About.aspx.cs">
@@ -7529,6 +7595,13 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Site.Master.cs">
       <DependentUpon>Site.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

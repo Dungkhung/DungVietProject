@@ -189,14 +189,14 @@ desired effect
                             <!-- Menu Toggle Button -->
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" style="margin-right: 18px">
                                 <!-- The user image in the navbar-->
-                                <img src="../Scripts/AdminLTE-2.4.5/dist/img/Dung 15x21.jpg" class="user-image" alt="User Image" style="margin-left: 10px">
+                                <img src="../Scripts/AdminLTE-2.4.5/dist/img/avatar.jpg" class="user-image" alt="User Image" style="margin-left: 10px">
                                 <!-- hidden-xs hides the username on small devices so only the image appears. -->
                                 <span class="hidden-xs">&nbsp</span>
                             </a>
                             <ul class="dropdown-menu" style="margin-right: 18px;">
                                 <!-- The user image in the menu -->
                                 <li class="user-header anbred-box-bg anbred-box-border-top">
-                                    <img src="../Scripts/AdminLTE-2.4.5/dist/img/Dung%2015x21.jpg" class="img-circle" alt="User Image">
+                                    <img src="../Scripts/AdminLTE-2.4.5/dist/img/avatar.jpg" class="img-circle" alt="User Image">
                                     <p>
                                         Nguyễn Văn Dũng
                                         <small>Trưởng trại</small>
@@ -225,8 +225,8 @@ desired effect
             <!-- Sidebar farm infomation -->
             <div class="user-panel anbred-farm-panel">
                 <div class="pull-left image">
-                    <img src="https://cdn.kualo.com/website/icons256px/financialshopping/piggybank.png" class="img-circle" alt="Farm Image" />
-                </div>
+                    <img src="../Scripts/AdminLTE-2.4.5/dist/img/piggybank.png"" class="img-rounded" alt="Farm Image" />
+                </div>                
                 <div class="pull-left info">
                     <p>Trại heo Gia Phát</p>
                     <a href="#" title="Cài đặt"><i class="fa fa-cog"></i>Quy mô: 1200 nái</a>
@@ -240,7 +240,7 @@ desired effect
 
                 <ul class="sidebar-menu anbred-controlpanel" data-widget="tree">
                     <!--li class="header">HEADER</!--li>
-                    <!-- Optionally, you can add icons to the links -->
+                    <!-- Optionally, you can add icons to the links  -->
                     <li class="active"><a href="#"><i class="fa fa-television"></i><span>&nbsp;TỔNG QUAN</span></a></li>
                     <li class="treeview">
                         <a href="#">
@@ -256,12 +256,13 @@ desired effect
                             <li><a href="#"><i class="fa fa-code"></i>&nbsp;Chu chuyển đàn</a></li>
                             <li><a href="#"><i class="fa fa-tencent-weibo"></i>&nbsp;Khai thác tinh</a></li>
                             <li><a href="#"><i class="fa fa-database"></i>&nbsp;Sử dụng thức ăn</a></li>
-                            <li><a href="#"><i class="fa fa-fire"></i>&nbsp;Nguyên liệu</a></li>
+                            <li><a href="#"><i class="glyphicon glyphicon-grain"></i>&nbsp;Nguyên liệu</a></li>
                             <li><a href="#"><i class="fa fa-medkit"></i>&nbsp;Thuốc & Vaccine</a></li>
                             <li><a href="#"><i class="fa fa-cubes"></i>&nbsp;Vật tư chăn nuôi</a></li>
                             <li><a href="#"><i class="fa fa-adjust"></i>&nbsp;Heo vấn đề</a></li>
                         </ul>
                     </li>
+                    <li><a href="#"><i class="glyphicon glyphicon-equalizer"></i><span>&nbsp;HỆ THỐNG TRẠI</span></a></li>
                     <li class="treeview">
                         <a href="#">
                             <i class="fa fa-sitemap"></i><span>&nbsp;QUẢN LÝ ĐÀN</span>
@@ -285,7 +286,7 @@ desired effect
                     <li><a href="#"><i class="fa fa-table"></i><span>&nbsp;THẺ NÁI</span></a></li>
                     <li class="treeview">
                         <a href="#">
-                            <i class="fa fa-bar-chart"></i><span>&nbsp;NĂNG SUẤT TRẠI</span>
+                            <i class="fa fa-line-chart"></i><span>&nbsp;NĂNG SUẤT TRẠI</span>
                             <span class="pull-right-container">
                                 <i class="fa fa-angle-left pull-right"></i>
                             </span>
@@ -379,7 +380,7 @@ desired effect
 
         <!-- Content Wrapper. Contains page content -->
 
-        <form id="form1" runat="server">
+        <form id="form1" runat="server" class="form-horizontal" role="form">
             <div>
                 <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
                 </asp:ContentPlaceHolder>

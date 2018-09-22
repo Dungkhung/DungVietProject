@@ -16,7 +16,7 @@
             <ol class="breadcrumb">
                 <li><a href="#"><i class="fa fa-map-o"></i>Bảng thông tin</a></li>
                 <li><a href="#">Báo cáo tổng hợp</a></li>
-                <li class="active"><a href="ReportMating.aspx">Báo cáo phối giống</a></li>
+                <li class="active"><a href="ReportMating.aspx">Phối giống</a></li>
             </ol>
         </section>
         <section class="content">
