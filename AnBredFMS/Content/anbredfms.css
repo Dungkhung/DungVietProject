@@ -174,7 +174,7 @@ select > option.anbred-option-box {
     border-bottom-width: 2px !important
 }
 
-.table-hover > thead > tr.anbred-tblReport-txt-center > th.
+.table-hover > thead > tr.anbred-tblReport-txt-center > th,
 .table-bordered > thead > tr.anbred-tblReport-txt-center > th {
     text-align: center !important;
     vertical-align: middle !important;
@@ -344,8 +344,6 @@ blockquote.anbred-tblcaption {
         margin: 0px
     }
 
-blockquote.info-default-right {
-}
 
     blockquote.info-default-right > p > code {
         background-color: #f7f7f7 !important
