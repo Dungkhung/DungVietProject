@@ -6,10 +6,10 @@
 <head runat="server">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>AN bred | FMS</title>
+    <title>Anbred FMS</title>
     <!-- Tell the browser to be responsive to screen width -->
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-    
+
     <link href="../Scripts/AdminLTE-2.4.5/bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
     <!-- Font Awesome -->
     <link rel="stylesheet" href="../Scripts/AdminLTE-2.4.5/bower_components/font-awesome/css/font-awesome.min.css">
@@ -29,10 +29,8 @@
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
     <!-- Google Font -->
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
     <!-- REQUIRED JS SCRIPTS -->
-
     <!-- jQuery 3 -->
     <script src="../Scripts/AdminLTE-2.4.5/bower_components/jquery/dist/jquery.min.js"></script>
     <!-- Bootstrap 3.3.7 -->
@@ -54,7 +52,6 @@
     <script src="../Scripts/AdminLTE-2.4.5/bower_components/jquery-slimscroll/jquery.slimscroll.min.js"></script>
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
-
 </head>
 <!--
 BODY TAG OPTIONS:
@@ -83,11 +80,11 @@ desired effect
         <header class="main-header">
 
             <!-- Logo #e08e0b-->
-            <a href="DashBoard.aspx" class="logo navbar-fixed-top anbred-logo-bg">
+            <a href="../Default.aspx" class="logo navbar-fixed-top anbred-logo-bg">
                 <!-- mini logo for sidebar mini 50x50 pixels -->
                 <span class="logo-mini"><b></b>AN</span>
                 <!-- logo for regular state and mobile devices -->
-                <span class="logo-lg"><b>AnBred</b> FMS</span>
+                <span class="logo-lg"><b>An</b>Bred FMS</span>
             </a>
             <!-- Header Navbar #f39c12-->
             <nav class="navbar navbar-fixed-top anbred-mini-sidebar-bg" role="navigation">
@@ -225,8 +222,8 @@ desired effect
             <!-- Sidebar farm infomation -->
             <div class="user-panel anbred-farm-panel">
                 <div class="pull-left image">
-                    <img src="../Scripts/AdminLTE-2.4.5/dist/img/piggybank.png"" class="img-rounded" alt="Farm Image" />
-                </div>                
+                    <img src="../Scripts/AdminLTE-2.4.5/dist/img/piggybank.png" class="img-rounded" alt="Farm Image" />
+                </div>
                 <div class="pull-left info">
                     <p>Trại heo Gia Phát</p>
                     <a href="#" title="Cài đặt"><i class="fa fa-cog"></i>Quy mô: 1200 nái</a>
@@ -236,8 +233,6 @@ desired effect
             <hr class="abfms-white-line" />
             <!-- sidebar: style can be found in sidebar.less -->
             <section class="sidebar">
-
-
                 <ul class="sidebar-menu anbred-controlpanel" data-widget="tree">
                     <!--li class="header">HEADER</!--li>
                     <!-- Optionally, you can add icons to the links  -->
@@ -283,7 +278,7 @@ desired effect
                             <li><a href="#"><i class="fa fa-circle-o-notch"></i>&nbsp;Heo chết, loại</a></li>
                         </ul>
                     </li>
-                    <li><a href="#"><i class="fa fa-table"></i><span>&nbsp;THẺ NÁI</span></a></li>
+                    <li><a href="#"><i class="fa fa-list-alt"></i><span>&nbsp;THẺ NÁI</span></a></li>
                     <li class="treeview">
                         <a href="#">
                             <i class="fa fa-line-chart"></i><span>&nbsp;NĂNG SUẤT TRẠI</span>
@@ -374,29 +369,24 @@ desired effect
                         </a>
                     </li>
                 </ul>
-
             </section>
         </aside>
 
         <!-- Content Wrapper. Contains page content -->
-
-        <form id="form1" runat="server" class="form-horizontal" role="form">
-            <div>
-                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
-                </asp:ContentPlaceHolder>
-            </div>
-
-        </form>
-
+            <form id="form1" runat="server">
+                <div>
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+            </form>
+        
         <footer class="main-footer">
             <!-- To the right -->
             <div class="pull-right hidden-xs">
                 One health
-   
             </div>
             <!-- Default to the left -->
-            <strong>Copyright &copy; <%: DateTime.Now.Year %> <a href="#">An Nhien</a>.</strong> All rights reserved.
- 
+            <strong>Copyright &copy; <%: DateTime.Now.Year %> <a href="../Default.aspx">An Nhien</a>.</strong> All rights reserved.
         </footer>
     </div>
 </body>

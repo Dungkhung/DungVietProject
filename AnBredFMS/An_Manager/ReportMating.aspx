@@ -57,7 +57,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class=" table-responsive">
+                            <div class="panel panel-default table-responsive">
                                 <table class="table table-bordered table-hover ">
                                     <thead>
                                         <tr class="anbred-tblReport-row-header">
@@ -75,6 +75,9 @@
                                         </tr>
                                     </thead>
                                     <tbody>
+                                        <tr class="anbred-tblrow-align-right separator-row">
+                                            <td colspan="11"></td>
+                                        </tr>
                                         <tr class="anbred-tblrow-align-right">
                                             <td>01</td>
                                             <td>14/08/2018</td>
@@ -244,28 +247,13 @@
                                             <td>&nbsp;</td>
                                             <td>&nbsp;</td>
                                         </tr>
-                                        <tr class="anbred-tblReport-row-footer">
-                                            <td>&nbsp;</td>
-                                            <td>&nbsp;</td>
-                                            <td>&nbsp;</td>
-                                            <td>&nbsp;</td>
-                                            <td>&nbsp;</td>
-                                            <td>&nbsp;</td>
-                                            <td>&nbsp;</td>
-                                            <td>&nbsp;</td>
-                                            <td>&nbsp;</td>
-                                            <td>&nbsp;</td>
-                                            <td>&nbsp;</td>
+                                        <tr class="anbred-tblrow-align-right separator-row">
+                                            <td colspan="11"></td>
                                         </tr>
                                     </tbody>
                                 </table>
-                            </div>
-                            <div class="row" style="margin-bottom: 20px; margin-top: 5px">
-                                <div class="col-md-6">
-                                    <h5>Ghi chú: NPD = Số ngày không làm việc</h5>
-                                </div>
-                                <div class="col-md-6">
-                                    <ul class="pagination pagination-sm no-margin pull-right">
+                                <div class="panel-footer text-right">
+                                    <ul class="pagination pagination-sm no-margin">
                                         <li><a href="#">&nbsp«&nbsp</a></li>
                                         <li><a href="#">&nbsp1&nbsp</a></li>
                                         <li><a href="#">&nbsp2&nbsp</a></li>
@@ -279,33 +267,38 @@
                                     </ul>
                                 </div>
                             </div>
-                            <div class="an-box-border-top">
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <blockquote class="info-success">
-                                            <p><code class="titleReport">&gt; TỔNG PHỐI: 57 <sup>nái</sup></code></p>
-                                            <footer>10 HB + 44 CS + 3 VĐ</footer>
-                                            <div style="height: 20px"></div>
-                                            <p><code class="titleReport">&gt; MANG THAI: 56 <sup>nái</sup></code></p>
-                                            <footer>Tỷ lệ mang thai/phối: 98 <sup>%</sup></footer>
-                                        </blockquote>
-                                    </div>
-                                    <div class="col-md-6">                                        
-                                        <blockquote class="blockquote-reverse info-default-right">
-                                            <p><code class="titleReport">XUẤT BÁO CÁO &lt; <sup></sup></code></p>
-                                            <div style="height: 10px"></div>
-                                            <footer><a href="#"><i class="fa fa-file-pdf-o"></i>&nbsp Định dạng  PDF</a></footer>
-                                            <div style="height: 10px"></div>
-                                            <footer><a href="#"><i class="fa fa-file-excel-o"></i>&nbsp Định dạng Excel</a></footer>
-                                            <div style="height: 20px"></div>
-                                            <footer><a href="#"><i class="fa fa-print"></i>&nbsp Bản In</a></footer>
-                                        </blockquote>
-                                    </div>
+                            <div class="note-panel">
+                                <h5>
+                                    <span class="anbred-note-text">Ghi chú: </span>
+                                    <span class="anbred-note-text">NPD = Số ngày không làm việc</span>
+                                </h5>
+                            </div>
+                            <br />
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <blockquote class="info-success">
+                                        <p><code class="titleReport">&gt; TỔNG PHỐI: 57 <sup>nái</sup></code></p>
+                                        <footer>10 HB + 44 CS + 3 VĐ</footer>
+                                        <div style="height: 20px"></div>
+                                        <p><code class="titleReport">&gt; MANG THAI: 56 <sup>nái</sup></code></p>
+                                        <footer>Tỷ lệ mang thai/phối: 98 <sup>%</sup></footer>
+                                    </blockquote>
+                                </div>
+                                <div class="col-md-6">
+                                    <blockquote class="blockquote-reverse info-default-right">
+                                        <p><code class="titleReport">XUẤT BÁO CÁO <sup><i class="fa fa-external-link"></i></sup></code></p>
+                                        <footer class="export-pdf">
+                                            <i class="fa fa-file-pdf-o"></i><a href="#" class="anbred-link-export">Định dạng  PDF</a>
+                                        </footer>
+                                        <footer class="export-excel">
+                                            <i class="fa fa-file-excel-o"></i><a href="#" class="anbred-link-export">Định dạng Excel</a>
+                                        </footer>
+                                        <footer class="export-printer">
+                                            <i class="fa fa-print"></i><a href="#" class="anbred-link-export">Bản In</a>
+                                        </footer>
+                                    </blockquote>
                                 </div>
                             </div>
-
-
-
                         </div>
                         <!-- /.box-body -->
 

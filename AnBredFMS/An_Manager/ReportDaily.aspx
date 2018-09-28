@@ -30,13 +30,13 @@
                             <div class="row">
                                 <div class="col-md-4">
                                     <blockquote class="info-title">
-                                        <p><code class="titleReport">&gt;&gt; CHU CHUYỂN ĐÀN </code></p>
+                                        <p><code class="titleReport"><i class="fa fa-angle-double-right"></i> CHU CHUYỂN ĐÀN </code></p>
                                         <footer>Từ ngày dd/mm/yyy - dd/mm/yyyy</footer>
                                     </blockquote>
                                 </div>
-                                <div class="col-md-4" style="padding-top: 20px">
+                                <div class="col-md-4" style="padding-top: 22px">
                                     <div class="input-group">
-                                        <input type="text" class="form-control pull-right" id="daterange" style="text-align: center">
+                                        <input type="text" class="form-control pull-right text-center" id="daterange">
                                         <div class="input-group-addon">
                                             <i class="fa fa-calendar"></i>
                                         </div>
@@ -47,7 +47,7 @@
                                 </div>
                             </div>
 
-                            <div class="table-responsive">
+                            <div class="panel panel-default table-responsive">
                                 <table class="table table-bordered">
                                     <thead>
                                         <tr class="anbred-tblReport-txt-center">
@@ -258,10 +258,10 @@
                             </div>
                             <br />
                             <blockquote class="info-title">
-                                <p><code class="titleReport">&gt;&gt; TÌNH HÌNH SỬ DỤNG THỨC ĂN TRONG NGÀY</code></p>
+                                <p><code class="titleReport"><i class="fa fa-angle-double-right"></i> TÌNH HÌNH SỬ DỤNG THỨC ĂN</code></p>
                                 <footer>Từ ngày dd/mm/yyy - dd/mm/yyyy</footer>
                             </blockquote>
-                            <div class=" table-responsive">
+                            <div class="panel panel-default table-responsive">
                                 <table class="table table-bordered">
                                     <thead>
                                         <tr class="anbred-tblReport-txt-center">
@@ -373,14 +373,7 @@
                                     </tbody>
                                 </table>
                             </div>
-                            <!--div class="row" style="margin-bottom: 20px; margin-top: 5px">
-                                <div class="col-md-6">
-                                    <h5>empty note here</h5>
-                                </div>
-                                <div class="col-md-6">
-                                    <h5> empty pagination here</h5>
-                                </div>
-                            </div-->
+                            <br />
                             <br />
                             <div class="row">
                                 <div class="col-md-4">
@@ -409,13 +402,16 @@
                                 </div>
                                 <div class="col-md-4">
                                     <blockquote class="blockquote-reverse info-default-right">
-                                        <p><code class="titleReport">XUẤT BÁO CÁO &lt; <sup></sup></code></p>
-                                        <div style="height: 10px"></div>
-                                        <footer><a href="#"><i class="fa fa-file-pdf-o"></i>&nbsp Định dạng  PDF</a></footer>
-                                        <div style="height: 10px"></div>
-                                        <footer><a href="#"><i class="fa fa-file-excel-o"></i>&nbsp Định dạng Excel</a></footer>
-                                        <div style="height: 20px"></div>
-                                        <footer><a href="#"><i class="fa fa-print"></i>&nbsp Bản In</a></footer>
+                                        <p><code class="titleReport">XUẤT BÁO CÁO <sup><i class="fa fa-external-link"></i></sup></code></p>
+                                        <footer class="export-pdf">
+                                            <i class="fa fa-file-pdf-o"></i><a href="#" class="anbred-link-export">Định dạng  PDF</a>
+                                        </footer>
+                                        <footer class="export-excel">
+                                            <i class="fa fa-file-excel-o"></i><a href="#" class="anbred-link-export">Định dạng Excel</a>
+                                        </footer>
+                                        <footer class="export-printer">
+                                            <i class="fa fa-print"></i><a href="#" class="anbred-link-export">Bản In</a>
+                                        </footer>
                                     </blockquote>
                                 </div>
                             </div>

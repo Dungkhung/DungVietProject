@@ -19,11 +19,11 @@
             <div class="row">
                 <div class="col-md-12 col-xs-12">
                     <div class="box">
-                        <div class="box-body">
+                        <div class="box-body form-horizontal" role="form">
                             <div class="row">
                                 <div class="col-md-4">
                                     <blockquote class="info-title">
-                                        <p><code class="titleReport">&gt;&gt; HỆ THỐNG TRẠI </code></p>
+                                        <p><code class="titleReport"><i class="fa fa-angle-double-right"></i> HỆ THỐNG TRẠI </code></p>
                                         <footer>Thêm trại mới</footer>
                                     </blockquote>
                                 </div>
@@ -37,10 +37,10 @@
                                 <div class="form-group">
                                     <label for="txtFarmName" class="col-sm-2 control-label">Trang trại</label>
                                     <div class="col-sm-4">
-                                        <input type="text" class="form-control" id="txtFarmName" placeholder="Tên trại">
+                                        <input type="text" class="form-control" id="txtFarmName" placeholder="Tên trại" />
                                     </div>
                                     <div class="col-sm-4">
-                                        <input type="text" class="form-control" id="txtFarmID" placeholder="Mã trại: FMS009">
+                                        <input type="text" class="form-control" id="txtFarmID" placeholder="Mã trại: FMS009" />
                                     </div>
                                 </div>
                             </div>
@@ -57,7 +57,7 @@
                                         </select>
                                     </div>
                                     <div class="col-sm-4">
-                                        <input type="text" class="form-control" id="txtFarmSize" placeholder="Quy mô">
+                                        <input type="text" class="form-control" id="txtFarmSize" placeholder="Quy mô" />
                                     </div>
                                 </div>
                             </div>
@@ -65,7 +65,7 @@
                                 <div class="form-group">
                                     <label for="txtFarmAddress" class="col-sm-2 control-label">Địa chỉ</label>
                                     <div class="col-sm-8">
-                                        <input type="text" class="form-control" id="txtFarmAddress" placeholder="">
+                                        <input type="text" class="form-control" id="txtFarmAddress" placeholder="" />
                                     </div>
                                 </div>
                             </div>
@@ -73,21 +73,21 @@
                                 <div class="form-group">
                                     <label for="txtFarmOwner" class="col-sm-2 control-label">Liên hệ</label>
                                     <div class="col-sm-4">
-                                        <input type="text" class="form-control" id="txtFarmOwner" placeholder="Chủ trang trại">
+                                        <input type="text" class="form-control" id="txtFarmOwner" placeholder="Chủ trang trại" />
                                     </div>
                                     <div class="col-sm-4">
-                                        <input type="text" class="form-control" id="txtFarmContact" placeholder="Số điện thoại">
+                                        <input type="text" class="form-control" id="txtFarmContact" placeholder="Số điện thoại" />
                                     </div>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="form-group">
-                                    <label for="txtFarmContact" class="col-sm-2 control-label">Ngày hoạt động</label>
+                                    <label for="txtFarmDate" class="col-sm-2 control-label">Ngày hoạt động</label>
                                     <div class="col-sm-4">
-                                        <input type="text" class="form-control" id="txtFarmDate" placeholder="<%: DateTime.Now.Date.ToShortDateString() %>">
+                                        <input type="text" class="form-control" id="txtFarmDate" placeholder="<%: DateTime.Now.Date.ToShortDateString() %>" />
                                     </div>
                                     <div class="col-sm-4">
-                                        <input type="text" class="form-control" id="txtFarmNote" placeholder="Ghi chú">
+                                        <input type="text" class="form-control" id="txtFarmNote" placeholder="Ghi chú" />
                                     </div>
                                 </div>
                             </div>
@@ -103,10 +103,10 @@
                                 <div class="form-group">
                                     <label for="txtTechnical" class="col-sm-2 control-label">Kỹ thuật trưởng</label>
                                     <div class="col-sm-4">
-                                        <input type="text" class="form-control" id="txtTechnical" placeholder="Họ tên">
+                                        <input type="text" class="form-control" id="txtTechnical" placeholder="Họ tên" />
                                     </div>
                                     <div class="col-sm-4">
-                                        <input type="text" class="form-control" id="txtTechEmail" placeholder="Email">
+                                        <input type="text" class="form-control" id="txtTechEmail" placeholder="Email" />
                                     </div>
                                 </div>
                             </div>
@@ -114,10 +114,10 @@
                                 <div class="form-group">
                                     <label for="" class="col-sm-2 control-label"></label>
                                     <div class="col-sm-4">
-                                        <input type="text" class="form-control" id="txtTechPhone" placeholder="Số điện thoại">
+                                        <input type="text" class="form-control" id="txtTechPhone" placeholder="Số điện thoại" />
                                     </div>
                                     <div class="col-sm-4">
-                                        <input type="text" class="form-control" id="txtTechDate" placeholder="Ngày nhận trại: <%: DateTime.Now.Date.ToShortDateString() %>">
+                                        <input type="text" class="form-control" id="txtTechDate" placeholder="Ngày nhận trại: <%: DateTime.Now.Date.ToShortDateString() %>" />
                                     </div>
                                 </div>
                             </div>

@@ -2,9 +2,9 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <!-- daterange picker -->
+    <link href="../Scripts/daterangepicker/daterangepicker.css" rel="stylesheet" />
     <script src="../Scripts/daterangepicker/moment.min.js"></script>
     <script src="../Scripts/daterangepicker/daterangepicker.min.js"></script>
-    <link href="../Scripts/daterangepicker/daterangepicker.css" rel="stylesheet" />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="content-wrapper">
@@ -27,20 +27,19 @@
                             <div class="row">
                                 <div class="col-md-4">
                                     <blockquote class="info-title">
-                                        <p><code class="titleReport">&gt;&gt; NÁI ĐẺ </code></p>
+                                        <p><code class="titleReport"><i class="fa fa-angle-double-right"></i> NÁI ĐẺ </code></p>
                                         <footer>Tuần 39</footer>
-                                        <footer>Chuồng đẻ 2</footer>
                                     </blockquote>
                                 </div>
-                                <div class="col-md-4" style="padding-top: 20px">
+                                <div class="col-md-4" style="padding-top: 22px">
                                     <div class="input-group">
-                                        <input type="text" class="form-control pull-right" id="daterange" style="text-align: center">
+                                        <input type="text" class="form-control pull-right text-center" id="daterange">
                                         <div class="input-group-addon">
                                             <i class="fa fa-calendar"></i>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-md-4" style="padding-top: 20px; text-align: right">
+                                <div class="col-md-4 text-right" style="padding-top: 22px">
                                     <div class="btn-group">
                                         <button type="button" class="btn btn-default" data-toggle="dropdown" style="background-color: white">Hiển thị&nbsp 30 dòng</button>
                                         <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
@@ -58,7 +57,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class=" table-responsive">
+                            <div class="panel panel-default table-responsive">
                                 <table class="table table-bordered table-hover ">
                                     <thead>
                                         <tr class="anbred-tblReport-row-header">
@@ -78,6 +77,9 @@
                                         </tr>
                                     </thead>
                                     <tbody>
+                                        <tr class="anbred-tblrow-align-right separator-row">
+                                            <td colspan="13"></td>
+                                        </tr>
                                         <tr class="anbred-tblrow-align-right">
                                             <td>01</td>
                                             <td>14/08/2018</td>
@@ -273,30 +275,13 @@
                                             <td>&nbsp;</td>
                                             <td>&nbsp;</td>
                                         </tr>
-                                        <tr class="anbred-tblReport-row-footer">
-                                            <td>&nbsp;</td>
-                                            <td>&nbsp;</td>
-                                            <td>&nbsp;</td>
-                                            <td>&nbsp;</td>
-                                            <td>&nbsp;</td>
-                                            <td>&nbsp;</td>
-                                            <td>&nbsp;</td>
-                                            <td>&nbsp;</td>
-                                            <td>&nbsp;</td>
-                                            <td>&nbsp;</td>
-                                            <td>&nbsp;</td>
-                                            <td>&nbsp;</td>
-                                            <td>&nbsp;</td>
+                                        <tr class="anbred-tblrow-align-right separator-row">
+                                            <td colspan="13"></td>
                                         </tr>
                                     </tbody>
                                 </table>
-                            </div>
-                            <div class="row" style="margin-bottom: 20px; margin-top: 5px">
-                                <div class="col-md-6">
-                                    <h5>Heo con sinh ra: D = chết, M = Khô thai, A = Bất thường, S = Nhỏ</h5>
-                                </div>
-                                <div class="col-md-6">
-                                    <ul class="pagination pagination-sm no-margin pull-right">
+                                <div class="panel-footer text-right">
+                                    <ul class="pagination pagination-sm no-margin">
                                         <li><a href="#">&nbsp«&nbsp</a></li>
                                         <li><a href="#">&nbsp1&nbsp</a></li>
                                         <li><a href="#">&nbsp2&nbsp</a></li>
@@ -310,32 +295,42 @@
                                     </ul>
                                 </div>
                             </div>
-                            
-                            <div class="an-box-border-top">
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <blockquote class="info-success">
-                                            <p><code class="titleReport">&gt; TỔNG PHỐI: 57 <sup>nái</sup></code></p>
-                                            <footer>10 HB + 44 CS + 3 VĐ</footer>
-                                            <div style="height: 20px"></div>
-                                            <p><code class="titleReport">&gt; MANG THAI: 56 <sup>nái</sup></code></p>
-                                            <footer>Tỷ lệ mang thai/phối: 98 <sup>%</sup></footer>
-                                            <div style="height: 20px"></div>
-                                            <p><code class="titleReport">&gt; LÊN ĐẺ: 54 <sup>nái</sup></code></p>
-                                            <footer>Tỷ lệ đẻ/phối: 95 <sup>%</sup></footer>
-                                        </blockquote>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <blockquote class="blockquote-reverse info-default-right">
-                                            <p><code class="titleReport">XUẤT BÁO CÁO &lt; <sup></sup></code></p>
-                                            <div style="height: 10px"></div>
-                                            <footer><a href="#"><i class="fa fa-file-pdf-o"></i>&nbsp Định dạng  PDF</a></footer>
-                                            <div style="height: 10px"></div>
-                                            <footer><a href="#"><i class="fa fa-file-excel-o"></i>&nbsp Định dạng Excel</a></footer>
-                                            <div style="height: 20px"></div>
-                                            <footer><a href="#"><i class="fa fa-print"></i>&nbsp Bản In</a></footer>
-                                        </blockquote>
-                                    </div>
+                            <div class="note-panel">
+                                <h5>
+                                    <span class="anbred-note-text">Heo con mới sinh: </span>
+                                    <i class="anbred-note shortcut inline">D</i><span class="anbred-note-text">Chết</span>
+                                    <i class="anbred-note shortcut inline">M</i><span class="anbred-note-text">Khô thai</span>
+                                    <i class="anbred-note shortcut inline">A</i><span class="anbred-note-text">Dị tật</span>
+                                    <i class="anbred-note shortcut inline">S</i><span class="anbred-note-text">Nhỏ</span>
+                                </h5>
+                            </div>
+                            <br />
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <blockquote class="info-success">
+                                        <p><code class="titleReport">&gt; TỔNG PHỐI: 57 <sup>nái</sup></code></p>
+                                        <footer>10 HB + 44 CS + 3 VĐ</footer>
+                                        <div style="height: 20px"></div>
+                                        <p><code class="titleReport">&gt; MANG THAI: 56 <sup>nái</sup></code></p>
+                                        <footer>Tỷ lệ mang thai/phối: 98 <sup>%</sup></footer>
+                                        <div style="height: 20px"></div>
+                                        <p><code class="titleReport">&gt; LÊN ĐẺ: 54 <sup>nái</sup></code></p>
+                                        <footer>Tỷ lệ đẻ/phối: 95 <sup>%</sup></footer>
+                                    </blockquote>
+                                </div>
+                                <div class="col-md-6">
+                                    <blockquote class="blockquote-reverse info-default-right">
+                                        <p><code class="titleReport">XUẤT BÁO CÁO <sup><i class="fa fa-external-link"></i></sup></code></p>
+                                        <footer class="export-pdf">
+                                            <i class="fa fa-file-pdf-o"></i><a href="#" class="anbred-link-export">Định dạng  PDF</a>
+                                        </footer>
+                                        <footer class="export-excel">
+                                            <i class="fa fa-file-excel-o"></i><a href="#" class="anbred-link-export">Định dạng Excel</a>
+                                        </footer>
+                                        <footer class="export-printer">
+                                            <i class="fa fa-print"></i><a href="#" class="anbred-link-export">Bản In</a>
+                                        </footer>
+                                    </blockquote>
                                 </div>
                             </div>
                         </div>
@@ -346,6 +341,7 @@
             </div>
         </section>
     </div>
+
     <!-- date-range-picker -->
     <script>
         $(function () {

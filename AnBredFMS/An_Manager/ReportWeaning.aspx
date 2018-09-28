@@ -1,4 +1,5 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/An_Manager/ControlPanel.Master" AutoEventWireup="true" CodeBehind="ReportWeaning.aspx.cs" Inherits="AnBredFMS.An_Manager.ReportWeaning" %>
+
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <!-- daterange picker -->
     <script src="../Scripts/daterangepicker/moment.min.js"></script>
@@ -6,7 +7,7 @@
     <link href="../Scripts/daterangepicker/daterangepicker.css" rel="stylesheet" />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-     <div class="content-wrapper">
+    <div class="content-wrapper">
         <section class="content-header" style="margin-right: 7px; margin-left: 7px;">
             <h1>Báo cáo tổng hợp
                     <small></small>
@@ -26,20 +27,19 @@
                             <div class="row">
                                 <div class="col-md-4">
                                     <blockquote class="info-title">
-                                        <p><code class="titleReport">&gt;&gt; CAI SỮA </code></p>
+                                        <p><code class="titleReport"><i class="fa fa-angle-double-right"></i> CAI SỮA </code></p>
                                         <footer>Tuần 33</footer>
-                                        <footer>Chuồng đẻ 5</footer>
                                     </blockquote>
                                 </div>
-                                <div class="col-md-4" style="padding-top: 20px">
+                                <div class="col-md-4" style="padding-top: 22px">
                                     <div class="input-group">
-                                        <input type="text" class="form-control pull-right" id="daterange" style="text-align: center">
+                                        <input type="text" class="form-control pull-right text-center" id="daterange">
                                         <div class="input-group-addon">
                                             <i class="fa fa-calendar"></i>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-md-4" style="padding-top: 20px; text-align: right">
+                                <div class="col-md-4 text-right" style="padding-top: 22px">
                                     <div class="btn-group">
                                         <button type="button" class="btn btn-default" data-toggle="dropdown" style="background-color: white">Hiển thị&nbsp 30 dòng</button>
                                         <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
@@ -57,7 +57,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class=" table-responsive">
+                            <div class="panel panel-default table-responsive">
                                 <table class="table table-bordered table-hover ">
                                     <thead>
                                         <tr class="anbred-tblReport-row-header">
@@ -76,6 +76,9 @@
                                         </tr>
                                     </thead>
                                     <tbody>
+                                        <tr class="anbred-tblrow-align-right separator-row">
+                                            <td colspan="12"></td>
+                                        </tr>
                                         <tr class="anbred-tblrow-align-right">
                                             <td>01</td>
                                             <td>14/08/2018</td>
@@ -219,6 +222,23 @@
                                         <tr class="anbred-tblrow-align-right">
                                             <td>&nbsp;</td>
                                             <td>&nbsp;</td>
+                                            <td>
+                                                
+                                                    <span style="font-size:12.0pt;font-family:Webdings;">á</span>
+                                            </td>
+                                            <td>&nbsp;</td>
+                                            <td>&nbsp;</td>
+                                            <td>&nbsp;</td>
+                                            <td>&nbsp;</td>
+                                            <td>&nbsp;</td>
+                                            <td>&nbsp;</td>
+                                            <td>&nbsp;</td>
+                                            <td>&nbsp;</td>
+                                            <td>&nbsp;</td>
+                                        </tr>
+                                        <tr class="anbred-tblrow-align-right">
+                                            <td>&nbsp;</td>
+                                            <td>&nbsp;</td>
                                             <td>&nbsp;</td>
                                             <td>&nbsp;</td>
                                             <td>&nbsp;</td>
@@ -244,21 +264,7 @@
                                             <td>&nbsp;</td>
                                             <td>&nbsp;</td>
                                         </tr>
-                                        <tr class="anbred-tblrow-align-right">
-                                            <td>&nbsp;</td>
-                                            <td>&nbsp;</td>
-                                            <td>&nbsp;</td>
-                                            <td>&nbsp;</td>
-                                            <td>&nbsp;</td>
-                                            <td>&nbsp;</td>
-                                            <td>&nbsp;</td>
-                                            <td>&nbsp;</td>
-                                            <td>&nbsp;</td>
-                                            <td>&nbsp;</td>
-                                            <td>&nbsp;</td>
-                                            <td>&nbsp;</td>
-                                        </tr>
-                                        <tr class="anbred-highlight-row">
+                                        <tr class="anbred-tblReport-row-footer text-center">
                                             <td colspan="4">Trung bình</td>
                                             <td>2.89</td>
                                             <td>11.2</td>
@@ -269,15 +275,13 @@
                                             <td>7,1</td>
                                             <td>&nbsp;</td>
                                         </tr>
+                                        <tr class="anbred-tblrow-align-right separator-row">
+                                            <td colspan="12"></td>
+                                        </tr>
                                     </tbody>
                                 </table>
-                            </div>
-                            <div class="row" style="margin-bottom: 20px; margin-top: 5px">
-                                <div class="col-md-6">
-                                    <h5>Ghép heo:&nbsp;&nbsp; ( + ) Nhập bầy;&nbsp;&nbsp; ( - ) Tách bầy</h5>
-                                </div>
-                                <div class="col-md-6">
-                                    <ul class="pagination pagination-sm no-margin pull-right">
+                                <div class="panel-footer text-right">
+                                    <ul class="pagination pagination-sm no-margin">
                                         <li><a href="#">&nbsp«&nbsp</a></li>
                                         <li><a href="#">&nbsp1&nbsp</a></li>
                                         <li><a href="#">&nbsp2&nbsp</a></li>
@@ -291,28 +295,37 @@
                                     </ul>
                                 </div>
                             </div>
-                            <div class="an-box-border-top">
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <blockquote class="info-success">
-                                            <p><code class="titleReport">&gt; TỔNG ĐẺ: 60 <sup>nái</sup></code></p>
-                                            <footer>678 heo con sơ sinh</footer>
-                                            <div style="height: 20px"></div>
-                                            <p><code class="titleReport">&gt; TỔNG CAI: 55 <sup>nái</sup></code></p>
-                                            <footer>620 heo con cai sữa <sup></sup></footer>
-                                        </blockquote>
-                                    </div>
-                                    <div class="col-md-6">                                        
-                                        <blockquote class="blockquote-reverse info-default-right">
-                                            <p><code class="titleReport">XUẤT BÁO CÁO &lt; <sup></sup></code></p>
-                                            <div style="height: 10px"></div>
-                                            <footer><a href="#"><i class="fa fa-file-pdf-o"></i>&nbsp Định dạng  PDF</a></footer>
-                                            <div style="height: 10px"></div>
-                                            <footer><a href="#"><i class="fa fa-file-excel-o"></i>&nbsp Định dạng Excel</a></footer>
-                                            <div style="height: 20px"></div>
-                                            <footer><a href="#"><i class="fa fa-print"></i>&nbsp Bản In</a></footer>
-                                        </blockquote>
-                                    </div>
+                            <div class="note-panel">
+                                <h5>
+                                    <span class="anbred-note-text">Ghép heo: </span>
+                                    <i class="anbred-note shortcut inline">+</i><span class="anbred-note-text">Nhập bầy</span>
+                                    <i class="anbred-note shortcut inline">-</i><span class="anbred-note-text">Tách bầy</span>
+                                </h5>
+                            </div>
+                            <br />
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <blockquote class="info-success">
+                                        <p><code class="titleReport">&gt; TỔNG ĐẺ: 60 <sup>nái</sup></code></p>
+                                        <footer>678 heo con sơ sinh</footer>
+                                        <div style="height: 20px"></div>
+                                        <p><code class="titleReport">&gt; TỔNG CAI: 55 <sup>nái</sup></code></p>
+                                        <footer>620 heo con cai sữa <sup></sup></footer>
+                                    </blockquote>
+                                </div>
+                                <div class="col-md-6">
+                                    <blockquote class="blockquote-reverse info-default-right">
+                                        <p><code class="titleReport">XUẤT BÁO CÁO <sup><i class="fa fa-external-link"></i></sup></code></p>
+                                        <footer class="export-pdf">
+                                            <i class="fa fa-file-pdf-o"></i><a href="#" class="anbred-link-export">Định dạng  PDF</a>
+                                        </footer>
+                                        <footer class="export-excel">
+                                            <i class="fa fa-file-excel-o"></i><a href="#" class="anbred-link-export">Định dạng Excel</a>
+                                        </footer>
+                                        <footer class="export-printer">
+                                            <i class="fa fa-print"></i><a href="#" class="anbred-link-export">Bản In</a>
+                                        </footer>
+                                    </blockquote>
                                 </div>
                             </div>
                         </div>

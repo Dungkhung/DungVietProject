@@ -18,11 +18,11 @@
             <div class="row">
                 <div class="col-md-12 col-xs-12">
                     <div class="box">
-                        <div class="box-body">
+                        <div class="box-body form-horizontal" role="form">
                             <div class="row">
                                 <div class="col-md-4">
                                     <blockquote class="info-title">
-                                        <p><code class="titleReport">&gt;&gt; HỆ THỐNG TRẠI </code></p>
+                                        <p><code class="titleReport"><i class="fa fa-angle-double-right"></i> HỆ THỐNG TRẠI </code></p>
                                         <footer>Chi tiết trại: FMS009</footer>
                                     </blockquote>
                                 </div>

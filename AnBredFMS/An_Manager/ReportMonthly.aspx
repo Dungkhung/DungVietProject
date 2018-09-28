@@ -27,37 +27,23 @@
                             <div class="row">
                                 <div class="col-md-4">
                                     <blockquote class="info-title">
-                                        <p><code class="titleReport">&gt;&gt; BÁO CÁO THÁNG </code></p>
+                                        <p><code class="titleReport"><i class="fa fa-angle-double-right"></i> BÁO CÁO THÁNG </code></p>
                                         <footer>Tháng 09.2018</footer>
                                     </blockquote>
                                 </div>
-                                <div class="col-md-4" style="padding-top: 20px">
+                                <div class="col-md-4" style="padding-top: 22px">
                                     <div class="input-group">
-                                        <input type="text" class="form-control pull-right" id="daterange" style="text-align: center">
+                                        <input type="text" class="form-control pull-right text-center" id="daterange">
                                         <div class="input-group-addon">
                                             <i class="fa fa-calendar"></i>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-md-4" style="padding-top: 20px; text-align: right">
-                                    <div class="btn-group">
-                                        <button type="button" class="btn btn-default" data-toggle="dropdown" style="background-color: white">Hiển thị&nbsp 30 dòng</button>
-                                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-                                            <span class="caret"></span>
-                                            <span class="sr-only">Toggle Dropdown</span>
-                                        </button>
-                                        <ul class="dropdown-menu" role="menu">
-                                            <li><a href="#">Hiển thị&nbsp 30 dòng</a></li>
-                                            <li><a href="#">Hiển thị&nbsp 60 dòng</a></li>
-                                            <li><a href="#">Hiển thị&nbsp 90 dòng</a></li>
-                                            <li><a href="#">Hiển thị 120 dòng</a></li>
-                                            <li class="divider"></li>
-                                            <li><a href="#">Xem hết</a></li>
-                                        </ul>
-                                    </div>
+                                    <!-- empty tool box (header right) -->
                                 </div>
                             </div>
-                            <div class=" table-responsive">
+                            <div class="panel panel-default table-responsive">
                                 <table class="table table-bordered">
                                     <thead>
                                         <tr>
@@ -198,7 +184,7 @@
                                 </table>
                             </div>
                             <br />
-                            <div class=" table-responsive">
+                            <div class="panel panel-default table-responsive">
                                 <table class="table table-bordered">
                                     <thead>
                                         <tr>
@@ -660,13 +646,16 @@
                                 </div>
                                 <div class="col-md-4">
                                     <blockquote class="blockquote-reverse info-default-right">
-                                        <p><code class="titleReport">XUẤT BÁO CÁO &lt; <sup></sup></code></p>
-                                        <div style="height: 10px"></div>
-                                        <footer><a href="#"><i class="fa fa-file-pdf-o"></i>&nbsp Định dạng  PDF</a></footer>
-                                        <div style="height: 10px"></div>
-                                        <footer><a href="#"><i class="fa fa-file-excel-o"></i>&nbsp Định dạng Excel</a></footer>
-                                        <div style="height: 20px"></div>
-                                        <footer><a href="#"><i class="fa fa-print"></i>&nbsp Bản In</a></footer>
+                                        <p><code class="titleReport">XUẤT BÁO CÁO <sup><i class="fa fa-external-link"></i></sup></code></p>
+                                        <footer class="export-pdf">
+                                            <i class="fa fa-file-pdf-o"></i><a href="#" class="anbred-link-export">Định dạng  PDF</a>
+                                        </footer>
+                                        <footer class="export-excel">
+                                            <i class="fa fa-file-excel-o"></i><a href="#" class="anbred-link-export">Định dạng Excel</a>
+                                        </footer>
+                                        <footer class="export-printer">
+                                            <i class="fa fa-print"></i><a href="#" class="anbred-link-export">Bản In</a>
+                                        </footer>
                                     </blockquote>
                                 </div>
                             </div>

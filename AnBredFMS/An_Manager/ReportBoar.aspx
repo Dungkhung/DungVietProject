@@ -1,12 +1,13 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/An_Manager/ControlPanel.Master" AutoEventWireup="true" CodeBehind="ReportProblem.aspx.cs" Inherits="AnBredFMS.An_Manager.ReportProblem" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/An_Manager/ControlPanel.Master" AutoEventWireup="true" CodeBehind="ReportBoar.aspx.cs" Inherits="AnBredFMS.An_Manager.ReportBoar" %>
+
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <!-- daterange picker -->
+    <link href="../Scripts/daterangepicker/daterangepicker.css" rel="stylesheet" />
     <script src="../Scripts/daterangepicker/moment.min.js"></script>
     <script src="../Scripts/daterangepicker/daterangepicker.min.js"></script>
-    <link href="../Scripts/daterangepicker/daterangepicker.css" rel="stylesheet" />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-     <div class="content-wrapper">
+    <div class="content-wrapper">
         <section class="content-header" style="margin-right: 7px; margin-left: 7px;">
             <h1>Báo cáo tổng hợp
                     <small></small>
@@ -15,7 +16,7 @@
             <ol class="breadcrumb">
                 <li><a href="#"><i class="fa fa-map-o"></i>Bảng thông tin</a></li>
                 <li><a href="#">Báo cáo tổng hợp</a></li>
-                <li class="active"><a href="ReportProblem.aspx">Heo vấn đề</a></li>
+                <li class="active"><a href="ReportBoar.aspx">Khai thác tinh</a></li>
             </ol>
         </section>
         <section class="content">
@@ -26,8 +27,8 @@
                             <div class="row">
                                 <div class="col-md-4">
                                     <blockquote class="info-title">
-                                        <p><code class="titleReport"><i class="fa fa-angle-double-right"></i> HEO VẤN ĐỀ </code></p>
-                                        <footer>Tuần 28</footer>                                        
+                                        <p><code class="titleReport"><i class="fa fa-angle-double-right"></i> KHAI THÁC TINH </code></p>
+                                        <footer>Tuần 22</footer>
                                     </blockquote>
                                 </div>
                                 <div class="col-md-4" style="padding-top: 22px">
@@ -59,124 +60,143 @@
                             <div class="panel panel-default table-responsive">
                                 <table class="table table-bordered table-hover ">
                                     <thead>
-                                        <tr class="anbred-tblReport-row-header">
-                                            <th class="report-tbl-col-stt">Stt.</th>
-                                            <th class="col-md-1">Loại VĐ</th>
-                                            <th class="col-md-1">Số tai</th>
-                                            <th class="report-tbl-col-stt">Giống</th>
-                                            <th class="report-tbl-col-stt">Dòng</th>                                            
-                                            <th class="report-tbl-col-stt">Lứa đẻ</th>
-                                            <th class="report-tbl-col-stt">Lần phối</th>
-                                            <th class="col-md-1">Ngày CS</th>
-                                            <th class="col-md-1">Ngày phối</th>
-                                            <th class="col-md-1">Ngày có vấn đề</th>
-                                            <th class="col-md-1">Ngày phối lại</th>
-                                            <th class="col-md-1">Ngày chết, loại</th>
-                                            <th class="report-tbl-col-stt">NPD</th>
-                                        </tr>
                                     </thead>
                                     <tbody>
+                                        <tr class="anbred-highlight-row row-header">
+                                            <td class="report-tbl-col-stt" rowspan="2">Stt.</td>
+                                            <td class="col-md-1" rowspan="2">Số tai nọc</td>
+                                            <td class="col-md-1" rowspan="2">Ngày sinh</td>
+                                            <td class="col-md-1" rowspan="2">tdáng tuổi</td>
+                                            <td class="col-md-1" rowspan="2">Giống</td>
+                                            <td class="col-md-1" rowspan="2">Số lần khai tdác</td>
+                                            <td class="col-md-1" rowspan="2">tdể tích (ml)</td>
+                                            <td class="col-md-1" rowspan="2">Nồng độ</td>
+                                            <td class="col-md-1" rowspan="2">Số liều pha</td>
+                                            <td class="col-md-1" rowspan="2">Tính vận động</td>
+                                            <td class="col-md-1" rowspan="2">Kỳ hình</td>
+                                            <td class="col-md-1" colspan="4">Hoạt lực tinh (ngày)</td>
+                                        </tr>
+                                        <tr class="anbred-highlight-row row-header">
+                                            <td class="report-tbl-col-stt">1d</td>
+                                            <td class="report-tbl-col-stt">2d</td>
+                                            <td class="report-tbl-col-stt">3d</td>
+                                            <td class="report-tbl-col-stt">5d</td>
+                                        </tr>                                        
                                         <tr class="anbred-tblrow-align-right separator-row">
-                                            <td colspan="13"></td>
+                                            <td colspan="15"></td>
                                         </tr>
                                         <tr class="anbred-tblrow-align-right">
                                             <td>01</td>
-                                            <td>D</td>
                                             <td>23254</td>
-                                            <td>LY</td>
-                                            <td>GP</td>
-                                            <td>2</td>
+                                            <td>14/08/2017</td>
+                                            <td>12</td>
+                                            <td>Du</td>
                                             <td>1</td>
-                                            <td>02/06/2018</td>
-                                            <td>08/06/2018</td>
-                                            <td>23/09/2018</td>
-                                            <td>-</td>
-                                            <td>28/10/2018</td>
-                                            <td>34</td>
+                                            <td>200</td>
+                                            <td>&nbsp;</td>
+                                            <td>25</td>
+                                            <td>&nbsp;</td>
+                                            <td>&nbsp;</td>
+                                            <td><i class="good-check fa fa-check"></i></td>
+                                            <td><i class="good-check fa fa-check"></i></td>
+                                            <td><i class="bad-check fa fa-exclamation-triangle"></i></td>
+                                            <td></td>
                                         </tr>
                                         <tr class="anbred-tblrow-align-right">
                                             <td>02</td>
-                                            <td>R</td>
                                             <td>2564</td>
-                                            <td>LY</td>
-                                            <td>PS</td>
-                                            <td>3</td>
-                                            <td>1</td>
-                                            <td>15/06/2018</td>
-                                            <td>21/06/2018</td>
-                                            <td>23/09/2018</td>
-                                            <td>-</td>
+                                            <td>14/08/2017</td>
+                                            <td>12</td>
+                                            <td>L</td>
+                                            <td>2</td>
+                                            <td>180</td>
                                             <td>&nbsp;</td>
-                                            <td>55</td>
+                                            <td>20</td>
+                                            <td>&nbsp;</td>
+                                            <td>&nbsp;</td>
+                                            <td><i class="good-check fa fa-check"></i></td>
+                                            <td><i class="good-check fa fa-check"></i></td>
+                                            <td><i class="bad-check fa fa-exclamation-triangle"></i></td>
+                                            <td></td>
                                         </tr>
                                         <tr class="anbred-tblrow-align-right">
                                             <td>03</td>
-                                            <td>R</td>
                                             <td>26775</td>
-                                            <td>LY</td>
-                                            <td>PS</td>
-                                            <td>1</td>
-                                            <td>2</td>
-                                            <td>22/07/2018</td>
-                                            <td>16/07/2018</td>
-                                            <td>26/09/2018</td>
-                                            <td>-</td>
+                                            <td>15/08/2017</td>
+                                            <td>12</td>
+                                            <td>Y</td>
+                                            <td>3</td>
+                                            <td>200</td>
                                             <td>&nbsp;</td>
-                                            <td>21</td>
+                                            <td>18</td>
+                                            <td>&nbsp;</td>
+                                            <td>&nbsp;</td>
+                                            <td><i class="good-check fa fa-check"></i></td>
+                                            <td><i class="good-check fa fa-check"></i></td>
+                                            <td><i class="good-check fa fa-check"></i></td>
+                                            <td><i class="bad-check fa fa-exclamation-triangle"></i></td>
                                         </tr>
                                         <tr class="anbred-tblrow-align-right">
                                             <td>04</td>
-                                            <td>A</td>
                                             <td>4528</td>
-                                            <td>Y</td>
-                                            <td>GPP</td>
-                                            <td>4</td>
-                                            <td>1</td>
-                                            <td>01/06/2018</td>
-                                            <td>08/06/2018</td>
-                                            <td>22/09/2018</td>
-                                            <td>30/10/2018</td>
+                                            <td>15/08/2016</td>
+                                            <td>25</td>
+                                            <td>L</td>
+                                            <td>2</td>
+                                            <td>190</td>
                                             <td>&nbsp;</td>
-                                            <td>21</td>
+                                            <td>25</td>
+                                            <td>&nbsp;</td>
+                                            <td>&nbsp;</td>
+                                            <td><i class="good-check fa fa-check"></i></td>
+                                            <td><i class="bad-check fa fa-exclamation-triangle"></i></td>
+                                            <td>&nbsp;</td>
+                                            <td>&nbsp;</td>
                                         </tr>
                                         <tr class="anbred-tblrow-align-right">
                                             <td>05</td>
-                                            <td>A</td>
                                             <td>28976</td>
-                                            <td>L</td>
-                                            <td>GPP</td>
-                                            <td>6</td>
+                                            <td>16/08/2016</td>
+                                            <td>25</td>
+                                            <td>Du</td>
                                             <td>1</td>
-                                            <td>17/06/2018</td>
-                                            <td>22/06/2018</td>
-                                            <td>23/09/2018</td>
-                                            <td>30/10/2018</td>
+                                            <td>300</td>
                                             <td>&nbsp;</td>
                                             <td>30</td>
+                                            <td>&nbsp;</td>
+                                            <td>&nbsp;</td>
+                                            <td>&nbsp;</td>
+                                            <td>&nbsp;</td>
+                                            <td>&nbsp;</td>
+                                            <td>&nbsp;</td>
                                         </tr>
                                         <tr class="anbred-tblrow-align-right">
                                             <td>06</td>
-                                            <td>N</td>
-                                            <td>4581</td>
-                                            <td>YL</td>
-                                            <td>PS</td>
+                                            <td>4436</td>
+                                            <td>22/05/2016</td>
+                                            <td>28</td>
+                                            <td>Du</td>
                                             <td>2</td>
+                                            <td>250</td>
+                                            <td>&nbsp;</td>
+                                            <td>30</td>
+                                            <td>&nbsp;</td>
+                                            <td>&nbsp;</td>
+                                            <td>&nbsp;</td>
+                                            <td>&nbsp;</td>
+                                            <td>&nbsp;</td>
+                                            <td>&nbsp;</td>
+                                        </tr>
+                                        <tr class="anbred-tblrow-align-right">
+                                            <td>07</td>
+                                            <td>0067</td>
+                                            <td>10/12/2016</td>
+                                            <td>21</td>
+                                            <td>Du</td>
                                             <td>2</td>
-                                            <td>14/07/2018</td>
-                                            <td>13/08/2018</td>
-                                            <td>25/09/2018</td>
-                                            <td>-</td>
-                                            <td>11/10/2018</td>
-                                            <td>67</td>
-                                        </tr>
-                                        <tr class="anbred-tblrow-align-right">
+                                            <td>200</td>
                                             <td>&nbsp;</td>
-                                            <td>&nbsp;</td>
-                                            <td>&nbsp;</td>
-                                            <td>&nbsp;</td>
-                                            <td>&nbsp;</td>
-                                            <td>&nbsp;</td>
-                                            <td>&nbsp;</td>
+                                            <td>25</td>
                                             <td>&nbsp;</td>
                                             <td>&nbsp;</td>
                                             <td>&nbsp;</td>
@@ -185,28 +205,15 @@
                                             <td>&nbsp;</td>
                                         </tr>
                                         <tr class="anbred-tblrow-align-right">
+                                            <td>08</td>
+                                            <td>12345</td>
+                                            <td>21/09/2016</td>
+                                            <td>24</td>
+                                            <td>Y</td>
+                                            <td>3</td>
+                                            <td>300</td>
                                             <td>&nbsp;</td>
-                                            <td>&nbsp;</td>
-                                            <td>&nbsp;</td>
-                                            <td>&nbsp;</td>
-                                            <td>&nbsp;</td>
-                                            <td>&nbsp;</td>
-                                            <td>&nbsp;</td>
-                                            <td>&nbsp;</td>
-                                            <td>&nbsp;</td>
-                                            <td>&nbsp;</td>
-                                            <td>&nbsp;</td>
-                                            <td>&nbsp;</td>
-                                            <td>&nbsp;</td>
-                                        </tr>
-                                        <tr class="anbred-tblrow-align-right">
-                                            <td>&nbsp;</td>
-                                            <td>&nbsp;</td>
-                                            <td>&nbsp;</td>
-                                            <td>&nbsp;</td>
-                                            <td>&nbsp;</td>
-                                            <td>&nbsp;</td>
-                                            <td>&nbsp;</td>
+                                            <td>25</td>
                                             <td>&nbsp;</td>
                                             <td>&nbsp;</td>
                                             <td>&nbsp;</td>
@@ -215,6 +222,25 @@
                                             <td>&nbsp;</td>
                                         </tr>
                                         <tr class="anbred-tblrow-align-right">
+                                            <td>09</td>
+                                            <td>7832</td>
+                                            <td>05/06/2016</td>
+                                            <td>27</td>
+                                            <td>L</td>
+                                            <td>1</td>
+                                            <td>350</td>
+                                            <td>&nbsp;</td>
+                                            <td>35</td>
+                                            <td>&nbsp;</td>
+                                            <td>&nbsp;</td>
+                                            <td>&nbsp;</td>
+                                            <td>&nbsp;</td>
+                                            <td>&nbsp;</td>
+                                            <td>&nbsp;</td>
+                                        </tr>
+                                        <tr class="anbred-tblrow-align-right">
+                                            <td>10</td>
+                                            <td>57353</td>
                                             <td>&nbsp;</td>
                                             <td>&nbsp;</td>
                                             <td>&nbsp;</td>
@@ -230,6 +256,8 @@
                                             <td>&nbsp;</td>
                                         </tr>
                                         <tr class="anbred-tblrow-align-right">
+                                            <td>11</td>
+                                            <td>74947</td>
                                             <td>&nbsp;</td>
                                             <td>&nbsp;</td>
                                             <td>&nbsp;</td>
@@ -245,6 +273,8 @@
                                             <td>&nbsp;</td>
                                         </tr>
                                         <tr class="anbred-tblrow-align-right">
+                                            <td>12</td>
+                                            <td>3637</td>
                                             <td>&nbsp;</td>
                                             <td>&nbsp;</td>
                                             <td>&nbsp;</td>
@@ -260,6 +290,8 @@
                                             <td>&nbsp;</td>
                                         </tr>
                                         <tr class="anbred-tblrow-align-right">
+                                            <td>13</td>
+                                            <td>35889</td>
                                             <td>&nbsp;</td>
                                             <td>&nbsp;</td>
                                             <td>&nbsp;</td>
@@ -275,18 +307,41 @@
                                             <td>&nbsp;</td>
                                         </tr>
                                         <tr class="anbred-tblrow-align-right">
-                                            <td colspan="5">Trung bình</td>
-                                            <td>2,3</td>
-                                            <td>1,3</td>
+                                            <td>14</td>
+                                            <td>97068</td>
                                             <td>&nbsp;</td>
                                             <td>&nbsp;</td>
                                             <td>&nbsp;</td>
                                             <td>&nbsp;</td>
                                             <td>&nbsp;</td>
-                                            <td>34</td>
+                                            <td>&nbsp;</td>
+                                            <td>&nbsp;</td>
+                                            <td>&nbsp;</td>
+                                            <td>&nbsp;</td>
+                                            <td>&nbsp;</td>
+                                            <td>&nbsp;</td>
+                                            <td>&nbsp;</td>
+                                            <td>&nbsp;</td>
+                                        </tr>
+                                        <tr class="anbred-tblrow-align-right">
+                                            <td>15</td>
+                                            <td>4357</td>
+                                            <td>&nbsp;</td>
+                                            <td>&nbsp;</td>
+                                            <td>&nbsp;</td>
+                                            <td>&nbsp;</td>
+                                            <td>&nbsp;</td>
+                                            <td>&nbsp;</td>
+                                            <td>&nbsp;</td>
+                                            <td>&nbsp;</td>
+                                            <td>&nbsp;</td>
+                                            <td>&nbsp;</td>
+                                            <td>&nbsp;</td>
+                                            <td>&nbsp;</td>
+                                            <td>&nbsp;</td>
                                         </tr>
                                         <tr class="anbred-tblrow-align-right separator-row">
-                                            <td colspan="13"></td>
+                                            <td colspan="15"></td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -305,32 +360,26 @@
                                     </ul>
                                 </div>
                             </div>
-                            <div class="note-panel">
-                                <h5>
-                                    <span class="anbred-note-text">Loại vấn đề: </span>
-                                    <i class="anbred-note shortcut inline">R</i><span class="anbred-note-text">Lốc < 42 ngày</span>
-                                    <i class="anbred-note shortcut inline">A</i><span class="anbred-note-text">Sẩy thai</span>
-                                    <i class="anbred-note shortcut inline">N</i><span class="anbred-note-text">Không bầu > 42 ngày</span>
-                                    <i class="anbred-note shortcut inline">D</i><span class="anbred-note-text">Bệnh</span>
-                                    <i class="anbred-note shortcut inline">O</i><span class="anbred-note-text">Vấn đề khác</span>
-                                </h5>
+                            <div class="well">
+                                <a href="#" class="btn btn-sm btn-primary"><i class="glyphicon glyphicon-plus"></i>&nbsp; Thêm mới</a>
                             </div>
                             <br />
                             <div class="row">
-                                    <div class="col-md-6">
-                                        <blockquote class="info-title">
-                                            <p><code class="titleReport">&gt; TỔNG SỐ: 6 <sup>nái VĐ</sup></code></p><div style="height: 10px"></div>
-                                            <footer>2 Sẩy thai</footer>   <div style="height: 10px"></div> 
-                                            <footer>2 Lốc</footer>    <div style="height: 10px"></div>
-                                            <footer>1 Không bầu</footer>   <div style="height: 10px"></div> 
-                                            <footer>1 Bệnh</footer>    
-                                        </blockquote>
-                                    </div>
-                                    <div class="col-md-6">                                        
-                                        <blockquote class="blockquote-reverse info-default-right">
+                                <div class="col-md-6">
+                                    <blockquote class="info-success">
+                                        <p><code class="titleReport">&gt; TỔNG ĐÀN: 15 <sup>nọc</sup></code></p>
+                                        <footer>abc xyz</footer>
+                                        <div style="height: 20px"></div>
+                                        <p><code class="titleReport">&gt; KHAI THÁC: 09 <sup>nọc</sup></code></p>
+                                        <footer>Số liều pha: 238 <sup>liều</sup></footer>
+                                        <div style="height: 20px"></div>
+                                    </blockquote>
+                                </div>
+                                <div class="col-md-6">
+                                    <blockquote class="blockquote-reverse info-default-right">
                                         <p><code class="titleReport">XUẤT BÁO CÁO <sup><i class="fa fa-external-link"></i></sup></code></p>
                                         <footer class="export-pdf">
-                                            <i class="fa fa-file-pdf-o"></i><a href="#" class="anbred-link-export">Định  dạng  PDF</a>
+                                            <i class="fa fa-file-pdf-o"></i><a href="#" class="anbred-link-export">Định dạng  PDF</a>
                                         </footer>
                                         <footer class="export-excel">
                                             <i class="fa fa-file-excel-o"></i><a href="#" class="anbred-link-export">Định dạng Excel</a>
@@ -339,8 +388,8 @@
                                             <i class="fa fa-print"></i><a href="#" class="anbred-link-export">Bản In</a>
                                         </footer>
                                     </blockquote>
-                                    </div>
                                 </div>
+                            </div>
                         </div>
                         <!-- /.box-body -->
                     </div>
@@ -349,6 +398,7 @@
             </div>
         </section>
     </div>
+
     <!-- date-range-picker -->
     <script>
         $(function () {

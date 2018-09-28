@@ -23,13 +23,13 @@
                             <div class="row">
                                 <div class="col-md-4">
                                     <blockquote class="info-title">
-                                        <p><code class="titleReport">&gt;&gt; HỆ THỐNG TRẠI </code></p>
+                                        <p><code class="titleReport"><i class="fa fa-angle-double-right"></i> HỆ THỐNG TRẠI </code></p>
                                         <footer>Danh sách</footer>
                                     </blockquote>
                                 </div>
                                 <div class="col-md-4" style="padding-top: 20px">
                                 </div>
-                                <div class="col-md-4" style="padding-top: 20px; text-align: right">
+                                <div class="col-md-4 text-right" style="padding-top: 22px">
                                     <div class="btn-group">
                                         <button type="button" class="btn btn-default" data-toggle="dropdown" style="background-color: white">Hiển thị&nbsp 30 dòng</button>
                                         <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
@@ -37,9 +37,9 @@
                                             <span class="sr-only">Toggle Dropdown</span>
                                         </button>
                                         <ul class="dropdown-menu" role="menu">
-                                            <li><a href="#">Hiển thị&nbsp; 30 dòng</a></li>
-                                            <li><a href="#">Hiển thị&nbsp; 60 dòng</a></li>
-                                            <li><a href="#">Hiển thị&nbsp; 90 dòng</a></li>
+                                            <li><a href="#">Hiển thị&nbsp 30 dòng</a></li>
+                                            <li><a href="#">Hiển thị&nbsp 60 dòng</a></li>
+                                            <li><a href="#">Hiển thị&nbsp 90 dòng</a></li>
                                             <li><a href="#">Hiển thị 120 dòng</a></li>
                                             <li class="divider"></li>
                                             <li><a href="#">Xem hết</a></li>
@@ -47,7 +47,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class=" table-responsive">
+                            <div class="panel panel-default table-responsive">
                                 <table class="table table-bordered table-hover ">
                                     <thead>
                                         <tr class="anbred-tblReport-row-header">
@@ -62,6 +62,8 @@
                                         </tr>
                                     </thead>
                                     <tbody>
+                                        <tr class="anbred-tblrow-align-right separator-row">
+                                            <td colspan="8"></td>
                                         <tr class="anbred-tblrow-align-left">
                                             <td>01</td>
                                             <td><a class="anbred-link-default" href="#">Xuân Lộc 1</a></td>
@@ -196,30 +198,30 @@
                                             <td>&nbsp;</td>
                                             <td>&nbsp;</td>
                                         </tr>
+                                        <tr class="anbred-tblrow-align-right separator-row">
+                                            <td colspan="8"></td>
                                     </tbody>
                                 </table>
-                            </div>
-                            <div class="row" style="margin-bottom: 20px; margin-top: 5px">
-                                <div class="col-md-6">
-                                    <a href="#" class="btn btn-sm btn-primary"><i class="glyphicon glyphicon-plus"></i>&nbsp; Thêm mới</a>
-                                </div>
-                                <div class="col-md-6">
-                                    <ul class="pagination pagination-sm no-margin pull-right">
-                                        <li><a href="#">&nbsp;«&nbsp;</a></li>
-                                        <li><a href="#">&nbsp;1&nbsp;</a></li>
-                                        <li><a href="#">&nbsp;2&nbsp;</a></li>
-                                        <li><a href="#">&nbsp;3&nbsp;</a></li>
-                                        <li><a href="#">&nbsp;4&nbsp;</a></li>
-                                        <li><a href="#">&nbsp;5&nbsp;</a></li>
-                                        <li><a href="#">&nbsp;6&nbsp;</a></li>
-                                        <li><a href="#">&nbsp;7&nbsp;</a></li>
-                                        <li><a href="#">&nbsp;9&nbsp;</a></li>
-                                        <li><a href="#">&nbsp;»&nbsp;</a></li>
+                                <div class="panel-footer text-right">
+                                    <ul class="pagination pagination-sm no-margin">
+                                        <li><a href="#">&nbsp«&nbsp</a></li>
+                                        <li><a href="#">&nbsp1&nbsp</a></li>
+                                        <li><a href="#">&nbsp2&nbsp</a></li>
+                                        <li><a href="#">&nbsp3&nbsp</a></li>
+                                        <li><a href="#">&nbsp4&nbsp</a></li>
+                                        <li><a href="#">&nbsp5&nbsp</a></li>
+                                        <li><a href="#">&nbsp6&nbsp</a></li>
+                                        <li><a href="#">&nbsp7&nbsp</a></li>
+                                        <li><a href="#">&nbsp9&nbsp</a></li>
+                                        <li><a href="#">&nbsp»&nbsp</a></li>
                                     </ul>
                                 </div>
                             </div>
-                            <div class="an-box-border-top">
-                                <div class="row">
+                            <div class="well">
+                                <a href="#" class="btn btn-sm btn-primary"><i class="glyphicon glyphicon-plus"></i>&nbsp; Thêm mới</a>
+                            </div>
+                            <br />
+                            <div class="row">
                                     <div class="col-md-6">
                                         <blockquote class="info-success">
                                             <p><code class="titleReport">&gt; TỔNG PHỐI: 57 <sup>nái</sup></code></p>
@@ -231,17 +233,19 @@
                                     </div>
                                     <div class="col-md-6">
                                         <blockquote class="blockquote-reverse info-default-right">
-                                            <p><code class="titleReport">XUẤT BÁO CÁO &lt; <sup></sup></code></p>
-                                            <div style="height: 10px"></div>
-                                            <footer><a href="#"><i class="fa fa-file-pdf-o"></i>&nbsp Định dạng  PDF</a></footer>
-                                            <div style="height: 10px"></div>
-                                            <footer><a href="#"><i class="fa fa-file-excel-o"></i>&nbsp Định dạng Excel</a></footer>
-                                            <div style="height: 20px"></div>
-                                            <footer><a href="#"><i class="fa fa-print"></i>&nbsp Bản In</a></footer>
-                                        </blockquote>
+                                        <p><code class="titleReport">XUẤT BÁO CÁO <sup><i class="fa fa-external-link"></i></sup></code></p>
+                                        <footer class="export-pdf">
+                                            <i class="fa fa-file-pdf-o"></i><a href="#" class="anbred-link-export">Định dạng  PDF</a>
+                                        </footer>
+                                        <footer class="export-excel">
+                                            <i class="fa fa-file-excel-o"></i><a href="#" class="anbred-link-export">Định dạng Excel</a>
+                                        </footer>
+                                        <footer class="export-printer">
+                                            <i class="fa fa-print"></i><a href="#" class="anbred-link-export">Bản In</a>
+                                        </footer>
+                                    </blockquote>
                                     </div>
                                 </div>
-                            </div>
                         </div>
                         <!-- /.box-body -->
                     </div>
