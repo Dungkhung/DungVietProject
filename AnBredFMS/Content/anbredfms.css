@@ -7,13 +7,39 @@ body {
     content: "\f03a";
 }
 
+.main-footer {
+    background-color: #ecf0f5
+}
+
 a.anbred-link-default {
-    color: green;
+    color: #333;
     text-decoration-style: none;
 }
 
 a:hover.anbred-link-default {
+    color: green;
     text-decoration: underline
+}
+
+a.anbred-link-warning {
+    color: #333;
+    text-decoration-style: none;
+}
+
+a:hover.anbred-link-warning {
+    color: #ff6a00;
+    text-decoration: underline
+}
+
+a.anbred-link-danger {
+    color: #333;
+    padding: 0px 15px 0px 9px;
+    text-decoration-style: none;
+}
+
+a:hover.anbred-link-danger {
+    color: #d04424;
+    text-decoration: none
 }
 
 /**************************************************************  Control panel  (Master page)  ***************************************************************/
@@ -99,8 +125,12 @@ sup.abfms-shortcut {
     border-bottom-left-radius: 4px !important
 }
 
+.dropdown-menu.anbred-nav-list {
+    border: 2px solid rgb(0, 166, 90);
+}
+
 .sidebar-menu.anbred-controlpanel {
-    height: 950px !important;
+    height: auto !important;
     /*overflow: inherit !important*/
 }
 
@@ -145,7 +175,15 @@ sup.abfms-shortcut {
 
 
 /******************************************************************  .table bootstrap   ******************************************************************/
+.table-hover.anbred-table-default > thead > tr > th {
+    padding-top: 6px !important;
+    padding-bottom: 6px !important;
+}
 
+.table-hover.anbred-table-default > tbody > tr > td {
+    padding-top: 5px !important;
+    padding-bottom: 5px !important;
+}
 
 .table.table-bordered {
     border: 1px solid #ddd !important;
@@ -165,8 +203,8 @@ sup.abfms-shortcut {
 
 .table-hover > thead > tr > th, .table-hover > tbody > tr > th, .table-hover > tfoot > tr > th, .table-hover > thead > tr > td, .table-hover > tbody > tr > td, .table-hover > tfoot > tr > td {
     border-color: #ddd;
-    padding-bottom: 3px !important;
-    padding-top: 3px !important;
+    padding-bottom: 3px;
+    padding-top: 3px;
     vertical-align: middle
 }
 
@@ -176,7 +214,8 @@ sup.abfms-shortcut {
 }
 
 .table-hover > thead > tr.anbred-tblReport-txt-center > th,
-.table-bordered > thead > tr.anbred-tblReport-txt-center > th {
+.table-bordered > thead > tr.anbred-tblReport-txt-center > th,
+.table-bordered > tfoot > tr.anbred-tblReport-txt-center > th {
     text-align: center !important;
     vertical-align: middle !important;
     font-weight: normal;
@@ -207,6 +246,10 @@ sup.abfms-shortcut {
     padding-right: 20px;
     text-align: right;
     font-weight: normal
+}
+
+.table-bordered > tbody > tr.anbred-highlight-row.demi-highlight > td {
+    background-color: rgba(242, 242, 242, 0.30);
 }
 
 .table-hover > tbody > tr.anbred-highlight-row.header-align-center > td,
@@ -247,7 +290,8 @@ sup.abfms-shortcut {
 .table-hover > tbody > tr.anbred-tblrow-align-right.sub-info > td,
 .table-bordered > tbody > tr.anbred-tblrow-align-right.sub-info > td {
     color: #777;
-    font-size: 12px
+    font-size: 12px;
+    background-color: rgba(242, 242, 242, 0.20);
 }
 
 .table-hover > tbody > tr.anbred-tblrow-align-left > td,
@@ -318,6 +362,7 @@ sup.abfms-shortcut {
 .table-hover > thead > tr > th.report-tbl-col-stt,
 .table-bordered > thead > tr > th.report-tbl-col-stt {
     table-layout: fixed !important;
+    width: 4%
 }
 
 .table-hover > tbody > tr.separator-row > td,
@@ -356,6 +401,54 @@ blockquote.anbred-tblcaption {
         margin: 0px
     }
 
+blockquote.anbred-month-view {
+    margin: 0px;
+    background-color: aliceblue;
+    min-height: 155px;
+    width: 72%;
+    float: right;
+    color: #555
+}
+
+    blockquote.anbred-month-view > footer {
+        margin-bottom: 5px
+    }
+
+a.anbred-big-link {
+    color: #bbb9b9;
+    text-decoration: none;
+}
+
+a:hover.anbred-big-link {
+    color: #008d4c;
+    text-decoration: none;
+}
+
+a.anbred-big-link > p.txt-month {
+    display: inline-table;
+    padding: 15px 0px 0px 15px;
+    text-align: center
+}
+
+    a.anbred-big-link > p.txt-month > span.num-month {
+        font-size: 50px;
+        font-family: serif, monospace
+    }
+
+a.anbred-link-inputdate {
+    color: #555;
+    padding-left: 5px;
+}
+
+    a.anbred-link-inputdate > sup.label {
+        margin-left: 10px;
+        background-color: #ddd
+    }
+
+a:hover.anbred-link-inputdate {
+    color: #008d4c;
+    text-decoration: underline;
+}
 
 blockquote.info-default-right > p > code {
     background-color: #f7f7f7 !important
@@ -378,7 +471,7 @@ blockquote.info-default-right > footer.export-pdf {
     }
 
 blockquote.info-default-right > footer.export-excel {
-    margin-top: 15px;
+    margin-top: 12px;
 }
 
     blockquote.info-default-right > footer.export-excel > i {
@@ -403,6 +496,31 @@ a.anbred-link-export {
 a:hover.anbred-link-export {
     text-decoration: underline
 }
+
+blockquote.anbred-overview {
+    border-left-color: rgb(0, 166, 90);
+}
+
+    blockquote.anbred-overview > p.margin-bottom {
+        margin-bottom: 20px !important;
+    }
+
+    blockquote.anbred-overview > p > code {
+        background-color: #f7f7f7 !important;
+    }
+
+        blockquote.anbred-overview > p > code.an-title {
+            padding: 8px 25px 8px 5px !important;
+            font-weight: bold !important;
+            font-size: medium !important;
+            color: rgb(0, 166, 90);
+        }
+
+    blockquote.anbred-overview > footer.an-content {
+        margin-top: 12px;
+        margin-bottom: 0px;
+        color: #333;
+    }
 
 blockquote.info-success {
     border-left-color: #00a65a;
@@ -487,13 +605,36 @@ blockquote.info-title {
     }
 
         blockquote.info-title > p > code.titleReport {
+            background-color: #f39c12;
             margin-top: 0px;
             padding: 8px 25px 8px 5px;
             font-weight: bold;
-            color: white
+            color: white;
         }
 
+.anbred-nav-toggle {
+    margin-top: 0px;
+    padding: 4px 10px 4px 5px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+    font-size: 16px;
+    border-color: #f39c12;
+}
 
+    .anbred-nav-toggle > i {
+        padding-right: 10px
+    }
+
+    .anbred-nav-toggle > span.caret {
+        margin-left: 15px
+    }
+
+.anbred-pager-toggle {
+    border: none;
+    background-color: white
+}
 
 .an-box-border-top {
     border-top: 2px solid #f4f4f4;
@@ -629,4 +770,26 @@ td > div.col-rate-value {
     padding-left: 15px;
     margin-bottom: 20px;
     font-style: italic;
+}
+
+.anbred-toolbar-btns {
+    background-color: rgba(250, 250, 250, 0.80);
+    border: none
+}
+
+.an-margin-btns {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+
+table.anbred-tbl-herdsize > thead > tr > th,
+table.anbred-tbl-herdsize > tfoot > tr > th {
+    padding-top: 9px;
+    padding-bottom: 9px
+}
+
+table.anbred-tbl-herdsize > tbody > tr > td {
+    padding-top: 13px;
+    padding-bottom: 13px
 }
