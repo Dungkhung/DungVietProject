@@ -209,12 +209,16 @@
     <Content Include="Herd\BoarDelete.aspx" />
     <Content Include="Herd\BoarsList.aspx" />
     <Content Include="Herd\BoarUpdate.aspx" />
+    <Content Include="Herd\GestatingSows.aspx" />
+    <Content Include="Herd\GestatingVaccine.aspx" />
+    <Content Include="Herd\GestVacWeekly.aspx" />
     <Content Include="Herd\GiltAdd.aspx" />
     <Content Include="Herd\GiltDelete.aspx" />
-    <Content Include="Herd\GiltsList.aspx" />
+    <Content Include="Herd\Gilts.aspx" />
     <Content Include="Herd\GiltsView.aspx" />
     <Content Include="Herd\GiltUpdate.aspx" />
     <Content Include="Herd\HerdSize.aspx" />
+    <Content Include="Herd\LactatingSows.aspx" />
     <Content Include="Herd\SowCard.aspx" />
     <Content Include="Manager\Dashboard.aspx" />
     <Content Include="MasterPages\ControlPanel.Master" />
@@ -7604,6 +7608,27 @@
     <Compile Include="Herd\BoarUpdate.aspx.designer.cs">
       <DependentUpon>BoarUpdate.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Herd\GestatingSows.aspx.cs">
+      <DependentUpon>GestatingSows.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Herd\GestatingSows.aspx.designer.cs">
+      <DependentUpon>GestatingSows.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Herd\GestatingVaccine.aspx.cs">
+      <DependentUpon>GestatingVaccine.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Herd\GestatingVaccine.aspx.designer.cs">
+      <DependentUpon>GestatingVaccine.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Herd\GestVacWeekly.aspx.cs">
+      <DependentUpon>GestVacWeekly.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Herd\GestVacWeekly.aspx.designer.cs">
+      <DependentUpon>GestVacWeekly.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Herd\GiltAdd.aspx.cs">
       <DependentUpon>GiltAdd.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -7618,12 +7643,12 @@
     <Compile Include="Herd\GiltDelete.aspx.designer.cs">
       <DependentUpon>GiltDelete.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Herd\GiltsList.aspx.cs">
-      <DependentUpon>GiltsList.aspx</DependentUpon>
+    <Compile Include="Herd\Gilts.aspx.cs">
+      <DependentUpon>Gilts.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Herd\GiltsList.aspx.designer.cs">
-      <DependentUpon>GiltsList.aspx</DependentUpon>
+    <Compile Include="Herd\Gilts.aspx.designer.cs">
+      <DependentUpon>Gilts.aspx</DependentUpon>
     </Compile>
     <Compile Include="Herd\GiltsView.aspx.cs">
       <DependentUpon>GiltsView.aspx</DependentUpon>
@@ -7645,6 +7670,13 @@
     </Compile>
     <Compile Include="Herd\HerdSize.aspx.designer.cs">
       <DependentUpon>HerdSize.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Herd\LactatingSows.aspx.cs">
+      <DependentUpon>LactatingSows.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Herd\LactatingSows.aspx.designer.cs">
+      <DependentUpon>LactatingSows.aspx</DependentUpon>
     </Compile>
     <Compile Include="Herd\SowCard.aspx.cs">
       <DependentUpon>SowCard.aspx</DependentUpon>

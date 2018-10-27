@@ -21,6 +21,18 @@ a:hover.anbred-link-default {
     text-decoration: underline
 }
 
+a.anbred-link-toolbar {
+    color: #333;
+    text-decoration-style: none;
+    padding: 10px 20px;
+}
+
+a:hover.anbred-link-toolbar {
+    color: green;
+    background-color: aliceblue;
+    border-radius: 4px;
+}
+
 a.anbred-link-warning {
     color: #333;
     text-decoration-style: none;
@@ -450,43 +462,47 @@ a:hover.anbred-link-inputdate {
     text-decoration: underline;
 }
 
-blockquote.info-default-right > p > code {
-    background-color: #f7f7f7 !important
+blockquote.info-default-right {
+    min-height: 165px
 }
 
-    blockquote.info-default-right > p > code.titleReport {
-        padding: 8px 5px 8px 25px !important;
-        font-weight: bold !important;
-        font-size: medium !important;
-        color: #808080
+    blockquote.info-default-right > p > code {
+        background-color: #f7f7f7 !important
     }
 
-blockquote.info-default-right > footer.export-pdf {
-    margin-top: 20px;
-}
+        blockquote.info-default-right > p > code.titleReport {
+            padding: 8px 5px 8px 25px !important;
+            font-weight: bold !important;
+            font-size: medium !important;
+            color: #808080
+        }
 
-    blockquote.info-default-right > footer.export-pdf > i {
-        padding-right: 10px;
-        color: #d04424
+    blockquote.info-default-right > footer.export-pdf {
+        margin-top: 20px;
     }
 
-blockquote.info-default-right > footer.export-excel {
-    margin-top: 12px;
-}
+        blockquote.info-default-right > footer.export-pdf > i {
+            padding-right: 10px;
+            color: #d04424
+        }
 
-    blockquote.info-default-right > footer.export-excel > i {
-        padding-right: 10px;
-        color: #217748
+    blockquote.info-default-right > footer.export-excel {
+        margin-top: 12px;
     }
 
-blockquote.info-default-right > footer.export-printer {
-    margin-top: 25px;
-}
+        blockquote.info-default-right > footer.export-excel > i {
+            padding-right: 10px;
+            color: #217748
+        }
 
-    blockquote.info-default-right > footer.export-printer > i {
-        padding-right: 10px;
-        color: rgb(85, 85, 85)
+    blockquote.info-default-right > footer.export-printer {
+        margin-top: 25px;
     }
+
+        blockquote.info-default-right > footer.export-printer > i {
+            padding-right: 10px;
+            color: rgb(85, 85, 85)
+        }
 
 a.anbred-link-export {
     color: #333;
@@ -499,6 +515,7 @@ a:hover.anbred-link-export {
 
 blockquote.anbred-overview {
     border-left-color: rgb(0, 166, 90);
+    min-height: 165px
 }
 
     blockquote.anbred-overview > p.margin-bottom {
@@ -774,7 +791,9 @@ td > div.col-rate-value {
 
 .anbred-toolbar-btns {
     background-color: rgba(250, 250, 250, 0.80);
-    border: none
+    border: none;
+    -webkit-box-shadow: 0 1px 1px rgba(0,0,0,.05);
+    box-shadow: 0 1px 1px rgba(0,0,0,.05);
 }
 
 .an-margin-btns {
@@ -792,4 +811,34 @@ table.anbred-tbl-herdsize > tfoot > tr > th {
 table.anbred-tbl-herdsize > tbody > tr > td {
     padding-top: 13px;
     padding-bottom: 13px
+}
+
+a.anbred-function-btns{
+    margin-left:15px;
+    margin-right:15px;
+    min-width: 100px;
+}
+
+a:hover.sign-success {
+    color: white;
+    background-color: #008d4c;
+    border-color: #398439;
+}
+
+a:hover.sign-warning {
+    color: #fff;
+    background-color: #e08e0b;
+    border-color: #d58512;
+}
+
+a:hover.sign-danger {
+    color: #fff;
+    background-color: #ac2925;
+    border-color: #761c19;
+}
+
+a:hover.sign-info {
+    color: white;
+    background-color: #00acd6;
+    border-color: #269abc;
 }

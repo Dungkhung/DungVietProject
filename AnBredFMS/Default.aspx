@@ -22,17 +22,18 @@
             <td>
                 <ol>
                     <li><a href="Herd/HerdSize.aspx">Tổng đàn</a></li>
-                    <li><a href="Herd/GiltsList.aspx">Heo hậu bị</a></li>
-                    <li><a href="#"></a>Nái mang thai</li>
-                    <li><a href="#"></a>Nái nuôi con</li>
-                    <li><a href="#"></a>Nái cai sữa</li>
-                    <li><a href="#"></a>Nái vấn đề</li>
-                    <li><a href="Herd/GiltsList.aspx">Heo nọc</a></li>
-                    <li><a href="#"></a>Heo cai sữa</li>
-                    <li><a href="#"></a>Heo thịt</li>
-                    <li><a href="#"></a>Xuất chuồng</li>
-                    <li><a href="#"></a>Heo chết</li>
-                    <li><a href="#"></a>Bán loại</li>
+                    <li><a href="Herd/Gilts.aspx">Heo hậu bị</a></li>
+                    <li><a href="Herd/GestatingSows.aspx"></a>Nái mang thai</li>
+                    <li><a href="Herd/LactatingSows.aspx"></a>Nái nuôi con</li>
+                    <li><a href="Herd/DrySows.aspx"></a>Nái cai sữa</li>                               
+                    <li><a href="Herd/Piglets.aspx"></a>Heo con theo mẹ</li>
+                    <li><a href="Herd/Weaners.aspx"></a>Heo con cai sữa</li>
+                    <li><a href="Herd/Growers.aspx"></a>Heo choai</li>
+                    <li><a href="Herd/Finishers.aspx"></a>Heo thịt</li>                    
+                    <li><a href="Herd/Boars.aspx">Heo nọc</a></li>      
+                    <li><a href="Herd/ProblemSows.aspx"></a>Nái vấn đề</li>
+                    <li><a href="Herd/Death.aspx"></a>Heo chết</li>
+                    <li><a href="Herd/Culls.aspx"></a>Bán loại</li>
                 </ol>
             </td>
             <td>

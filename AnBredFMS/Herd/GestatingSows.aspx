@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPages/ControlPanel.Master" AutoEventWireup="true" CodeBehind="GiltsList.aspx.cs" Inherits="AnBredFMS.Herd.GiltsList" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPages/ControlPanel.Master" AutoEventWireup="true" CodeBehind="GestatingSows.aspx.cs" Inherits="AnBredFMS.Herd.GestatingSows" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <!-- daterange picker -->
     <link href="../Scripts/daterangepicker/daterangepicker.css" rel="stylesheet" />
@@ -13,9 +13,9 @@
             </h1>
             <!-- Site Map -->
             <ol class="breadcrumb">
-                <li><a href="#"><i class="fa fa-map-o"></i><b>An</b>Bred FMS</a></li>
+                <li><a href="#"><i class="fa fa-map-o"></i>AnBred FMS</a></li>
                 <li><a href="#">Quản lý đàn</a></li>
-                <li class="active"><a href="ReportMating.aspx">Hậu bị</a></li>
+                <li class="active"><a href="ReportMating.aspx">Nái mang thai</a></li>
             </ol>
         </section>
         <section class="content">
@@ -26,8 +26,8 @@
                             <div class="row">
                                 <div class="col-md-4">
                                     <blockquote class="info-title">
-                                        <p><code class="titleReport"><i class="fa fa-angle-double-right"></i>&nbsp;HẬU BỊ </code></p>
-                                        <footer>Nhập ngày 15/08/2018</footer>
+                                        <p><code class="titleReport"><i class="fa fa-angle-double-right"></i>&nbsp;NÁI MANG THAI </code></p>
+                                        <footer>Tuần 33</footer>
                                     </blockquote>
                                 </div>
                                 <div class="col-md-4" style="padding-top: 22px">
@@ -38,8 +38,8 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-md-4" style="padding-top: 22px; padding-right: 20px; text-align: right">
-                                    <a class="anbred-link-default" href="GiltsView.aspx">Danh sách hậu bị<br />theo ngày nhập</a>
+                                <div class="col-md-4" style="padding-top: 30px; padding-right: 15px; text-align: right">
+                                    <a class="anbred-link-toolbar" href="GestatingVaccine.aspx"><i class="fa fa-shield" style="padding-right:10px"></i>Theo lịch chủng ngừa</a>
                                 </div>
                             </div>
                             <div class="panel panel-default">
@@ -47,236 +47,215 @@
                                     <table class="table table-bordered table-hover anbred-table-default">
                                         <thead>
                                             <tr class="anbred-tblReport-row-header">
-                                                <th class="report-tbl-col-stt">Stt.</th>
-                                                <th style="width: 8%">Số tai</th>
-                                                <th>Ngày sinh</th>
-                                                <th>Ngày nhập</th>
-                                                <th style="width: 7%">TL (kg)</th>
-                                                <th>Nguồn gốc</th>
-                                                <th style="width: 5%">G.tính</th>
-                                                <th style="width: 5%">Giống</th>
-                                                <th style="width: 5%">Dòng</th>
-                                                <th style="width: 6%">Tháng tuổi</th>
-                                                <th style="width: 7%">Bố</th>
-                                                <th style="width: 7%">Mẹ</th>
-                                                <th style="width: 9%">Ngày thành thục</th>
-                                                <th style="width: 7%">Trạng thái</th>
+                                                <th class="text-center">
+                                                    <input id="Checkbox1" type="checkbox" />
+                                                </th>
+                                                <th>Số tai nái</th>                                                
+                                                <th class="col-md-1">Nhóm</th>
+                                                <th class="col-md-1">Lứa đẻ</th>
+                                                <th class="col-md-1">Lần phối</th>
+                                                <th class="col-md-1">Độ phê</th>
+                                                <th class="col-md-1">Nọc</th>
+                                                <th class="col-md-1">Ngày cai sữa</th>
+                                                <th class="col-md-1">Ngày phối</th>
+                                                <th class="col-md-1">NPD</th>
+                                                <th class="col-md-1">Ngày đẻ dự kiến</th>
+                                                <th class="col-md-1">Người phối</th>
                                             </tr>
                                         </thead>
                                         <tbody>
                                             <tr class="separator-row">
-                                                <td colspan="14"></td>
+                                                <td colspan="12" class="text-center"></td>
                                             </tr>
                                             <tr>
-                                                <td class="text-center">01</td>
+                                                <td class="text-center">
+                                                    <input id="Checkbox2" type="checkbox" /></td>
                                                 <td>23254</td>
-                                                <td class="text-right">09/04/18</td>
-                                                <td class="text-right">15/08/18</td>
-                                                <td class="text-right">102</td>
-                                                <td>Choice Genetics</td>
-                                                <td class="text-center">F</td>
-                                                <td class="text-center">YL</td>
-                                                <td class="text-center">PS</td>
-                                                <td class="text-center">7,8</td>
-                                                <td class="text-center">5589</td>
-                                                <td class="text-center">2287</td>
-                                                <td class="text-right">07/12/18</td>
-                                                <td class="text-center"><span class="fa fa-minus-square text-info" /></td>
+                                                <td class="text-center">CS</td>
+                                                <td class="text-center">2</td>
+                                                <td class="text-center">1</td>
+                                                <td class="text-right">&nbsp;</td>
+                                                <td>2287</td>
+                                                <td class="text-right">09/08/2018</td>
+                                                <td class="text-right">14/08/2018</td>
+                                                <td class="text-right">5</td>
+                                                <td class="text-right">07/12/2018</td>
+                                                <td class="text-right">&nbsp;</td>
                                             </tr>
                                             <tr>
-                                                <td class="text-center">02</td>
+                                                <td class="text-center">
+                                                    <input id="Checkbox3" type="checkbox" /></td>
                                                 <td>2564</td>
-                                                <td class="text-right">27/04/18</td>
-                                                <td class="text-right">15/08/18</td>
-                                                <td class="text-right">110</td>
-                                                <td>Japfa</td>
-                                                <td class="text-center">F</td>
-                                                <td class="text-center">YL</td>
-                                                <td class="text-center">PS</td>
-                                                <td class="text-center">8,1</td>
-                                                <td class="text-center">5364</td>
-                                                <td class="text-center">7843</td>
-                                                <td class="text-right">07/12/18</td>
-                                                <td class="text-center"><span class="fa fa-minus-square text-info" /></td>
+                                                <td class="text-center">VĐ</td>
+                                                <td class="text-center">3</td>
+                                                <td class="text-center">2</td>
+                                                <td class="text-right">&nbsp;</td>
+                                                <td>7843</td>
+                                                <td class="text-right">27/06/2018</td>
+                                                <td class="text-right">14/08/2018</td>
+                                                <td class="text-right">49</td>
+                                                <td class="text-right">07/12/2018</td>
+                                                <td class="text-right">&nbsp;</td>
                                             </tr>
                                             <tr>
-                                                <td class="text-center">03</td>
+                                                <td class="text-center">
+                                                    <input id="Checkbox4" type="checkbox" /></td>
                                                 <td>26775</td>
-                                                <td class="text-right">13/01/18</td>
-                                                <td class="text-right">15/08/18</td>
-                                                <td class="text-right">98</td>
-                                                <td>Darby</td>
-                                                <td class="text-center">F</td>
-                                                <td class="text-center">YL</td>
-                                                <td class="text-center">PS</td>
-                                                <td class="text-center">9,2</td>
-                                                <td class="text-center">0905</td>
-                                                <td class="text-center">76844</td>
-                                                <td class="text-right">08/12/18</td>
-                                                <td class="text-center"><span class="fa fa-warning text-danger" /></td>
+                                                <td class="text-center">HB</td>
+                                                <td class="text-center">1</td>
+                                                <td class="text-center">1</td>
+                                                <td class="text-right">&nbsp;</td>
+                                                <td>76844</td>
+                                                <td class="text-right">-</td>
+                                                <td class="text-right">15/08/2018</td>
+                                                <td class="text-right">6</td>
+                                                <td class="text-right">08/12/2018</td>
+                                                <td class="text-right">&nbsp;</td>
                                             </tr>
                                             <tr>
-                                                <td class="text-center">04</td>
+                                                <td class="text-center">
+                                                    <input id="Checkbox5" type="checkbox" /></td>
                                                 <td>4528</td>
-                                                <td class="text-right">09/01/18</td>
-                                                <td class="text-right">15/08/18</td>
-                                                <td class="text-right">100</td>
-                                                <td>Danbred</td>
-                                                <td class="text-center">F</td>
-                                                <td class="text-center">YL</td>
-                                                <td class="text-center">PS</td>
-                                                <td class="text-center">7,6</td>
-                                                <td class="text-center">2213</td>
-                                                <td class="text-center">0564</td>
-                                                <td class="text-right">08/12/18</td>
-                                                <td class="text-center"><span class="fa fa-plus-square text-success" /></td>
+                                                <td class="text-center">CS</td>
+                                                <td class="text-center">3</td>
+                                                <td class="text-center">1</td>
+                                                <td class="text-right">&nbsp;</td>
+                                                <td>0564</td>
+                                                <td class="text-right">09/08/2018</td>
+                                                <td class="text-right">15/08/2018</td>
+                                                <td class="text-right">6</td>
+                                                <td class="text-right">08/12/2018</td>
+                                                <td class="text-right">&nbsp;</td>
                                             </tr>
                                             <tr>
-                                                <td class="text-center">05</td>
+                                                <td class="text-center">
+                                                    <input id="Checkbox6" type="checkbox" /></td>
                                                 <td>28976</td>
-                                                <td class="text-right">09/02/18</td>
-                                                <td class="text-right">15/08/18</td>
-                                                <td class="text-right">104</td>
-                                                <td>Butaphan</td>
-                                                <td class="text-center">F</td>
-                                                <td class="text-center">YL</td>
-                                                <td class="text-center">PS</td>
-                                                <td class="text-center">8,6</td>
-                                                <td class="text-center">3428</td>
-                                                <td class="text-center">14986</td>
-                                                <td class="text-right">09/12/18</td>
-                                                <td class="text-center"><span class="fa fa-warning text-danger" /></td>
+                                                <td class="text-center">CS</td>
+                                                <td class="text-center">4</td>
+                                                <td class="text-center">1</td>
+                                                <td class="text-right">&nbsp;</td>
+                                                <td>14986</td>
+                                                <td class="text-right">09/08/2018</td>
+                                                <td class="text-right">16/08/2018</td>
+                                                <td class="text-right">6</td>
+                                                <td class="text-right">09/12/2018</td>
+                                                <td class="text-right">&nbsp;</td>
                                             </tr>
                                             <tr>
                                                 <td class="text-center">&nbsp;</td>
-                                                <td>&nbsp;</td>
-                                                <td class="text-right">&nbsp;</td>
-                                                <td class="text-right">&nbsp;</td>
                                                 <td class="text-right">&nbsp;</td>
                                                 <td>&nbsp;</td>
                                                 <td class="text-center">&nbsp;</td>
                                                 <td class="text-center">&nbsp;</td>
                                                 <td class="text-center">&nbsp;</td>
-                                                <td class="text-center">&nbsp;</td>
-                                                <td class="text-center">&nbsp;</td>
-                                                <td class="text-center">&nbsp;</td>
                                                 <td class="text-right">&nbsp;</td>
-                                                <td class="text-center">&nbsp;</td>
+                                                <td class="text-right">&nbsp;</td>
+                                                <td>&nbsp;</td>
+                                                <td>&nbsp;</td>
+                                                <td>&nbsp;</td>
+                                                <td class="text-right">&nbsp;</td>
                                             </tr>
                                             <tr>
                                                 <td class="text-center">&nbsp;</td>
-                                                <td>&nbsp;</td>
-                                                <td class="text-right">&nbsp;</td>
-                                                <td class="text-right">&nbsp;</td>
                                                 <td class="text-right">&nbsp;</td>
                                                 <td>&nbsp;</td>
                                                 <td class="text-center">&nbsp;</td>
                                                 <td class="text-center">&nbsp;</td>
                                                 <td class="text-center">&nbsp;</td>
-                                                <td class="text-center">&nbsp;</td>
-                                                <td class="text-center">&nbsp;</td>
-                                                <td class="text-center">&nbsp;</td>
                                                 <td class="text-right">&nbsp;</td>
-                                                <td class="text-center">&nbsp;</td>
+                                                <td class="text-right">&nbsp;</td>
+                                                <td>&nbsp;</td>
+                                                <td>&nbsp;</td>
+                                                <td>&nbsp;</td>
+                                                <td class="text-right">&nbsp;</td>
                                             </tr>
                                             <tr>
                                                 <td class="text-center">&nbsp;</td>
-                                                <td>&nbsp;</td>
-                                                <td class="text-right">&nbsp;</td>
-                                                <td class="text-right">&nbsp;</td>
                                                 <td class="text-right">&nbsp;</td>
                                                 <td>&nbsp;</td>
                                                 <td class="text-center">&nbsp;</td>
                                                 <td class="text-center">&nbsp;</td>
                                                 <td class="text-center">&nbsp;</td>
-                                                <td class="text-center">&nbsp;</td>
-                                                <td class="text-center">&nbsp;</td>
-                                                <td class="text-center">&nbsp;</td>
                                                 <td class="text-right">&nbsp;</td>
-                                                <td class="text-center">&nbsp;</td>
+                                                <td class="text-right">&nbsp;</td>
+                                                <td>&nbsp;</td>
+                                                <td>&nbsp;</td>
+                                                <td>&nbsp;</td>
+                                                <td class="text-right">&nbsp;</td>
                                             </tr>
                                             <tr>
                                                 <td class="text-center">&nbsp;</td>
-                                                <td>&nbsp;</td>
-                                                <td class="text-right">&nbsp;</td>
-                                                <td class="text-right">&nbsp;</td>
                                                 <td class="text-right">&nbsp;</td>
                                                 <td>&nbsp;</td>
                                                 <td class="text-center">&nbsp;</td>
                                                 <td class="text-center">&nbsp;</td>
                                                 <td class="text-center">&nbsp;</td>
-                                                <td class="text-center">&nbsp;</td>
-                                                <td class="text-center">&nbsp;</td>
-                                                <td class="text-center">&nbsp;</td>
                                                 <td class="text-right">&nbsp;</td>
-                                                <td class="text-center">&nbsp;</td>
+                                                <td class="text-right">&nbsp;</td>
+                                                <td>&nbsp;</td>
+                                                <td>&nbsp;</td>
+                                                <td>&nbsp;</td>
+                                                <td class="text-right">&nbsp;</td>
                                             </tr>
                                             <tr>
                                                 <td class="text-center">&nbsp;</td>
-                                                <td>&nbsp;</td>
-                                                <td class="text-right">&nbsp;</td>
-                                                <td class="text-right">&nbsp;</td>
                                                 <td class="text-right">&nbsp;</td>
                                                 <td>&nbsp;</td>
                                                 <td class="text-center">&nbsp;</td>
                                                 <td class="text-center">&nbsp;</td>
                                                 <td class="text-center">&nbsp;</td>
-                                                <td class="text-center">&nbsp;</td>
-                                                <td class="text-center">&nbsp;</td>
-                                                <td class="text-center">&nbsp;</td>
                                                 <td class="text-right">&nbsp;</td>
-                                                <td class="text-center">&nbsp;</td>
+                                                <td class="text-right">&nbsp;</td>
+                                                <td>&nbsp;</td>
+                                                <td>&nbsp;</td>
+                                                <td>&nbsp;</td>
+                                                <td class="text-right">&nbsp;</td>
                                             </tr>
                                             <tr>
                                                 <td class="text-center">&nbsp;</td>
-                                                <td>&nbsp;</td>
-                                                <td class="text-right">&nbsp;</td>
-                                                <td class="text-right">&nbsp;</td>
                                                 <td class="text-right">&nbsp;</td>
                                                 <td>&nbsp;</td>
                                                 <td class="text-center">&nbsp;</td>
                                                 <td class="text-center">&nbsp;</td>
                                                 <td class="text-center">&nbsp;</td>
-                                                <td class="text-center">&nbsp;</td>
-                                                <td class="text-center">&nbsp;</td>
-                                                <td class="text-center">&nbsp;</td>
                                                 <td class="text-right">&nbsp;</td>
-                                                <td class="text-center">&nbsp;</td>
+                                                <td class="text-right">&nbsp;</td>
+                                                <td>&nbsp;</td>
+                                                <td>&nbsp;</td>
+                                                <td>&nbsp;</td>
+                                                <td class="text-right">&nbsp;</td>
                                             </tr>
                                             <tr>
                                                 <td class="text-center">&nbsp;</td>
-                                                <td>&nbsp;</td>
-                                                <td class="text-right">&nbsp;</td>
-                                                <td class="text-right">&nbsp;</td>
                                                 <td class="text-right">&nbsp;</td>
                                                 <td>&nbsp;</td>
                                                 <td class="text-center">&nbsp;</td>
                                                 <td class="text-center">&nbsp;</td>
                                                 <td class="text-center">&nbsp;</td>
-                                                <td class="text-center">&nbsp;</td>
-                                                <td class="text-center">&nbsp;</td>
-                                                <td class="text-center">&nbsp;</td>
                                                 <td class="text-right">&nbsp;</td>
-                                                <td class="text-center">&nbsp;</td>
+                                                <td class="text-right">&nbsp;</td>
+                                                <td>&nbsp;</td>
+                                                <td>&nbsp;</td>
+                                                <td>&nbsp;</td>
+                                                <td class="text-right">&nbsp;</td>
                                             </tr>
                                             <tr>
                                                 <td class="text-center">&nbsp;</td>
-                                                <td>&nbsp;</td>
-                                                <td class="text-right">&nbsp;</td>
-                                                <td class="text-right">&nbsp;</td>
                                                 <td class="text-right">&nbsp;</td>
                                                 <td>&nbsp;</td>
                                                 <td class="text-center">&nbsp;</td>
                                                 <td class="text-center">&nbsp;</td>
                                                 <td class="text-center">&nbsp;</td>
-                                                <td class="text-center">&nbsp;</td>
-                                                <td class="text-center">&nbsp;</td>
-                                                <td class="text-center">&nbsp;</td>
                                                 <td class="text-right">&nbsp;</td>
-                                                <td class="text-center">&nbsp;</td>
+                                                <td class="text-right">&nbsp;</td>
+                                                <td>&nbsp;</td>
+                                                <td>&nbsp;</td>
+                                                <td>&nbsp;</td>
+                                                <td class="text-right">&nbsp;</td>
                                             </tr>
                                             <tr class="anbred-tblrow-align-right separator-row">
-                                                <td colspan="14"></td>
+                                                <td colspan="12" class="text-center"></td>
                                             </tr>
                                         </tbody>
                                     </table>
@@ -299,7 +278,7 @@
                                                 </div>
                                             </td>
                                             <td style="width: auto" class="text-right">
-                                                <ul class="pagination pagination-sm no-margin" style="vertical-align: middle">
+                                                <ul class="pagination pagination-sm no-margin">
                                                     <li><a href="#">&nbsp;«&nbsp;</a></li>
                                                     <li><a href="#">&nbsp1&nbsp;</a></li>
                                                     <li><a href="#">&nbsp2&nbsp;</a></li>
@@ -309,7 +288,7 @@
                                                     <li><a href="#">&nbsp;»&nbsp;</a></li>
                                                 </ul>
                                             </td>
-                                            <td style="width: 15%" class="text-right">165 - 306 &nbsp;<i class="fa fa-sort"></i>&nbsp; 1205
+                                            <td style="width: 15%; padding-left: 15px" class="text-right">165 - 306 / 12200
                                             </td>
                                         </tr>
                                     </table>
@@ -317,29 +296,20 @@
                             </div>
                             <div class="note-panel">
                                 <h5>
-                                    <span class="anbred-note-text">Giới tính: </span>
-                                    <i class="anbred-note shortcut inline">F</i><span class="anbred-note-text">Cái</span>
-                                    <i class="anbred-note shortcut inline">M</i><span class="anbred-note-text">Đực</span>
-                                </h5>
-                                <h5>
-                                    <span class="anbred-note-text">Trạng thái: </span>
-                                    <i class="anbred-note shortcut inline no-border"><span class="fa fa-minus-square text-info"></span></i>
-                                    <span class="anbred-note-text text-info">Cách ly</span>
-                                    <i class="anbred-note shortcut inline no-border"><span class="fa fa-plus-square text-success"></span></i>
-                                    <span class="anbred-note-text text-success">Chờ phối</span>
-                                    <i class="anbred-note shortcut inline no-border"><span class="fa fa-check-square-o text-success"></span></i>
-                                    <span class="anbred-note-text text-success">Đã phối</span>
-                                    <i class="anbred-note shortcut inline no-border"><span class="fa fa-warning text-danger"></span></i>
-                                    <span class="anbred-note-text text-danger">HB tồn</span>
-                                    <i class="anbred-note shortcut inline no-border"><span class="fa fa-bug text-danger"></span></i>
-                                    <span class="anbred-note-text text-danger">Chết</span>
-                                    <i class="anbred-note shortcut inline no-border"><span class="fa fa-remove text-danger"></span></i>
-                                    <span class="anbred-note-text text-danger">Loại</span>
+                                    <span class="anbred-note-text">Ghi chú: </span>
+                                    <span class="anbred-note-text">HB = Hậu bị</span>
+                                    <span class="anbred-note-text">CS = Cai sữa</span>
+                                    <span class="anbred-note-text">VĐ = Vấn đề</span>
+                                    <span class="anbred-note-text">NPD = Số ngày không làm việc</span>
                                 </h5>
                             </div>
                             <br />
-                            <div class="well anbred-toolbar-btns">
-                                <a href="#" class="btn btn-sm btn-primary an-margin-btns"><i class="glyphicon glyphicon-plus"></i>&nbsp; Nhập mới</a>
+                            <div class="well anbred-toolbar-btns text-left">
+                                <a href="#" class="btn btn-default anbred-function-btns sign-success"><i class="glyphicon glyphicon-baby-formula"></i>&nbsp; Báo đẻ</a>
+                                <a href="#" class="btn btn-default anbred-function-btns sign-info"><i class="glyphicon glyphicon-screenshot"></i>&nbsp; Vaccine</a>
+                                <a href="#" class="btn btn-default anbred-function-btns sign-danger pull-right"><i class="glyphicon glyphicon-trash"></i>&nbsp; Xóa </a>
+                                <a href="#" class="btn btn-default anbred-function-btns sign-warning pull-right"><i class="fa fa-bug"></i>&nbsp; Báo chết</a>
+                                <a href="#" class="btn btn-default anbred-function-btns sign-warning pull-right"><i class="fa fa-ambulance"></i>&nbsp; Vấn đề</a>
                             </div>
                             <br />
                             <div class="row">
