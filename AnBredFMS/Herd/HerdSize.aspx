@@ -48,34 +48,42 @@
                                             <td>1</td>
                                             <td><a href="Gilts.aspx" class="anbred-link-default">Hậu bị</a></td>
                                             <td>200</td>
-                                            <td class="text-right">
-                                                <a href="#" class="btn btn-sm btn-default sign-info"><i class="glyphicon glyphicon-plus"></i>&nbsp; Nhập mới</a>
+                                            <td class="text-right">                                                
+                                                <a href="#" class="btn btn-sm btn-default anbred-function-btns sign-success"><i class="fa fa-venus-mars"></i>Phối</a>
+                                                <a href="GiltAdd.aspx" class="btn btn-sm btn-default anbred-function-btns sign-success"><i class="glyphicon glyphicon-plus"></i>Nhập mới</a>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td>2</td>
                                             <td><a href="GestatingSows.aspx" class="anbred-link-default">Nái mang thai</a></td>
                                             <td>862</td>
-                                            <td>&nbsp;</td>
+                                            <td class="text-right">
+                                                <a href="Farrowing.aspx" class="btn btn-sm btn-default anbred-function-btns sign-success"><i class="fa fa-unlock-alt"></i>Báo đẻ</a>
+                                            </td>
                                         </tr>
                                         <tr>
                                             <td>3</td>
                                             <td><a href="LactatingSows.aspx" class="anbred-link-default">Nái nuôi con</a></td>
                                             <td>257</td>
-                                            <td class="text-right"></td>
+                                            <td class="text-right">
+                                                <a href="#" class="btn btn-sm btn-default anbred-function-btns sign-success"><i class="glyphicon glyphicon-random"></i>Cai sữa</a>
+                                            </td>
                                         </tr>
                                         <tr>
                                             <td>4</td>
                                             <td><a href="ProblemSows.aspx" class="anbred-link-default">Nái vấn đề</a></td>
                                             <td>4</td>
-                                            <td class="text-right"></td>
+                                            <td class="text-right">
+                                                <a href="#" class="btn btn-sm btn-default anbred-function-btns sign-warning"><i class="fa fa-bolt"></i>Bán loại</a>
+                                                <a href="#" class="btn btn-sm btn-default anbred-function-btns sign-warning"><i class="fa fa-bug"></i>Báo chết</a>
+                                            </td>
                                         </tr>
                                         <tr>
                                             <td>5</td>
                                             <td><a href="DrySows.aspx" class="anbred-link-default">Nái cai sữa</a></td>
                                             <td>53</td>
                                             <td class="text-right">
-                                                <a href="#" class="btn btn-sm btn-default sign-info"><i class="glyphicon glyphicon-plus"></i>&nbsp; Nhập mới</a>
+                                                <a href="#" class="btn btn-sm btn-default anbred-function-btns sign-info"><i class="glyphicon glyphicon-plus"></i>Nhập mới</a>
                                             </td>
                                         </tr>
                                         <tr>
@@ -83,7 +91,7 @@
                                             <td><a href="Piglets.aspx" class="anbred-link-default">Heo con theo mẹ</a></td>
                                             <td>2.980</td>
                                             <td class="text-right">
-                                                <a href="#" class="btn btn-sm btn-default sign-info"><i class="glyphicon glyphicon-plus"></i>&nbsp; Nhập mới</a>
+                                                <a href="#" class="btn btn-sm btn-default anbred-function-btns sign-info"><i class="glyphicon glyphicon-plus"></i>Nhập mới</a>
                                             </td>
                                         </tr>
                                         <tr>
@@ -91,7 +99,7 @@
                                             <td><a href="Weaners.aspx" class="anbred-link-default">Heo con cai sữa</a></td>
                                             <td>4.129</td>
                                             <td class="text-right">
-                                                <a href="#" class="btn btn-sm btn-default sign-info"><i class="glyphicon glyphicon-plus"></i>&nbsp; Nhập mới</a>
+                                                <a href="#" class="btn btn-sm btn-default anbred-function-btns sign-info"><i class="glyphicon glyphicon-plus"></i>Nhập mới</a>
                                             </td>
                                         </tr>
                                         <tr>
@@ -99,21 +107,24 @@
                                             <td><a href="Growers.aspx" class="anbred-link-default">Heo choai</a></td>
                                             <td>4.558</td>
                                             <td class="text-right">
-                                                <a href="#" class="btn btn-sm btn-default sign-info"><i class="glyphicon glyphicon-plus"></i>&nbsp; Nhập mới</a>
+                                                <a href="#" class="btn btn-sm btn-default anbred-function-btns sign-info"><i class="glyphicon glyphicon-plus"></i>Nhập mới</a>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td>9</td>
                                             <td><a href="Finishers.aspx" class="anbred-link-default">Heo thịt</a></td>
                                             <td>5.047</td>
-                                            <td class="text-right">&nbsp;</td>
+                                            <td class="text-right">
+                                                <a href="#" class="btn btn-sm btn-default anbred-function-btns sign-success"><i class="fa fa-usd"></i>Xuất bán</a>
+                                                <a href="#" class="btn btn-sm btn-default anbred-function-btns sign-success"><i class="fa fa-sign-in"></i>Nhập đàn</a>
+                                            </td>
                                         </tr>
                                         <tr>
                                             <td>10&nbsp;</td>
                                             <td><a href="Boars.aspx" class="anbred-link-default">Heo nọc</a></td>
                                             <td>18</td>
                                             <td class="text-right">
-                                                <a href="#" class="btn btn-sm btn-default sign-info"><i class="glyphicon glyphicon-plus"></i>&nbsp; Nhập mới</a>
+                                                <a href="#" class="btn btn-sm btn-default anbred-function-btns sign-success"><i class="glyphicon glyphicon-plus"></i>Nhập mới</a>
                                             </td>
                                         </tr>
                                         <tr class="separator-row">
@@ -133,10 +144,10 @@
                             <div class="note-panel">
                             </div>
                             <br />
-                            <div class="well anbred-toolbar-btns text-right" style="padding: 20px 13px 20px 20px">
-                                <a href="#" class="btn btn-default anbred-function-btns"><i class="fa fa-share-square-o"></i>&nbsp; Xuất heo</a>
-                                <a href="#" class="btn btn-default anbred-function-btns"><i class="fa fa-bolt"></i>&nbsp; Bán loại</a>
-                                <a href="#" class="btn btn-default anbred-function-btns sign-warning"><i class="fa fa-bug"></i>&nbsp; Báo chết</a>
+                            <div class="well anbred-toolbar-btns text-right" style="padding: 20px 30px 20px 20px">
+                                <a href="#" class="btn btn-sm btn-default anbred-function-btns sign-warning"><i class="fa fa-ambulance"></i>Vấn đề</a>
+                                <a href="#" class="btn btn-sm btn-default anbred-function-btns sign-warning"><i class="fa fa-bolt"></i>Bán loại</a>
+                                <a href="#" class="btn btn-sm btn-default anbred-function-btns sign-warning"><i class="fa fa-bug"></i>Báo chết</a>
                             </div>
                             <br />
                             <div class="row">
@@ -145,8 +156,11 @@
                                         <p class="margin-bottom">
                                             <code class="an-title"><i class="fa fa-user-md"></i>&nbsp;MỞ RỘNG</code>
                                         </p>
-                                        <footer class="an-content"><a href="Death.aspx" class="anbred-link-danger">Heo chết: 0/148</a></footer>
-                                        <footer class="an-content"><a href="Culls.aspx" class="anbred-link-danger">Bán loại: 2/327</a></footer>
+                                        <footer class="an-content">&nbsp;Đàn sản xuất: 1200 nái</footer>
+                                        <footer class="an-content">&nbsp;Đàn thương phẩm: 10,020 con</footer>
+                                        <footer class="an-content">&nbsp;Heo nọc: 18</footer>
+                                        <footer class="an-content"><a href="Death.aspx" class="anbred-link-danger">&nbsp;Heo chết: 0/148</a></footer>
+                                        <footer class="an-content"><a href="Culls.aspx" class="anbred-link-danger">&nbsp;Bán loại: 2/327</a></footer>
                                     </blockquote>
                                 </div>
                                 <div class="col-md-6">

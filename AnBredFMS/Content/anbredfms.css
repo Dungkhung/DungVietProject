@@ -4,7 +4,7 @@ body {
 }
 
 .main-header .sidebar-toggle:before {
-    content: "\f03a";
+    content: "\f0c9";
 }
 
 .main-footer {
@@ -27,9 +27,37 @@ a.anbred-link-toolbar {
     padding: 10px 20px;
 }
 
+    a.anbred-link-toolbar > i {
+        padding-right: 10px;
+    }
+
+a.anbred-link-full-screen {
+    color: #898787;
+    font-size: 13px;
+    text-decoration-style: none;
+    padding: 5px 10px;
+    background-color: #fbfbfb;
+    border: 1px solid #f7f7f7;
+    border-radius: 0px 0px 4px 4px;
+}
+
+    a.anbred-link-full-screen > i {
+        padding-right: 9px;
+    }
+
+a:hover.anbred-link-full-screen {
+    color: green;
+    font-size: 14px;
+    background-color: #f7f7f7;
+    border: 1px solid #dddddd;
+    border-top-style: none;
+    border-radius: 0px 0px 4px 4px;
+    padding-top: 6px
+}
+
 a:hover.anbred-link-toolbar {
     color: green;
-    background-color: aliceblue;
+    background-color: #f7f7f7;
     border-radius: 4px;
 }
 
@@ -45,7 +73,6 @@ a:hover.anbred-link-warning {
 
 a.anbred-link-danger {
     color: #333;
-    padding: 0px 15px 0px 9px;
     text-decoration-style: none;
 }
 
@@ -332,18 +359,13 @@ sup.abfms-shortcut {
     font-weight: lighter;
 }
 
-.table-hover > thead > tr > th.cell-border-left, .table-hover > thead > tr > th.col-md-1.cell-border-left,
-.table-hover > thead > tr > td.cell-border-left, .table-hover > thead > tr > td.cell-bg-disable.cell-border-left,
-.table-hover > tbody > tr > th.cell-border-left, .table-hover > tbody > tr > th.col-md-1.cell-border-left,
-.table-hover > tbody > tr > th.cell-bg-disable.cell-border-left, .table-hover > tbody > tr > td.cell-border-left,
-.table-hover > tbody > tr > td.align-center.cell-border-left, .table-hover > tfoot > tr > th.cell-border-left,
-.table-hover > tfoot > tr > td.cell-border-left, .table-bordered > thead > tr > th.cell-border-left,
-.table-bordered > thead > tr > th.col-md-1.cell-border-left, .table-bordered > thead > tr > td.cell-border-left,
-.table-bordered > thead > tr > td.cell-bg-disable.cell-border-left, .table-bordered > tbody > tr > th.cell-border-left,
-.table-bordered > tbody > tr > th.col-md-1.cell-border-left, .table-bordered > tbody > tr > th.cell-bg-disable.cell-border-left,
-.table-bordered > tbody > tr > td.cell-border-left, .table-bordered > tbody > tr > td.align-center.cell-border-left,
-.table-bordered > tfoot > tr > th.cell-border-left, .table-bordered > tfoot > tr > td.cell-border-left {
+.cell-border-left {
     border-left: 2px solid #ddd !important;
+}
+
+/* --  NO border on the left cell  --*/
+.cell-no-border-left {
+    border-left-style: hidden !important;
 }
 
 /*.table-hover > thead > tr.anbred-tblReport-row-header > th,*/
@@ -352,8 +374,8 @@ sup.abfms-shortcut {
     text-align: center;
     vertical-align: middle !important;
     font-weight: normal;
-    padding-top: 10px !important;
-    padding-bottom: 10px !important
+    padding-top: 5px !important;
+    padding-bottom: 5px !important
 }
 
     .table-hover > thead > tr.anbred-tblReport-row-header > th.txt-left,
@@ -784,7 +806,6 @@ td > div.col-rate-value {
 }
 
 .note-panel {
-    padding-left: 15px;
     margin-bottom: 20px;
     font-style: italic;
 }
@@ -813,11 +834,15 @@ table.anbred-tbl-herdsize > tbody > tr > td {
     padding-bottom: 13px
 }
 
-a.anbred-function-btns{
-    margin-left:15px;
-    margin-right:15px;
+a.anbred-function-btns {
+    margin-left: 10px;
+    margin-right: 10px;
     min-width: 100px;
 }
+
+    a.anbred-function-btns > i {
+        padding-right: 10px
+    }
 
 a:hover.sign-success {
     color: white;
@@ -841,4 +866,18 @@ a:hover.sign-info {
     color: white;
     background-color: #00acd6;
     border-color: #269abc;
+}
+
+.anbred-scroll-container {
+    height: 400px;
+    overflow: hidden;
+    border: 1px solid #ddd;
+}
+
+.handsontable table thead th {
+    white-space: pre-wrap;
+    max-width: 100px;
+    vertical-align: middle;
+    padding-top: 3px;
+    padding-bottom: 3px
 }

@@ -197,8 +197,7 @@
             </nav>
         </header>
         <!-- aside class="main-sidebar" :default css background-color:#222d32-->
-        <aside class="main-sidebar">
-
+        <aside class="main-sidebar" style="padding-top: 50px">
             <!-- Sidebar farm infomation -->
             <div class="user-panel anbred-farm-panel">
                 <div class="pull-left image">

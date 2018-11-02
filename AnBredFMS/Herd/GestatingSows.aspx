@@ -39,7 +39,7 @@
                                     </div>
                                 </div>
                                 <div class="col-md-4" style="padding-top: 30px; padding-right: 15px; text-align: right">
-                                    <a class="anbred-link-toolbar" href="GestatingVaccine.aspx"><i class="fa fa-shield" style="padding-right:10px"></i>Theo lịch chủng ngừa</a>
+                                    <a class="anbred-link-toolbar" href="GestatingVaccine.aspx"><i class="fa fa-shield" style="padding-right:10px"></i>Xem lịch vaccine</a>
                                 </div>
                             </div>
                             <div class="panel panel-default">
@@ -288,7 +288,7 @@
                                                     <li><a href="#">&nbsp;»&nbsp;</a></li>
                                                 </ul>
                                             </td>
-                                            <td style="width: 15%; padding-left: 15px" class="text-right">165 - 306 / 12200
+                                            <td style="width: 15%; padding-left: 15px" class="text-right">165 - 306 <b>&nbsp;|&nbsp;</b> 12200
                                             </td>
                                         </tr>
                                     </table>
@@ -305,11 +305,11 @@
                             </div>
                             <br />
                             <div class="well anbred-toolbar-btns text-left">
-                                <a href="#" class="btn btn-default anbred-function-btns sign-success"><i class="glyphicon glyphicon-baby-formula"></i>&nbsp; Báo đẻ</a>
-                                <a href="#" class="btn btn-default anbred-function-btns sign-info"><i class="glyphicon glyphicon-screenshot"></i>&nbsp; Vaccine</a>
-                                <a href="#" class="btn btn-default anbred-function-btns sign-danger pull-right"><i class="glyphicon glyphicon-trash"></i>&nbsp; Xóa </a>
-                                <a href="#" class="btn btn-default anbred-function-btns sign-warning pull-right"><i class="fa fa-bug"></i>&nbsp; Báo chết</a>
-                                <a href="#" class="btn btn-default anbred-function-btns sign-warning pull-right"><i class="fa fa-ambulance"></i>&nbsp; Vấn đề</a>
+                                <a href="Farrowing.aspx" class="btn btn-default anbred-function-btns sign-success"><i class="glyphicon glyphicon-baby-formula"></i>Báo đẻ</a>
+                                <a href="#" class="btn btn-default anbred-function-btns sign-info"><i class="glyphicon glyphicon-screenshot"></i>Vaccine</a>
+                                <a href="#" class="btn btn-default anbred-function-btns sign-danger pull-right"><i class="glyphicon glyphicon-trash"></i>Xóa </a>
+                                <a href="#" class="btn btn-default anbred-function-btns sign-warning pull-right"><i class="fa fa-bug"></i>Báo chết</a>
+                                <a href="#" class="btn btn-default anbred-function-btns sign-warning pull-right"><i class="fa fa-ambulance"></i>Vấn đề</a>
                             </div>
                             <br />
                             <div class="row">

@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPages/ControlPanel.Master" AutoEventWireup="true" CodeBehind="GiltAdd.aspx.cs" Inherits="AnBredFMS.Herd.GiltAdd" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPages/ControlPanel.Master" AutoEventWireup="true" CodeBehind="Farrowing.aspx.cs" Inherits="AnBredFMS.Herd.Farrowing" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <!-- handsontable -->
@@ -10,17 +10,16 @@
     <script src="../Scripts/daterangepicker/daterangepicker.min.js"></script>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-
     <div class="content-wrapper">
         <section class="content-header" style="margin-right: 7px; margin-left: 7px;">
             <h1>Quản lý đàn
-                    <small></small>
+                    <small>Nái mang thai T20</small>
             </h1>
             <!-- Site Map -->
             <ol class="breadcrumb">
-                <li><a href="#"><i class="fa fa-map-o"></i><b>An</b>Bred FMS</a></li>
+                <li><a href="#"><i class="fa fa-map-o"></i>AnBred FMS</a></li>
                 <li><a href="#">Quản lý đàn</a></li>
-                <li class="active"><a href="ReportMating.aspx">Hậu bị</a></li>
+                <li class="active"><a href="ReportMating.aspx">Nái mang thai</a></li>
             </ol>
         </section>
         <section class="content">
@@ -31,8 +30,8 @@
                             <div class="row">
                                 <div class="col-md-4">
                                     <blockquote class="info-title">
-                                        <p><code class="titleReport"><i class="fa fa-angle-double-right"></i>&nbsp;NHẬP HẬU BỊ </code></p>
-                                        <footer>Ngày nhập: 15/08/2018</footer>
+                                        <p><code class="titleReport"><i class="fa fa-angle-double-right"></i>&nbsp;BÁO ĐẺ </code></p>
+                                        <footer>Tuần 36</footer>
                                     </blockquote>
                                 </div>
                                 <div class="col-md-4" style="padding-top: 22px">
@@ -44,17 +43,36 @@
                                     </div>
                                 </div>
                                 <div class="col-md-4" style="padding-top: 30px; padding-right: 15px; text-align: right">
-                                    <a class="anbred-link-toolbar" href="GiltsView.aspx"><i class="fa fa-history" style="padding-right: 10px"></i>Danh sách theo ngày nhập</a>
+                                    <a class="anbred-link-toolbar" href="#"><i class="fa fa-umbrella"></i>Nái nuôi con</a>
                                 </div>
                             </div>
+
                             <div class="anbred-scroll-container">
-                                <div id="hot-gilt"></div>
+
+                                <div id="hot-farrowing"></div>
+
                             </div>
                             <a class="anbred-link-full-screen" href="#" style="float:right"><i class="fa fa-object-group"></i>Mở rộng</a>
+                            <div class="note-panel">
+                                <h5>
+                                    <span class="anbred-note-text">Ghi chú: </span>
+                                    <span class="anbred-note-text">HB = Hậu bị</span>
+                                    <span class="anbred-note-text">CS = Cai sữa</span>
+                                    <span class="anbred-note-text">VĐ = Vấn đề</span>
+                                    <span class="anbred-note-text">TTL = Tổng trọng lượng</span>
+                                </h5>
+                                <h5>
+                                    <span class="anbred-note-text">Heo con sơ sinh: </span>
+                                    <i class="anbred-note shortcut inline">D</i><span class="anbred-note-text">Chết</span>
+                                    <i class="anbred-note shortcut inline">M</i><span class="anbred-note-text">Khô thai</span>
+                                    <i class="anbred-note shortcut inline">A</i><span class="anbred-note-text">Dị tật</span>
+                                    <i class="anbred-note shortcut inline">S</i><span class="anbred-note-text">Nhỏ</span>
+                                </h5>
+                            </div>
                             <br />
-                            <br />
-                            <div class="well anbred-toolbar-btns">
-                                <a href="#" class="btn btn-default anbred-function-btns sign-info"><i class="fa fa-download"></i>Lưu</a>
+                            <div class="well anbred-toolbar-btns text-left">
+                                <a href="#" class="btn btn-sm btn-default anbred-function-btns sign-success"><i class="fa fa-download"></i>&nbsp; Lưu</a>
+                                <a href="#" class="btn btn-sm btn-default anbred-function-btns sign-success"><i class="glyphicon glyphicon-transfer"></i>Ghép heo</a>
                             </div>
                             <br />
                             <div class="row">
@@ -116,32 +134,38 @@
             });
         })
     </script>
-
     <!-- handsontable -->
     <script>
         var
-            container = document.getElementById('hot-gilt'),
-            hot_gilt_tbl;
+            container = document.getElementById('hot-farrowing'),
+            hot_farrowing_tbl;
 
-        hot_gilt_tbl = new Handsontable(container, {
+        hot_farrowing_tbl = new Handsontable(container, {
             data: [],
-            dataSchema: { earTag: null, DOB: null, inputDate: null, weight: null, source: null, type: null, category: null, family: { father: null, mother: null }, note: null },
-            colWidths: [90, 100, 100, 80, 120, 70, 70, 90, 90, 110],            
-            colHeaders: ['Số tai', 'Ngày sinh', 'Ngày nhập', 'TL nhập<br/>(kg)', 'Nguồn gốc', 'Giống', 'Dòng', 'Bố', 'Mẹ', 'Ghi chú'],
+            dataSchema: {
+                birthday: null, earTag: null, type: null, matingDate: null, matingNo: null, parity: null, totalPiglet: null, cullPiglet: { Die: null, Mum: null, Abnormal: null, Small: null }, livePiglet: null, weight: null, note: null
+            },
+            colWidths: [90, 90, 60, 90, 60, 60, 60, 40, 40, 40, 40, 60, 50, 80],
+            colHeaders: ['Ngày sinh', 'Số tai', 'Nhóm<br/>nái', 'Ngày phối', 'Số lần<br/>phối', 'Lứa<br/>đẻ', 'Số con<br/>sinh ra', 'D', 'M', 'A', 'S', 'Số con<br/>để nuôi', 'TTL<br/>(kg)', 'Ghi chú'],
             columns: [
+                { data: 'birthday' },
                 { data: 'earTag' },
-                { data: 'DOB' },
-                { data: 'inputDate' },
-                { data: 'weight' },
-                { data: 'source' },                
                 { data: 'type' },
-                { data: 'catefory' },
-                { data: 'family.father' },
-                { data: 'family.mother' },
-                { data: 'note' },
+                { data: 'matingDate' },
+                { data: 'matingNo' },
+                { data: 'parity' },
+                { data: 'totalPiglet' },
+                { data: 'cullPiglet.Die' },
+                { data: 'cullPiglet.Mum' },
+                { data: 'cullPiglet.Abnormal' },
+                { data: 'cullPiglet.Small' },
+                { data: 'livePiglet' },
+                { data: 'weight' },
+                { data: 'note' }
             ],
             className: "htMiddle",
-            height: 400,
+            height: 405,
+            //weight: '100%',
             rowHeights: 30,
             rowHeaders: true,
             manualColumnResize: true,
@@ -155,25 +179,4 @@
         });
 
     </script>
-
-    <!--script>
-        var
-            container = document.getElementById('example6'),
-            hot6;
-
-        hot6 = new Handsontable(container, {
-            data: [],
-            dataSchema: { id: null, name: { first: null, last: null }, address: null },
-            startRows: 5,
-            startCols: 4,
-            colHeaders: ['ID', 'First Name', 'Last Name', 'Address'],
-            columns: [
-                { data: 'id' },
-                { data: 'name.first' },
-                { data: 'name.last' },
-                { data: 'address' }
-            ],
-            minSpareRows: 1
-        });
-    </script-->
 </asp:Content>

@@ -209,6 +209,7 @@
     <Content Include="Herd\BoarDelete.aspx" />
     <Content Include="Herd\BoarsList.aspx" />
     <Content Include="Herd\BoarUpdate.aspx" />
+    <Content Include="Herd\Farrowing.aspx" />
     <Content Include="Herd\GestatingSows.aspx" />
     <Content Include="Herd\GestatingVaccine.aspx" />
     <Content Include="Herd\GestVacWeekly.aspx" />
@@ -219,6 +220,7 @@
     <Content Include="Herd\GiltUpdate.aspx" />
     <Content Include="Herd\HerdSize.aspx" />
     <Content Include="Herd\LactatingSows.aspx" />
+    <Content Include="Herd\Mating.aspx" />
     <Content Include="Herd\SowCard.aspx" />
     <Content Include="Manager\Dashboard.aspx" />
     <Content Include="MasterPages\ControlPanel.Master" />
@@ -7608,6 +7610,13 @@
     <Compile Include="Herd\BoarUpdate.aspx.designer.cs">
       <DependentUpon>BoarUpdate.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Herd\Farrowing.aspx.cs">
+      <DependentUpon>Farrowing.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Herd\Farrowing.aspx.designer.cs">
+      <DependentUpon>Farrowing.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Herd\GestatingSows.aspx.cs">
       <DependentUpon>GestatingSows.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -7677,6 +7686,13 @@
     </Compile>
     <Compile Include="Herd\LactatingSows.aspx.designer.cs">
       <DependentUpon>LactatingSows.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Herd\Mating.aspx.cs">
+      <DependentUpon>Mating.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Herd\Mating.aspx.designer.cs">
+      <DependentUpon>Mating.aspx</DependentUpon>
     </Compile>
     <Compile Include="Herd\SowCard.aspx.cs">
       <DependentUpon>SowCard.aspx</DependentUpon>

@@ -308,7 +308,7 @@
                                     <span class="anbred-note-text">VĐ = Vấn đề</span>
                                 </h5>
                                 <h5>
-                                    <span class="anbred-note-text">Heo con mới sinh: </span>
+                                    <span class="anbred-note-text">Heo con sơ sinh: </span>
                                     <i class="anbred-note shortcut inline">D</i><span class="anbred-note-text">Chết</span>
                                     <i class="anbred-note shortcut inline">M</i><span class="anbred-note-text">Khô thai</span>
                                     <i class="anbred-note shortcut inline">A</i><span class="anbred-note-text">Dị tật</span>
