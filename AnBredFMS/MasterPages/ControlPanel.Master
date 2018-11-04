@@ -197,7 +197,7 @@
             </nav>
         </header>
         <!-- aside class="main-sidebar" :default css background-color:#222d32-->
-        <aside class="main-sidebar" style="padding-top: 50px">
+        <aside class="main-sidebar anbred-cp-bkg" style="padding-top: 50px">
             <!-- Sidebar farm infomation -->
             <div class="user-panel anbred-farm-panel">
                 <div class="pull-left image">
@@ -209,8 +209,8 @@
                 </div>
             </div>
             <hr class="abfms-white-line" />
-            <hr class="abfms-white-line" />
-            <!-- sidebar: style can be found in sidebar.less -->
+            <!--<hr class="abfms-white-line" />
+             sidebar: style can be found in sidebar.less -->
             <section class="sidebar">
                 <ul class="sidebar-menu anbred-controlpanel" data-widget="tree">
                     <!--li class="header">HEADER</!--li>

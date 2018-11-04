@@ -40,7 +40,7 @@
                                     </div>
                                 </div>
                                 <div class="col-md-4" style="padding-top: 30px; padding-right: 15px; text-align: right">
-                                    <a class="anbred-link-toolbar" href="GiltsView.aspx"><i class="fa fa-history" style="padding-right: 10px"></i>Danh sách theo ngày nhập</a>
+                                    <a class="anbred-link-toolbar" href="GiltsView.aspx"><i class="fa fa-history" style="padding-right: 10px"></i>Lịch sử nhập heo</a>
                                 </div>
                             </div>
                             <div class="panel panel-default">
@@ -311,11 +311,11 @@
                                         <p class="margin-bottom">
                                             <code class="an-title"><i class="fa fa-user-md"></i>&nbsp;HIỆN TRẠNG</code>
                                         </p>
-                                        <footer class="an-content">Cách ly: đang trong quá trình chủng ngừa vaccine (6~8 tháng tuổi)</footer>
-                                        <footer class="an-content">Chờ phối: đã xong quy trình vaccine, đủ 8 tháng tuổi, ~140kg</footer>
-                                        <footer class="an-content">HB tồn: > 8 tháng tuổi, chưa phát hiện lên giống</footer>
-                                        <footer class="an-content">Nái khô: không mang thai, cũng không nuôi con</footer>
-                                        <footer class="an-content">Khác: Mang thai; Nuôi con, Vấn đề, Đã loại, Đã chết</footer>
+                                        <footer class="an-sub-content">&nbsp;Cách ly: đang trong quá trình chủng ngừa vaccine (6~8 tháng tuổi)</footer>
+                                        <footer class="an-sub-content">&nbsp;Chờ phối: đã xong quy trình vaccine, đủ 8 tháng tuổi, ~140kg</footer>
+                                        <footer class="an-sub-content">&nbsp;HB tồn: > 8 tháng tuổi, chưa phát hiện lên giống</footer>
+                                        <footer class="an-sub-content">&nbsp;Nái khô: không mang thai, cũng không nuôi con</footer>
+                                        <footer class="an-sub-content">&nbsp;Khác: Mang thai; Nuôi con, Vấn đề, Đã loại, Đã chết</footer>
                                     </blockquote>
                                 </div>
                                 <div class="col-md-6">

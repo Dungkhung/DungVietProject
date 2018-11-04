@@ -1,5 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPages/ControlPanel.Master" AutoEventWireup="true" CodeBehind="Farrowing.aspx.cs" Inherits="AnBredFMS.Herd.Farrowing" %>
-
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPages/ControlPanel.Master" AutoEventWireup="true" CodeBehind="Problem.aspx.cs" Inherits="AnBredFMS.Herd.Problem" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <!-- handsontable -->
     <script src="https://cdn.jsdelivr.net/npm/handsontable@6.1.1/dist/handsontable.full.min.js"></script>
@@ -13,13 +12,13 @@
     <div class="content-wrapper">
         <section class="content-header" style="margin-right: 7px; margin-left: 7px;">
             <h1>Quản lý đàn
-                    <small>Nái mang thai T20</small>
+                    <small>Nái vấn đề</small>
             </h1>
             <!-- Site Map -->
             <ol class="breadcrumb">
                 <li><a href="#"><i class="fa fa-map-o"></i>AnBred FMS</a></li>
                 <li><a href="#">Quản lý đàn</a></li>
-                <li class="active"><a href="ReportMating.aspx">Nái mang thai</a></li>
+                <li class="active"><a href="ReportMating.aspx">Nái vấn đề</a></li>
             </ol>
         </section>
         <section class="content">
@@ -30,7 +29,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                     <blockquote class="info-title">
-                                        <p><code class="titleReport"><i class="fa fa-angle-double-right"></i>&nbsp;BÁO ĐẺ </code></p>
+                                        <p><code class="titleReport"><i class="fa fa-angle-double-right"></i>&nbsp;BÁO VẤN ĐỀ </code></p>
                                         <footer>Tuần 36</footer>
                                     </blockquote>
                                 </div>
@@ -43,13 +42,13 @@
                                     </div>
                                 </div>
                                 <div class="col-md-4" style="padding-top: 30px; padding-right: 15px; text-align: right">
-                                    <a class="anbred-link-toolbar" href="#"><i class="fa fa-history"></i>Nhật ký Đẻ</a>
+                                    <a class="anbred-link-toolbar" href="#"><i class="fa fa-history"></i>Nhật ký Buồn</a>
                                 </div>
                             </div>
 
                             <div class="anbred-scroll-container">
 
-                                <div id="hot-farrowing"></div>
+                                <div id="hot-problem"></div>
 
                             </div>
                             <a class="anbred-link-full-screen" href="#" style="float: right"><i class="fa fa-object-group"></i>Mở rộng</a>
@@ -139,32 +138,24 @@
     </script>
     <!-- handsontable -->
     <script>                
-                var container = document.getElementById('hot-farrowing');
+                var container = document.getElementById('hot-problem');
 
-                hot_farrowing_tbl = new Handsontable(container, {
+                hot_problem_tbl = new Handsontable(container, {
                     data: [],
                     startCols: 16,
                     dataSchema: {
-                        birthday: null, earTag: null, type: null, matingDate: null, matingNo: null, parity: null, totalPiglet: null, cullPiglet: { Die: null, Mum: null, Abnormal: null, Small: null }, livePiglet: null, male: null, female: null, weight: null, note: null
+                        problemDate: null, problem: null, earTag: null, type: null, parity: null, matingNo: null, matingDate: null, note: null
                     },
-                    colWidths: [90, 90, 60, 90, 60, 60, 60, 40, 40, 40, 40, 60, 30, 30, 50, 80],
-                    colHeaders: ['Ngày sinh', 'Số tai', 'Nhóm<br/>nái', 'Ngày phối', 'Lần<br/>phối', 'Lứa<br/>đẻ', 'Số con<br/>sinh ra', 'D', 'M', 'A', 'S', 'Số con<br/>để nuôi', '♂', '♀', 'TTL<br/>(kg)', 'Ghi chú'],
+                    colWidths: [100, 90, 100, 70, 70, 70, 100, 90],
+                    colHeaders: ['Ngày có<br/>vấn đề', 'Loại<br/>vấn đề', 'Số tai', 'Nhóm<br/>nái', 'Lứa<br/>đẻ', 'Lần<br/>phối', 'Ngày phối', 'Ghi chú'],
                     columns: [
-                        { data: 'birthday' },
+                        { data: 'problemDate' },
+                        { data: 'problem' },
                         { data: 'earTag' },
                         { data: 'type' },
-                        { data: 'matingDate' },
-                        { data: 'matingNo' },
                         { data: 'parity' },
-                        { data: 'totalPiglet' },
-                        { data: 'cullPiglet.Die' },
-                        { data: 'cullPiglet.Mum' },
-                        { data: 'cullPiglet.Abnormal' },
-                        { data: 'cullPiglet.Small' },
-                        { data: 'livePiglet' },
-                        { data: 'male' },
-                        { data: 'female' },
-                        { data: 'weight' },
+                        { data: 'matingNo' },
+                        { data: 'matingDate' },
                         { data: 'note' }
                     ],
                     className: "htMiddle htCenter",

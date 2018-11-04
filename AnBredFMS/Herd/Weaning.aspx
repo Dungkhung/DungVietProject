@@ -1,5 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPages/ControlPanel.Master" AutoEventWireup="true" CodeBehind="Farrowing.aspx.cs" Inherits="AnBredFMS.Herd.Farrowing" %>
-
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPages/ControlPanel.Master" AutoEventWireup="true" CodeBehind="Weaning.aspx.cs" Inherits="AnBredFMS.Herd.Weaning" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <!-- handsontable -->
     <script src="https://cdn.jsdelivr.net/npm/handsontable@6.1.1/dist/handsontable.full.min.js"></script>
@@ -13,13 +12,13 @@
     <div class="content-wrapper">
         <section class="content-header" style="margin-right: 7px; margin-left: 7px;">
             <h1>Quản lý đàn
-                    <small>Nái mang thai T20</small>
+                    <small>Nái nuôi con</small>
             </h1>
             <!-- Site Map -->
             <ol class="breadcrumb">
                 <li><a href="#"><i class="fa fa-map-o"></i>AnBred FMS</a></li>
                 <li><a href="#">Quản lý đàn</a></li>
-                <li class="active"><a href="ReportMating.aspx">Nái mang thai</a></li>
+                <li class="active"><a href="ReportMating.aspx">Nái nuôi con</a></li>
             </ol>
         </section>
         <section class="content">
@@ -30,7 +29,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                     <blockquote class="info-title">
-                                        <p><code class="titleReport"><i class="fa fa-angle-double-right"></i>&nbsp;BÁO ĐẺ </code></p>
+                                        <p><code class="titleReport"><i class="fa fa-angle-double-right"></i>&nbsp;BÁO CAI </code></p>
                                         <footer>Tuần 36</footer>
                                     </blockquote>
                                 </div>
@@ -43,16 +42,16 @@
                                     </div>
                                 </div>
                                 <div class="col-md-4" style="padding-top: 30px; padding-right: 15px; text-align: right">
-                                    <a class="anbred-link-toolbar" href="#"><i class="fa fa-history"></i>Nhật ký Đẻ</a>
+                                    <a class="anbred-link-toolbar" href="#"><i class="fa fa-history"></i>Nhật ký Cai</a>
                                 </div>
                             </div>
 
                             <div class="anbred-scroll-container">
 
-                                <div id="hot-farrowing"></div>
+                                <div id="hot-weaning"></div>
 
                             </div>
-                            <a class="anbred-link-full-screen" href="#" style="float: right"><i class="fa fa-object-group"></i>Mở rộng</a>
+                            <a class="anbred-link-full-screen" href="#" style="float:right"><i class="fa fa-object-group"></i>Mở rộng</a>
                             <br />
                             <br />
                             <div class="well anbred-toolbar-btns text-left">
@@ -77,7 +76,6 @@
                                 </h5>
                             </div>
                             <br />
-
                             <div class="row">
                                 <div class="col-md-6">
                                     <blockquote class="anbred-overview">
@@ -138,88 +136,44 @@
         })
     </script>
     <!-- handsontable -->
-    <script>                
-                var container = document.getElementById('hot-farrowing');
+    <script>
+        var
+            container = document.getElementById('hot-weaning'),
+            hot_weaning_tbl;
 
-                hot_farrowing_tbl = new Handsontable(container, {
-                    data: [],
-                    startCols: 16,
-                    dataSchema: {
-                        birthday: null, earTag: null, type: null, matingDate: null, matingNo: null, parity: null, totalPiglet: null, cullPiglet: { Die: null, Mum: null, Abnormal: null, Small: null }, livePiglet: null, male: null, female: null, weight: null, note: null
-                    },
-                    colWidths: [90, 90, 60, 90, 60, 60, 60, 40, 40, 40, 40, 60, 30, 30, 50, 80],
-                    colHeaders: ['Ngày sinh', 'Số tai', 'Nhóm<br/>nái', 'Ngày phối', 'Lần<br/>phối', 'Lứa<br/>đẻ', 'Số con<br/>sinh ra', 'D', 'M', 'A', 'S', 'Số con<br/>để nuôi', '♂', '♀', 'TTL<br/>(kg)', 'Ghi chú'],
-                    columns: [
-                        { data: 'birthday' },
-                        { data: 'earTag' },
-                        { data: 'type' },
-                        { data: 'matingDate' },
-                        { data: 'matingNo' },
-                        { data: 'parity' },
-                        { data: 'totalPiglet' },
-                        { data: 'cullPiglet.Die' },
-                        { data: 'cullPiglet.Mum' },
-                        { data: 'cullPiglet.Abnormal' },
-                        { data: 'cullPiglet.Small' },
-                        { data: 'livePiglet' },
-                        { data: 'male' },
-                        { data: 'female' },
-                        { data: 'weight' },
-                        { data: 'note' }
-                    ],
-                    className: "htMiddle htCenter",
-                    cell: [
-                        { row: 0, col: 0, className: "htRight" }
-                    ],
-                    height: 405,
-                    //weight: '100%',
-                    rowHeights: 30,
-                    rowHeaders: true,
-                    manualColumnResize: true,
-                    manualRowResize: true,
-                    autoWrapRow: true,
-                    maxRows: 500,
-                    stretchH: 'all',
-                    //contextMenu: ['row_above', 'row_below', 'remove_row'],
-                    minSpareRows: 1,
-                    columnSorting: true,
-                    beforeCreateRow: function (indexRow) {
-
-                    },
-                    afterCreateRow: function (indexRow) {
-                        this.setCellMeta(indexRow - 1, 0, 'className', 'htMiddle htRight');//hack css style when user clicks 'Enter' many time..!
-                        this.setCellMeta(indexRow, 0, 'className', 'htMiddle htRight');
-
-                        if (this.isEmptyRow(indexRow - 1) && indexRow > 0) {
-                            this.alter('remove_row', indexRow);  // have only 1 empty row on the table when user clicks 'Enter' many time..!
-                        }
-                    },
-                    contextMenu: {
-                        callback: function (key, selection, clickEvent) {
-                            // Common callback for all options
-                            console.log(clickEvent);
-                        },
-                        items: {
-                            "remove_row": {
-                                name: 'Remove row',
-                            },
-                            "remove_all_blank_rows": { // Own custom option
-                                name: 'Remove blank rows',
-                                callback: function () { // Callback for specific option
-                                    var countRows = this.countRows();
-
-                                    for (var i = 0; i < countRows; i++) {
-                                        if (this.isEmptyRow(i)) {
-                                            this.alter('remove_row', i);
-                                            i = i - 1;
-                                            countRows = countRows - 1;
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
-                });
-
+        hot_weaning_tbl = new Handsontable(container, {
+            data: [],
+            dataSchema: {
+                weaned_day: null, earTag: null, matingNo: null, parity: null, birthday: null, piglets: null, pba: null, fostering: null, cull: null, nurse: null, weight: null, note: null
+            },
+            colWidths: [90, 90, 60, 60, 90, 60, 60, 60, 60, 60, 60, 80],
+            colHeaders: ['Ngày cai', 'Số tai', 'Số lần<br/>phối', 'Lứa<br/>đẻ', 'Ngày đẻ', 'Số con<br/>sinh ra', 'Số con<br/>để nuôi', 'Ghép<br/>đàn', 'Chết,<br/>loại', 'Số con<br/>cai sữa', 'TTL<br/>(kg)', 'Ghi chú'],
+            columns: [
+                { data: 'weaned_day' },
+                { data: 'earTag' },
+                { data: 'matingNo' },
+                { data: 'parity' },
+                { data: 'birthday' },
+                { data: 'piglets' },
+                { data: 'pba' },
+                { data: 'fostering' },
+                { data: 'cull' },
+                { data: 'nurse' },
+                { data: 'weight' },
+                { data: 'note' }
+            ],
+            className: "htMiddle",
+            height: 405,
+            //weight: '100%',
+            rowHeights: 30,
+            rowHeaders: true,
+            manualColumnResize: true,
+            autoWrapRow: true,
+            maxRows: 500,
+            stretchH: 'all',
+            contextMenu: true,
+            minSpareRows: 1,
+            columnSorting: true
+        });
     </script>
 </asp:Content>

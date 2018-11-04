@@ -75,8 +75,8 @@
                                                     nuôi</th>
                                                 <th>TL<br />
                                                     (kg)</th>
-                                                <th class="cell-border-left">-</th>
-                                                <th>+</th>
+                                                <th class="cell-border-left">&divide;</th>
+                                                <th>&plusmn;</th>
                                                 <th>Số
                                                     <br />
                                                     lượng</th>
@@ -422,7 +422,7 @@
                             <div class="well anbred-toolbar-btns text-left">
                                 <a href="Farrowing.aspx" class="btn btn-sm btn-default anbred-function-btns sign-success"><i class="glyphicon glyphicon-transfer"></i>Ghép heo</a>
                                 <a href="#" class="btn btn-sm btn-default anbred-function-btns sign-success"><i class="glyphicon glyphicon-screenshot"></i>Vaccine</a>
-                                <a href="Farrowing.aspx" class="btn btn-sm btn-default anbred-function-btns sign-success"><i class="glyphicon glyphicon-random"></i>Cai sữa</a>
+                                <a href="Weaning.aspx" class="btn btn-sm btn-default anbred-function-btns sign-success"><i class="glyphicon glyphicon-random"></i>Cai sữa</a>
                                 <a href="#" class="btn btn-sm btn-default anbred-function-btns sign-danger pull-right"><i class="glyphicon glyphicon-trash"></i>Xóa </a>
                                 <a href="#" class="btn btn-sm btn-default anbred-function-btns sign-warning pull-right"><i class="fa fa-bug"></i>Báo chết</a>
                                 <a href="#" class="btn btn-sm btn-default anbred-function-btns sign-warning pull-right"><i class="fa fa-ambulance"></i>Vấn đề</a>
@@ -438,12 +438,12 @@
                                 </h5>
                                 <h5>
                                     <span class="anbred-note-text">Heo con: </span>
-                                    <i class="anbred-note shortcut inline">D</i><span class="anbred-note-text">Chết</span>
-                                    <i class="anbred-note shortcut inline">M</i><span class="anbred-note-text">Khô thai</span>
-                                    <i class="anbred-note shortcut inline">A</i><span class="anbred-note-text">Dị tật</span>
-                                    <i class="anbred-note shortcut inline">S</i><span class="anbred-note-text">Nhỏ</span>
-                                    <i class="anbred-note shortcut inline">-</i><span class="anbred-note-text">Tách bầy, chết, loại</span>
-                                    <i class="anbred-note shortcut inline">+</i><span class="anbred-note-text">Nhập bầy</span>
+                                    <span class="anbred-note shortcut inline">D</span><span class="anbred-note-text">Chết</span>
+                                    <span class="anbred-note shortcut inline">M</span><span class="anbred-note-text">Khô thai</span>
+                                    <span class="anbred-note shortcut inline">A</span><span class="anbred-note-text">Dị tật</span>
+                                    <span class="anbred-note shortcut inline">S</span><span class="anbred-note-text">Nhỏ</span>
+                                    <span class="anbred-note shortcut inline">&divide;</span><span class="anbred-note-text">Chết, loại</span>
+                                    <span class="anbred-note shortcut inline">&plusmn;</span><span class="anbred-note-text">Ghép heo: nhập / tách bầy</span>
                                 </h5>
                             </div>
                             <br />

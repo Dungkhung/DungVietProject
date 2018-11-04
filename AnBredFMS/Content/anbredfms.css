@@ -7,6 +7,25 @@ body {
     content: "\f0c9";
 }
 
+.skin-green .sidebar-menu > li > a {
+    color: #555;
+}
+
+.skin-green .sidebar-menu > li:hover > a, .skin-green .sidebar-menu > li.active > a, .skin-green .sidebar-menu > li.menu-open > a {
+    color: white;
+    background: #008d4c;
+}
+
+.skin-green .user-panel > .info, .skin-green .user-panel > .info > a {
+    color: #008d4c;
+}
+
+.anbred-cp-bkg {
+    background-image: url('../Scripts/AdminLTE-2.4.5/dist/img/bkg-blu.jpg');
+    background-size: cover;
+    position: relative;
+}
+
 .main-footer {
     background-color: #ecf0f5
 }
@@ -22,9 +41,11 @@ a:hover.anbred-link-default {
 }
 
 a.anbred-link-toolbar {
-    color: #333;
+    color: #898787;
     text-decoration-style: none;
-    padding: 10px 20px;
+    padding: 9px 18px;
+    border: 1px solid #e1e1e1;
+    border-radius: 4px;
 }
 
     a.anbred-link-toolbar > i {
@@ -35,9 +56,10 @@ a.anbred-link-full-screen {
     color: #898787;
     font-size: 13px;
     text-decoration-style: none;
+    margin-top: -1px;
     padding: 5px 10px;
-    background-color: #fbfbfb;
-    border: 1px solid #f7f7f7;
+    background-color: #f7f7f7;
+    border: 1px solid #ddd;
     border-radius: 0px 0px 4px 4px;
 }
 
@@ -48,11 +70,10 @@ a.anbred-link-full-screen {
 a:hover.anbred-link-full-screen {
     color: green;
     font-size: 14px;
-    background-color: #f7f7f7;
-    border: 1px solid #dddddd;
+    background-color: rgb(252, 252, 252);
+    border: 1px solid #ddd;
     border-top-style: none;
     border-radius: 0px 0px 4px 4px;
-    padding-top: 6px
 }
 
 a:hover.anbred-link-toolbar {
@@ -109,7 +130,6 @@ sup.abfms-shortcut {
 }
 
 .user-panel.anbred-farm-panel {
-    background-color: #008d4c !important;
     padding-top: 14px !important;
     padding-bottom: 14px !important;
     margin-bottom: 0px !important;
@@ -561,6 +581,12 @@ blockquote.anbred-overview {
         color: #333;
     }
 
+    blockquote.anbred-overview > footer.an-sub-content {
+        margin-top: 12px;
+        margin-bottom: 0px;
+        color: #898787;
+    }
+
 blockquote.info-success {
     border-left-color: #00a65a;
 }
@@ -770,10 +796,8 @@ td > div.col-rate-value {
 }
 
 .shortcut {
-    font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
     text-align: center;
-    font-style: italic;
-    color: #555;
+    color: #898787;
 }
 
     .shortcut.inline {
@@ -790,11 +814,11 @@ td > div.col-rate-value {
     }
 
 .anbred-note-text {
-    padding-left: 7px;
+    font-family: Tahoma, Geneva, Verdana, sans-serif !important;
+    padding-left: 9px;
     padding-right: 25px;
     display: inline-flex;
     vertical-align: bottom;
-    font-style: italic;
 }
 
 .panel-footer {
@@ -807,7 +831,8 @@ td > div.col-rate-value {
 
 .note-panel {
     margin-bottom: 20px;
-    font-style: italic;
+    color: #898787;
+    font-size: small
 }
 
 .anbred-toolbar-btns {
@@ -868,16 +893,29 @@ a:hover.sign-info {
     border-color: #269abc;
 }
 
-.anbred-scroll-container {
-    height: 400px;
-    overflow: hidden;
-    border: 1px solid #ddd;
+a:hover.sign-default {
+    color: #333;
+    background-color: #e6e6e6;
+    border-color: #adadad;
 }
 
-.handsontable table thead th {
-    white-space: pre-wrap;
-    max-width: 100px;
-    vertical-align: middle;
-    padding-top: 3px;
-    padding-bottom: 3px
+.anbred-scroll-container {
+    height: 405px;
+    overflow: hidden;
+    border: 1px solid #ddd;
+    border-radius: 4px 4px 0px 4px;
+    background-color: rgba(250, 250, 250, 0.50);
 }
+
+.handsontable table thead {
+    border-radius: 4px 4px 0px 0px;
+    border-color: #ddd;
+}
+
+    .handsontable table thead th {
+        white-space: pre-wrap;
+        max-width: 100px;
+        vertical-align: middle;
+        padding-top: 3px;
+        padding-bottom: 3px;
+    }

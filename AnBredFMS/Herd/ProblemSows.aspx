@@ -1,4 +1,5 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPages/ControlPanel.Master" AutoEventWireup="true" CodeBehind="GestatingSows.aspx.cs" Inherits="AnBredFMS.Herd.GestatingSows" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPages/ControlPanel.Master" AutoEventWireup="true" CodeBehind="ProblemSows.aspx.cs" Inherits="AnBredFMS.Herd.ProblemSows" %>
+
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <!-- daterange picker -->
     <link href="../Scripts/daterangepicker/daterangepicker.css" rel="stylesheet" />
@@ -9,13 +10,13 @@
     <div class="content-wrapper">
         <section class="content-header" style="margin-right: 7px; margin-left: 7px;">
             <h1>Quản lý đàn
-                    <small></small>
+                    <small>Heo vấn đề</small>
             </h1>
             <!-- Site Map -->
             <ol class="breadcrumb">
                 <li><a href="#"><i class="fa fa-map-o"></i>AnBred FMS</a></li>
                 <li><a href="#">Quản lý đàn</a></li>
-                <li class="active"><a href="ReportMating.aspx">Nái mang thai</a></li>
+                <li class="active"><a href="ReportMating.aspx">Heo vấn đề</a></li>
             </ol>
         </section>
         <section class="content">
@@ -26,8 +27,8 @@
                             <div class="row">
                                 <div class="col-md-4">
                                     <blockquote class="info-title">
-                                        <p><code class="titleReport"><i class="fa fa-angle-double-right"></i>&nbsp;NÁI MANG THAI </code></p>
-                                        <footer>Tuần 33</footer>
+                                        <p><code class="titleReport"><i class="fa fa-angle-double-right"></i>&nbsp;HEO VẤN ĐỀ </code></p>
+                                        <footer>Tuần 40</footer>
                                     </blockquote>
                                 </div>
                                 <div class="col-md-4" style="padding-top: 22px">
@@ -39,7 +40,7 @@
                                     </div>
                                 </div>
                                 <div class="col-md-4" style="padding-top: 30px; padding-right: 15px; text-align: right">
-                                    <a class="anbred-link-toolbar" href="GestatingVaccine.aspx"><i class="fa fa-history" style="padding-right:10px"></i>Nhật ký chủng ngừa</a>
+                                    <a class="anbred-link-toolbar" href="#"><i class="fa fa-history"></i>Nhật ký Buồn</a>
                                 </div>
                             </div>
                             <div class="panel panel-default">
@@ -47,215 +48,231 @@
                                     <table class="table table-bordered table-hover anbred-table-default">
                                         <thead>
                                             <tr class="anbred-tblReport-row-header">
-                                                <th class="text-center">
-                                                    <input id="Checkbox1" type="checkbox" />
-                                                </th>
-                                                <th>Số tai</th>                                                
-                                                <th class="col-md-1">Nhóm</th>
-                                                <th class="col-md-1">Lứa đẻ</th>
-                                                <th class="col-md-1">Lần phối</th>
-                                                <th class="col-md-1">Độ phê</th>
-                                                <th class="col-md-1">Nọc</th>
-                                                <th class="col-md-1">Ngày cai sữa</th>
-                                                <th class="col-md-1">Ngày phối</th>
-                                                <th class="col-md-1">NPD</th>
-                                                <th class="col-md-1">Ngày đẻ dự kiến</th>
-                                                <th class="col-md-1">Người phối</th>
+                                                <th class="text-center">Ngày có<br />vấn đề</th>
+                                                <th class="text-center">Loại<br />vấn đề</th>
+                                                <th class="text-center cell-border-left">
+                                                    <input id="Checkbox1" type="checkbox" /></th>
+                                                <th class="cell-no-border-left text-left" style="text-align:left">Số tai</th>
+                                                <th>Nhóm</th>
+                                                <th>Lứa<br />
+                                                    đẻ</th>
+                                                <th>Lần<br />
+                                                    phối</th>
+                                                <th>Ngày cai sữa</th>
+                                                <th>Ngày phối lại</th>
+                                                <th>Ngày loại</th>
+                                                <th>Ngày chết</th>
+                                                <th>NPD</th>
+                                                <th>Ghi chú</th>
                                             </tr>
                                         </thead>
                                         <tbody>
                                             <tr class="separator-row">
-                                                <td colspan="12" class="text-center"></td>
+                                                <td colspan="2" class="text-center"></td>
+                                                <td colspan="11" class="text-center cell-border-left"></td>
                                             </tr>
                                             <tr>
-                                                <td class="text-center">
-                                                    <input id="Checkbox2" type="checkbox" /></td>
-                                                <td>23254</td>
-                                                <td class="text-center">CS</td>
-                                                <td class="text-center">2</td>
-                                                <td class="text-center">1</td>
-                                                <td class="text-right">&nbsp;</td>
-                                                <td>2287</td>
-                                                <td class="text-right">09/08/2018</td>
                                                 <td class="text-right">14/08/2018</td>
-                                                <td class="text-right">5</td>
-                                                <td class="text-right">07/12/2018</td>
+                                                <td class="text-center">R</td>
+                                                <td class="text-center cell-border-left">
+                                                    <input id="Checkbox2" type="checkbox" /></td>
+                                                <td class="cell-no-border-left">23254</td>
+                                                <td class="text-center">CS</td>
+                                                <td class="text-center">1</td>
+                                                <td class="text-center">1</td>
+                                                <td class="text-right">14/08/2018</td>
+                                                <td class="text-right">14/09/2018</td>
+                                                <td class="text-right">14/09/2018</td>
+                                                <td class="text-right">14/09/2018</td>
+                                                <td class="text-right">21</td>
                                                 <td class="text-right">&nbsp;</td>
                                             </tr>
                                             <tr>
-                                                <td class="text-center">
+                                                <td class="text-right">14/08/2018</td>
+                                                <td class="text-center">R</td>
+                                                <td class="text-center cell-border-left">
                                                     <input id="Checkbox3" type="checkbox" /></td>
-                                                <td>2564</td>
+                                                <td class="cell-no-border-left">2564</td>
                                                 <td class="text-center">VĐ</td>
                                                 <td class="text-center">3</td>
                                                 <td class="text-center">2</td>
-                                                <td class="text-right">&nbsp;</td>
-                                                <td>7843</td>
-                                                <td class="text-right">27/06/2018</td>
                                                 <td class="text-right">14/08/2018</td>
-                                                <td class="text-right">49</td>
-                                                <td class="text-right">07/12/2018</td>
+                                                <td class="text-right">14/09/2018</td>
+                                                <td class="text-right">14/09/2018</td>
+                                                <td class="text-right">14/09/2018</td>
+                                                <td class="text-right">23</td>
                                                 <td class="text-right">&nbsp;</td>
                                             </tr>
                                             <tr>
-                                                <td class="text-center">
-                                                    <input id="Checkbox4" type="checkbox" /></td>
-                                                <td>26775</td>
-                                                <td class="text-center">HB</td>
-                                                <td class="text-center">1</td>
-                                                <td class="text-center">1</td>
-                                                <td class="text-right">&nbsp;</td>
-                                                <td>76844</td>
-                                                <td class="text-right">-</td>
                                                 <td class="text-right">15/08/2018</td>
-                                                <td class="text-right">6</td>
-                                                <td class="text-right">08/12/2018</td>
-                                                <td class="text-right">&nbsp;</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="text-center">
-                                                    <input id="Checkbox5" type="checkbox" /></td>
-                                                <td>4528</td>
-                                                <td class="text-center">CS</td>
+                                                <td class="text-center">A</td>
+                                                <td class="text-center cell-border-left">
+                                                    <input id="Checkbox4" type="checkbox" /></td>
+                                                <td class="cell-no-border-left">26775</td>
+                                                <td class="text-center">HB</td>
                                                 <td class="text-center">3</td>
                                                 <td class="text-center">1</td>
-                                                <td class="text-right">&nbsp;</td>
-                                                <td>0564</td>
-                                                <td class="text-right">09/08/2018</td>
                                                 <td class="text-right">15/08/2018</td>
-                                                <td class="text-right">6</td>
-                                                <td class="text-right">08/12/2018</td>
+                                                <td class="text-right">15/09/2018</td>
+                                                <td class="text-right">15/09/2018</td>
+                                                <td class="text-right">15/09/2018</td>
+                                                <td class="text-right">16</td>
                                                 <td class="text-right">&nbsp;</td>
                                             </tr>
                                             <tr>
-                                                <td class="text-center">
-                                                    <input id="Checkbox6" type="checkbox" /></td>
-                                                <td>28976</td>
+                                                <td class="text-right">15/08/2018</td>
+                                                <td class="text-center">M</td>
+                                                <td class="text-center cell-border-left">
+                                                    <input id="Checkbox5" type="checkbox" /></td>
+                                                <td class="cell-no-border-left">4528</td>
                                                 <td class="text-center">CS</td>
-                                                <td class="text-center">4</td>
+                                                <td class="text-center">2</td>
                                                 <td class="text-center">1</td>
+                                                <td class="text-right">15/08/2018</td>
+                                                <td class="text-right">15/09/2018</td>
+                                                <td class="text-right">15/09/2018</td>
+                                                <td class="text-right">15/09/2018</td>
+                                                <td class="text-right">18</td>
                                                 <td class="text-right">&nbsp;</td>
-                                                <td>14986</td>
-                                                <td class="text-right">09/08/2018</td>
+                                            </tr>
+                                            <tr>
                                                 <td class="text-right">16/08/2018</td>
-                                                <td class="text-right">6</td>
-                                                <td class="text-right">09/12/2018</td>
+                                                <td class="text-center">D</td>
+                                                <td class="text-center cell-border-left">
+                                                    <input id="Checkbox6" type="checkbox" /></td>
+                                                <td class="cell-no-border-left">28976</td>
+                                                <td class="text-center">CS</td>
+                                                <td class="text-center">5</td>
+                                                <td class="text-center">2</td>
+                                                <td class="text-right">16/08/2018</td>
+                                                <td class="text-right">16/09/2018</td>
+                                                <td class="text-right">16/09/2018</td>
+                                                <td class="text-right">16/09/2018</td>
+                                                <td class="text-right">20</td>
                                                 <td class="text-right">&nbsp;</td>
                                             </tr>
                                             <tr>
                                                 <td class="text-center">&nbsp;</td>
-                                                <td class="text-right">&nbsp;</td>
+                                                <td class="text-center">&nbsp;</td>
+                                                <td class="text-center cell-border-left">&nbsp;</td>
+                                                <td class="cell-no-border-left">&nbsp;</td>
                                                 <td>&nbsp;</td>
                                                 <td class="text-center">&nbsp;</td>
                                                 <td class="text-center">&nbsp;</td>
                                                 <td class="text-center">&nbsp;</td>
+                                                <td>&nbsp;</td>
                                                 <td class="text-right">&nbsp;</td>
                                                 <td class="text-right">&nbsp;</td>
-                                                <td>&nbsp;</td>
-                                                <td>&nbsp;</td>
-                                                <td>&nbsp;</td>
+                                                <td class="text-right">&nbsp;</td>
                                                 <td class="text-right">&nbsp;</td>
                                             </tr>
                                             <tr>
                                                 <td class="text-center">&nbsp;</td>
-                                                <td class="text-right">&nbsp;</td>
+                                                <td class="text-center">&nbsp;</td>
+                                                <td class="text-center cell-border-left">&nbsp;</td>
+                                                <td class="cell-no-border-left">&nbsp;</td>
                                                 <td>&nbsp;</td>
                                                 <td class="text-center">&nbsp;</td>
                                                 <td class="text-center">&nbsp;</td>
                                                 <td class="text-center">&nbsp;</td>
+                                                <td>&nbsp;</td>
                                                 <td class="text-right">&nbsp;</td>
                                                 <td class="text-right">&nbsp;</td>
-                                                <td>&nbsp;</td>
-                                                <td>&nbsp;</td>
-                                                <td>&nbsp;</td>
+                                                <td class="text-right">&nbsp;</td>
                                                 <td class="text-right">&nbsp;</td>
                                             </tr>
                                             <tr>
                                                 <td class="text-center">&nbsp;</td>
-                                                <td class="text-right">&nbsp;</td>
+                                                <td class="text-center">&nbsp;</td>
+                                                <td class="text-center cell-border-left">&nbsp;</td>
+                                                <td class="cell-no-border-left">&nbsp;</td>
                                                 <td>&nbsp;</td>
                                                 <td class="text-center">&nbsp;</td>
                                                 <td class="text-center">&nbsp;</td>
                                                 <td class="text-center">&nbsp;</td>
+                                                <td>&nbsp;</td>
                                                 <td class="text-right">&nbsp;</td>
                                                 <td class="text-right">&nbsp;</td>
-                                                <td>&nbsp;</td>
-                                                <td>&nbsp;</td>
-                                                <td>&nbsp;</td>
+                                                <td class="text-right">&nbsp;</td>
                                                 <td class="text-right">&nbsp;</td>
                                             </tr>
                                             <tr>
                                                 <td class="text-center">&nbsp;</td>
-                                                <td class="text-right">&nbsp;</td>
+                                                <td class="text-center">&nbsp;</td>
+                                                <td class="text-center cell-border-left">&nbsp;</td>
+                                                <td class="cell-no-border-left">&nbsp;</td>
                                                 <td>&nbsp;</td>
                                                 <td class="text-center">&nbsp;</td>
                                                 <td class="text-center">&nbsp;</td>
                                                 <td class="text-center">&nbsp;</td>
+                                                <td>&nbsp;</td>
                                                 <td class="text-right">&nbsp;</td>
                                                 <td class="text-right">&nbsp;</td>
-                                                <td>&nbsp;</td>
-                                                <td>&nbsp;</td>
-                                                <td>&nbsp;</td>
+                                                <td class="text-right">&nbsp;</td>
                                                 <td class="text-right">&nbsp;</td>
                                             </tr>
                                             <tr>
                                                 <td class="text-center">&nbsp;</td>
-                                                <td class="text-right">&nbsp;</td>
+                                                <td class="text-center">&nbsp;</td>
+                                                <td class="text-center cell-border-left">&nbsp;</td>
+                                                <td class="cell-no-border-left">&nbsp;</td>
                                                 <td>&nbsp;</td>
                                                 <td class="text-center">&nbsp;</td>
                                                 <td class="text-center">&nbsp;</td>
                                                 <td class="text-center">&nbsp;</td>
+                                                <td>&nbsp;</td>
                                                 <td class="text-right">&nbsp;</td>
                                                 <td class="text-right">&nbsp;</td>
-                                                <td>&nbsp;</td>
-                                                <td>&nbsp;</td>
-                                                <td>&nbsp;</td>
+                                                <td class="text-right">&nbsp;</td>
                                                 <td class="text-right">&nbsp;</td>
                                             </tr>
                                             <tr>
                                                 <td class="text-center">&nbsp;</td>
-                                                <td class="text-right">&nbsp;</td>
+                                                <td class="text-center">&nbsp;</td>
+                                                <td class="text-center cell-border-left">&nbsp;</td>
+                                                <td class="cell-no-border-left">&nbsp;</td>
                                                 <td>&nbsp;</td>
                                                 <td class="text-center">&nbsp;</td>
                                                 <td class="text-center">&nbsp;</td>
                                                 <td class="text-center">&nbsp;</td>
+                                                <td>&nbsp;</td>
                                                 <td class="text-right">&nbsp;</td>
                                                 <td class="text-right">&nbsp;</td>
-                                                <td>&nbsp;</td>
-                                                <td>&nbsp;</td>
-                                                <td>&nbsp;</td>
+                                                <td class="text-right">&nbsp;</td>
                                                 <td class="text-right">&nbsp;</td>
                                             </tr>
                                             <tr>
                                                 <td class="text-center">&nbsp;</td>
-                                                <td class="text-right">&nbsp;</td>
+                                                <td class="text-center">&nbsp;</td>
+                                                <td class="text-center cell-border-left">&nbsp;</td>
+                                                <td class="cell-no-border-left">&nbsp;</td>
                                                 <td>&nbsp;</td>
                                                 <td class="text-center">&nbsp;</td>
                                                 <td class="text-center">&nbsp;</td>
                                                 <td class="text-center">&nbsp;</td>
+                                                <td>&nbsp;</td>
                                                 <td class="text-right">&nbsp;</td>
                                                 <td class="text-right">&nbsp;</td>
-                                                <td>&nbsp;</td>
-                                                <td>&nbsp;</td>
-                                                <td>&nbsp;</td>
+                                                <td class="text-right">&nbsp;</td>
                                                 <td class="text-right">&nbsp;</td>
                                             </tr>
                                             <tr>
                                                 <td class="text-center">&nbsp;</td>
-                                                <td class="text-right">&nbsp;</td>
+                                                <td class="text-center">&nbsp;</td>
+                                                <td class="text-center cell-border-left">&nbsp;</td>
+                                                <td class="cell-no-border-left">&nbsp;</td>
                                                 <td>&nbsp;</td>
                                                 <td class="text-center">&nbsp;</td>
                                                 <td class="text-center">&nbsp;</td>
                                                 <td class="text-center">&nbsp;</td>
+                                                <td>&nbsp;</td>
                                                 <td class="text-right">&nbsp;</td>
                                                 <td class="text-right">&nbsp;</td>
-                                                <td>&nbsp;</td>
-                                                <td>&nbsp;</td>
-                                                <td>&nbsp;</td>
+                                                <td class="text-right">&nbsp;</td>
                                                 <td class="text-right">&nbsp;</td>
                                             </tr>
-                                            <tr class="anbred-tblrow-align-right separator-row">
-                                                <td colspan="12" class="text-center"></td>
+                                            <tr class="separator-row">
+                                                <td colspan="13" class="text-center"></td>
                                             </tr>
                                         </tbody>
                                     </table>
@@ -295,11 +312,9 @@
                                 </div>
                             </div>
                             <div class="well anbred-toolbar-btns text-left">
-                                <a href="Farrowing.aspx" class="btn btn-default anbred-function-btns sign-success"><i class="glyphicon glyphicon-baby-formula"></i>Báo đẻ</a>
-                                <a href="#" class="btn btn-default anbred-function-btns sign-success"><i class="glyphicon glyphicon-screenshot"></i>Vaccine</a>
-                                <a href="#" class="btn btn-default anbred-function-btns sign-danger pull-right"><i class="glyphicon glyphicon-trash"></i>Xóa </a>
-                                <a href="#" class="btn btn-default anbred-function-btns sign-warning pull-right"><i class="fa fa-bug"></i>Báo chết</a>
-                                <a href="#" class="btn btn-default anbred-function-btns sign-warning pull-right"><i class="fa fa-ambulance"></i>Vấn đề</a>
+                                <a href="Mating.aspx" class="btn btn-sm btn-default anbred-function-btns sign-success"><i class="fa fa-venus-mars"></i>Phối lại</a>
+                                <a href="#" class="btn btn-sm btn-default anbred-function-btns sign-warning pull-right"><i class="fa fa-bug"></i>Báo chết</a>
+                                <a href="#" class="btn btn-sm btn-default anbred-function-btns sign-warning pull-right"><i class="fa fa-bolt"></i>Bán loại</a>
                             </div>
                             <br />
                             <div class="note-panel">
@@ -308,11 +323,11 @@
                                     <span class="anbred-note-text">HB = Hậu bị</span>
                                     <span class="anbred-note-text">CS = Cai sữa</span>
                                     <span class="anbred-note-text">VĐ = Vấn đề</span>
-                                    <span class="anbred-note-text">NPD = Số ngày không làm việc</span>
+                                    <span class="anbred-note-text">NPD = Số ngày từ nhập đến phối</span>
                                 </h5>
                             </div>
                             <br />
-                            
+
                             <div class="row">
                                 <div class="col-md-6">
                                     <blockquote class="anbred-overview">
@@ -372,4 +387,5 @@
             });
         })
     </script>
+
 </asp:Content>

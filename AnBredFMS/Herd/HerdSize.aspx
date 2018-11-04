@@ -49,7 +49,7 @@
                                             <td><a href="Gilts.aspx" class="anbred-link-default">Hậu bị</a></td>
                                             <td>200</td>
                                             <td class="text-right">                                                
-                                                <a href="#" class="btn btn-sm btn-default anbred-function-btns sign-success"><i class="fa fa-venus-mars"></i>Phối</a>
+                                                <a href="Mating.aspx" class="btn btn-sm btn-default anbred-function-btns sign-success"><i class="fa fa-venus-mars"></i>Phối</a>
                                                 <a href="GiltAdd.aspx" class="btn btn-sm btn-default anbred-function-btns sign-success"><i class="glyphicon glyphicon-plus"></i>Nhập mới</a>
                                             </td>
                                         </tr>
@@ -58,7 +58,7 @@
                                             <td><a href="GestatingSows.aspx" class="anbred-link-default">Nái mang thai</a></td>
                                             <td>862</td>
                                             <td class="text-right">
-                                                <a href="Farrowing.aspx" class="btn btn-sm btn-default anbred-function-btns sign-success"><i class="fa fa-unlock-alt"></i>Báo đẻ</a>
+                                                <a href="Farrowing.aspx" class="btn btn-sm btn-default anbred-function-btns sign-success"><i class="fa fa-bullhorn"></i>Báo đẻ</a>
                                             </td>
                                         </tr>
                                         <tr>
@@ -66,7 +66,7 @@
                                             <td><a href="LactatingSows.aspx" class="anbred-link-default">Nái nuôi con</a></td>
                                             <td>257</td>
                                             <td class="text-right">
-                                                <a href="#" class="btn btn-sm btn-default anbred-function-btns sign-success"><i class="glyphicon glyphicon-random"></i>Cai sữa</a>
+                                                <a href="Weaning.aspx" class="btn btn-sm btn-default anbred-function-btns sign-success"><i class="glyphicon glyphicon-random"></i>Cai sữa</a>
                                             </td>
                                         </tr>
                                         <tr>
@@ -83,7 +83,7 @@
                                             <td><a href="DrySows.aspx" class="anbred-link-default">Nái cai sữa</a></td>
                                             <td>53</td>
                                             <td class="text-right">
-                                                <a href="#" class="btn btn-sm btn-default anbred-function-btns sign-info"><i class="glyphicon glyphicon-plus"></i>Nhập mới</a>
+                                                <a href="#" class="btn btn-sm btn-default anbred-function-btns sign-default"><i class="glyphicon glyphicon-plus"></i>Nhập mới</a>
                                             </td>
                                         </tr>
                                         <tr>
@@ -91,7 +91,7 @@
                                             <td><a href="Piglets.aspx" class="anbred-link-default">Heo con theo mẹ</a></td>
                                             <td>2.980</td>
                                             <td class="text-right">
-                                                <a href="#" class="btn btn-sm btn-default anbred-function-btns sign-info"><i class="glyphicon glyphicon-plus"></i>Nhập mới</a>
+                                                <a href="#" class="btn btn-sm btn-default anbred-function-btns sign-default"><i class="glyphicon glyphicon-plus"></i>Nhập mới</a>
                                             </td>
                                         </tr>
                                         <tr>
@@ -99,7 +99,7 @@
                                             <td><a href="Weaners.aspx" class="anbred-link-default">Heo con cai sữa</a></td>
                                             <td>4.129</td>
                                             <td class="text-right">
-                                                <a href="#" class="btn btn-sm btn-default anbred-function-btns sign-info"><i class="glyphicon glyphicon-plus"></i>Nhập mới</a>
+                                                <a href="#" class="btn btn-sm btn-default anbred-function-btns sign-default"><i class="glyphicon glyphicon-plus"></i>Nhập mới</a>
                                             </td>
                                         </tr>
                                         <tr>
@@ -107,7 +107,7 @@
                                             <td><a href="Growers.aspx" class="anbred-link-default">Heo choai</a></td>
                                             <td>4.558</td>
                                             <td class="text-right">
-                                                <a href="#" class="btn btn-sm btn-default anbred-function-btns sign-info"><i class="glyphicon glyphicon-plus"></i>Nhập mới</a>
+                                                <a href="#" class="btn btn-sm btn-default anbred-function-btns sign-default"><i class="glyphicon glyphicon-plus"></i>Nhập mới</a>
                                             </td>
                                         </tr>
                                         <tr>
@@ -156,11 +156,11 @@
                                         <p class="margin-bottom">
                                             <code class="an-title"><i class="fa fa-user-md"></i>&nbsp;MỞ RỘNG</code>
                                         </p>
-                                        <footer class="an-content">&nbsp;Đàn sản xuất: 1200 nái</footer>
-                                        <footer class="an-content">&nbsp;Đàn thương phẩm: 10,020 con</footer>
-                                        <footer class="an-content">&nbsp;Heo nọc: 18</footer>
-                                        <footer class="an-content"><a href="Death.aspx" class="anbred-link-danger">&nbsp;Heo chết: 0/148</a></footer>
-                                        <footer class="an-content"><a href="Culls.aspx" class="anbred-link-danger">&nbsp;Bán loại: 2/327</a></footer>
+                                        <footer class="an-sub-content">&nbsp;Đàn sản xuất: 1200 nái</footer>
+                                        <footer class="an-sub-content">&nbsp;Đàn thương phẩm: 10,020 con</footer>
+                                        <footer class="an-sub-content">&nbsp;Heo nọc: 18</footer>
+                                        <footer class="an-sub-content"><a href="Death.aspx" class="anbred-link-danger">&nbsp;Heo chết: 0/148</a></footer>
+                                        <footer class="an-sub-content"><a href="Culls.aspx" class="anbred-link-danger">&nbsp;Bán loại: 2/327</a></footer>
                                     </blockquote>
                                 </div>
                                 <div class="col-md-6">

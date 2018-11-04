@@ -209,6 +209,7 @@
     <Content Include="Herd\BoarDelete.aspx" />
     <Content Include="Herd\BoarsList.aspx" />
     <Content Include="Herd\BoarUpdate.aspx" />
+    <Content Include="Herd\Culling.aspx" />
     <Content Include="Herd\Farrowing.aspx" />
     <Content Include="Herd\GestatingSows.aspx" />
     <Content Include="Herd\GestatingVaccine.aspx" />
@@ -221,7 +222,10 @@
     <Content Include="Herd\HerdSize.aspx" />
     <Content Include="Herd\LactatingSows.aspx" />
     <Content Include="Herd\Mating.aspx" />
+    <Content Include="Herd\Problem.aspx" />
+    <Content Include="Herd\ProblemSows.aspx" />
     <Content Include="Herd\SowCard.aspx" />
+    <Content Include="Herd\Weaning.aspx" />
     <Content Include="Manager\Dashboard.aspx" />
     <Content Include="MasterPages\ControlPanel.Master" />
     <None Include="Properties\PublishProfiles\AnBredFMS - Web Deploy.pubxml" />
@@ -6585,6 +6589,7 @@
     <Content Include="Scripts\AdminLTE-2.4.5\dist\img\avatar2.png" />
     <Content Include="Scripts\AdminLTE-2.4.5\dist\img\avatar3.png" />
     <Content Include="Scripts\AdminLTE-2.4.5\dist\img\avatar5.png" />
+    <Content Include="Scripts\AdminLTE-2.4.5\dist\img\bkg-blu.jpg" />
     <Content Include="Scripts\AdminLTE-2.4.5\dist\img\credit\american-express.png" />
     <Content Include="Scripts\AdminLTE-2.4.5\dist\img\credit\cirrus.png" />
     <Content Include="Scripts\AdminLTE-2.4.5\dist\img\credit\mastercard.png" />
@@ -7610,6 +7615,13 @@
     <Compile Include="Herd\BoarUpdate.aspx.designer.cs">
       <DependentUpon>BoarUpdate.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Herd\Culling.aspx.cs">
+      <DependentUpon>Culling.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Herd\Culling.aspx.designer.cs">
+      <DependentUpon>Culling.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Herd\Farrowing.aspx.cs">
       <DependentUpon>Farrowing.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -7694,12 +7706,33 @@
     <Compile Include="Herd\Mating.aspx.designer.cs">
       <DependentUpon>Mating.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Herd\Problem.aspx.cs">
+      <DependentUpon>Problem.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Herd\Problem.aspx.designer.cs">
+      <DependentUpon>Problem.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Herd\ProblemSows.aspx.cs">
+      <DependentUpon>ProblemSows.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Herd\ProblemSows.aspx.designer.cs">
+      <DependentUpon>ProblemSows.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Herd\SowCard.aspx.cs">
       <DependentUpon>SowCard.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Herd\SowCard.aspx.designer.cs">
       <DependentUpon>SowCard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Herd\Weaning.aspx.cs">
+      <DependentUpon>Weaning.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Herd\Weaning.aspx.designer.cs">
+      <DependentUpon>Weaning.aspx</DependentUpon>
     </Compile>
     <Compile Include="Manager\Dashboard.aspx.cs">
       <DependentUpon>Dashboard.aspx</DependentUpon>
