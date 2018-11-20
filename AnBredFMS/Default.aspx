@@ -22,23 +22,25 @@
             <td>
                 <ol>
                     <li><a href="Herd/HerdSize.aspx">Tổng đàn</a></li>
+                    <li><a href="Herd/SowCard.aspx">Thẻ nái</a></li>
                     <li><a href="Herd/Gilts.aspx">Heo hậu bị</a></li>
-                    <li><a href="Herd/GestatingSows.aspx"></a>Nái mang thai</li>
-                    <li><a href="Herd/LactatingSows.aspx"></a>Nái nuôi con</li>
+                    <li><a href="Herd/GestatingSows.aspx">Nái mang thai</a></li>
+                    <li><a href="Herd/LactatingSows.aspx">Nái nuôi con</a></li>
                     <li><a href="Herd/DrySows.aspx"></a>Nái cai sữa</li>                               
                     <li><a href="Herd/Piglets.aspx"></a>Heo con theo mẹ</li>
                     <li><a href="Herd/Weaners.aspx"></a>Heo con cai sữa</li>
                     <li><a href="Herd/Growers.aspx"></a>Heo choai</li>
                     <li><a href="Herd/Finishers.aspx"></a>Heo thịt</li>                    
-                    <li><a href="Herd/Boars.aspx">Heo nọc</a></li>      
-                    <li><a href="Herd/ProblemSows.aspx"></a>Nái vấn đề</li>
-                    <li><a href="Herd/Death.aspx"></a>Heo chết</li>
-                    <li><a href="Herd/Culls.aspx"></a>Bán loại</li>
+                    <li><a href="Herd/BoarsList.aspx">Heo nọc</a></li>      
+                    <li><a href="Herd/ProblemSows.aspx">Nái vấn đề</a></li>
+                    <li><a href="Herd/Death.aspx">Heo chết</a></li>
+                    <li><a href="Herd/Culling.aspx">Bán loại</a></li>
                 </ol>
             </td>
             <td>
                 <ol>
                     <li><a href="#">Tổng quan</a></li>
+                    <li><a href="ReportWeekly/Vaccine.aspx">Kho hàng</a></li>
                 </ol>
             </td>
             <td>
@@ -66,7 +68,7 @@
             <td>
                 <ol>
                     <li><a href="ReportMonthly/Overview.aspx">Tổng quan</a></li>
-                    <li><a href="ReportMonthly/WorkingBoars.aspx"></a>Khai thác tinh</li>
+                    <li><a href="ReportMonthly/WorkingBoars.aspx">Khai thác tinh</a></li>
                 </ol>
             </td>
         </tr>
@@ -96,7 +98,7 @@
                 </ol>
             </td>
             <td>
-                <ol>
+                <!--ol>
                     <li><a href="#"></a>Lốc thường (R)</li>
                     <li><a href="#"></a>Lốc mủ (M)</li>
                     <li><a href="#"></a>Không bầu (N)</li>
@@ -104,7 +106,7 @@
                     <li><a href="#"></a>Sẩy thai (A)</li>
                     <li><a href="#"></a>Đẻ non (S)</li>
                     <li><a href="#"></a>Vđ khác (O),...</li>
-                </ol>
+                </ol-->
             </td>
             <td>
 

@@ -15,7 +15,7 @@
             <ol class="breadcrumb">
                 <li><a href="#"><i class="fa fa-map-o"></i>AnBred FMS</a></li>
                 <li><a href="#">Báo cáo tổng hợp</a></li>
-                <li class="active"><a href="ReportMating.aspx">Tuần phối giống</a></li>
+                <li class="active"><a href="#">Tuần phối giống</a></li>
             </ol>
         </section>
         <section class="content">

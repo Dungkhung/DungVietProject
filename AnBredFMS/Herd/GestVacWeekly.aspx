@@ -15,7 +15,7 @@
             <ol class="breadcrumb">
                 <li><a href="#"><i class="fa fa-map-o"></i>AnBred FMS</a></li>
                 <li><a href="#">Quản lý đàn</a></li>
-                <li class="active"><a href="ReportMating.aspx">Nái mang thai</a></li>
+                <li class="active"><a href="#">Nái mang thai</a></li>
             </ol>
         </section>
         <section class="content">

@@ -74,7 +74,7 @@
                 </a>
                 <!-- Navbar Right Menu -->
                 <div class="navbar-custom-menu">
-                    <div class="nav navbar-nav anbred-search-ear-tag" style="">
+                    <div class="nav navbar-nav anbred-search-ear-tag hidden-xs">
                         <!-- search form -->
                         <form action="#" method="get">
                             <div class="input-group input-group-sm">
@@ -220,12 +220,13 @@
                     <li><a href="../Farms/FarmsList.aspx"><i class="glyphicon glyphicon-equalizer"></i><span>&nbsp;HỆ THỐNG TRẠI</span></a></li>
                     <li><a href="../Herd/HerdSize.aspx"><i class="fa fa-sitemap"></i><span>&nbsp;QUẢN LÝ ĐÀN</span></a></li>
                     <li><a href="#"><i class="fa fa-line-chart"></i><span>&nbsp;NĂNG SUẤT TRẠI</span></a></li>
-                    <li><a href="#"><i class="fa fa-list-alt"></i><span>&nbsp;THẺ NÁI</span></a></li>
+                    <li><a href="../Herd/SowCard.aspx"><i class="fa fa-list-alt"></i><span>&nbsp;THẺ NÁI</span></a></li>
+                    <li><a href="../Herd/BoarCard.aspx"><i class="fa fa-list-alt"></i><span>&nbsp;THẺ NỌC</span></a></li>
                     <li><a href="#"><i class="fa fa-map-signs"></i><span>&nbsp;QUY TRÌNH</span></a></li>
                     <li><a href="#"><i class="fa fa-book"></i><span>&nbsp;SỔ NHẬT KÝ</span></a></li>
                     <li><a href="#"><i class="fa fa-usd"></i><span>&nbsp;GIAO DỊCH</span></a></li>
                     <li class="bg-green">
-                        <a href="https://annhien.com" style="background-color: rgb(0, 166, 90);">
+                        <a href="#" style="background-color: rgb(0, 166, 90);">
                             <i class="fa fa-star-o" style="color: rgb(255, 255, 255);"></i>
                             <span style="color: rgb(255, 255, 255);">&nbsp;Tài trợ <b>An</b>Bred FMS</span>
                         </a>
