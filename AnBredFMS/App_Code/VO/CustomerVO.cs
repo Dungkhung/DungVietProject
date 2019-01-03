@@ -6,7 +6,7 @@ using System.Web;
 namespace AnBredFMS.App_Code.VO
 {
     public class CustomerVO
-    {
+    {/*
         private int _cusID;
         private string _cusName;
         private string _cusPass;
@@ -47,5 +47,6 @@ namespace AnBredFMS.App_Code.VO
         public DateTime Date { get => _date; set => _date = value; }
         public bool IsActive { get => _isActive; set => _isActive = value; }
         public string LogInfo { get => _logInfo; set => _logInfo = value; }
+        */
     }
 }

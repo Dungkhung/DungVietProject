@@ -9,7 +9,7 @@ using AnBredFMS.App_Code.VO;
 namespace AnBredFMS.App_Code.BLL
 {
     public class CustomerBUS
-    {
+    {/*
         private CustomerDAO _cusDAO;
 
         public CustomerBUS()
@@ -74,6 +74,6 @@ namespace AnBredFMS.App_Code.BLL
                 cusVO.LogInfo = dr["LogInfo"].ToString();
             }
             return cusVO;
-        }
+        }*/
     }
 }
