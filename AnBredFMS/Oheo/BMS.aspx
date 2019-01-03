@@ -8,7 +8,7 @@
         <section class="content-header">
             <h1>Trang chức năng
        
-                <small>Dành cho Quản lý Oheo</small>
+                <small>Dành cho cấp Quản lý Oheo</small>
             </h1>
             <ol class="breadcrumb">
                 <li><a href="#"><i class="fa fa-dashboard"></i>Level</a></li>
@@ -28,15 +28,21 @@
             <br />
             <br />
             <br />
+            <p align="left">Một số chức năng chính:</p>            
+                <ol>
+                    <li>Quản lý các công việc liên quan tới kinh doanh</li>
+                    <li>Quản lý (thêm/xóa/sửa) danh sách khách hàng, sản phẩm,....</li>
+                    <li>Làm Bảng báo giá sản phẩm (cho từng khách hàng)</li>
+                    <li>Quản lý đơn hàng, tồn kho, trạng thái, công nợ,...<br />
+                        (các bussiness logic...)
+                    </li>
+                    <li>Lịch sử mua bán</li>
+                    <li>...</li>
+                </ol>
             <br />
             <br />
             <br />
-            <p align="center">Nội dung....</p>
-            <p align="center">abc def</p>
-            <br />
-            <br />
-            <br />
-            <br />
+            <p align="left">Mục tiêu giúp đơn giản hóa công việc kinh doanh...</p>    
             <br />
             <br />
             <br />

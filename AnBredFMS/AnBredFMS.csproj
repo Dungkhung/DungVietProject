@@ -7513,6 +7513,7 @@
     <Content Include="Site.Master" />
     <Content Include="Upload\OheoBMS\20171204_170247.jpg" />
     <Content Include="Upload\OheoBMS\apple-icon-60x60.png" />
+    <Content Include="Upload\OheoBMS\Oheo Database.png" />
     <Content Include="Upload\OheoBMS\oheo-4174.png" />
     <Content Include="Upload\OheoBMS\oheo-logo.png" />
     <Content Include="ViewSwitcher.ascx" />
