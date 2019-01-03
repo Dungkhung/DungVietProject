@@ -68,9 +68,9 @@
     <!-- /.login-box -->
     <footer class="login-footer">
         <!-- Default to the left -->
-        <small><strong>Copyright &copy; 2017 - <%: DateTime.Now.Year %>: <a href="http://oheo.vn/">Pig & Health</a>.</strong> All rights reserved.</small>
+        <small>&copy; 2017 - <%: DateTime.Now.Year %>: <strong><a href="http://oheo.vn/">Pig & Health</a>.</strong> All rights reserved.</small>
         <br />
-        <small>HTX chăn nuôi heo an toàn Tiên Phong</small>
+        <small>Oheo Bussiness Management System</small>
     </footer>
     <!-- jQuery 3 -->
     <script src="../Scripts/AdminLTE-2.4.5/bower_components/jquery/dist/jquery.min.js"></script>

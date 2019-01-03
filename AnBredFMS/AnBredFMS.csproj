@@ -233,6 +233,7 @@
     <Content Include="MasterPages\Oheo.Master" />
     <Content Include="MasterPages\Customer.Master" />
     <None Include="Properties\PublishProfiles\AnBredFMS - Web Deploy.pubxml" />
+    <Content Include="Oheo\BMS.aspx" />
     <Content Include="Oheo\Customers.aspx" />
     <Content Include="Oheo\Handling.aspx" />
     <Content Include="Oheo\Orders.aspx" />
@@ -240,6 +241,7 @@
     <Content Include="Oheo\Stock.aspx" />
     <Content Include="Ouser\Login.aspx" />
     <Content Include="Ouser\OheoNews.aspx" />
+    <Content Include="Ouser\OneHealth.aspx" />
     <Content Include="Ouser\Profile.aspx" />
     <Content Include="Ouser\Purchase.aspx" />
     <Content Include="Ouser\testdemo.aspx" />
@@ -7789,6 +7791,13 @@
     <Compile Include="MasterPages\Oheo.Master.designer.cs">
       <DependentUpon>Oheo.Master</DependentUpon>
     </Compile>
+    <Compile Include="Oheo\BMS.aspx.cs">
+      <DependentUpon>BMS.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Oheo\BMS.aspx.designer.cs">
+      <DependentUpon>BMS.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Oheo\Customers.aspx.cs">
       <DependentUpon>Customers.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -7837,6 +7846,13 @@
     </Compile>
     <Compile Include="Ouser\OheoNews.aspx.designer.cs">
       <DependentUpon>OheoNews.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Ouser\OneHealth.aspx.cs">
+      <DependentUpon>OneHealth.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Ouser\OneHealth.aspx.designer.cs">
+      <DependentUpon>OneHealth.aspx</DependentUpon>
     </Compile>
     <Compile Include="Ouser\Profile.aspx.cs">
       <DependentUpon>Profile.aspx</DependentUpon>

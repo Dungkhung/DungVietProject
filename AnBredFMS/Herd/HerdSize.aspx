@@ -10,7 +10,7 @@
             </h1>
             <!-- Site Map -->
             <ol class="breadcrumb">
-                <li><a href="#"><i class="fa fa-map-o"></i><b>An</b>Bred FMS</a></li>
+                <li><a href="#"><i class="fa fa-map-o"></i><b>O</b>heo FMS</a></li>
                 <li><a href="#">Quản lý đàn</a></li>
                 <li class="active"><a href="#">Tổng đàn</a></li>
             </ol>

@@ -128,7 +128,7 @@
                 <!-- Sidebar Menu -->
                 <ul class="sidebar-menu" data-widget="tree">
                     <li><a href="#"><i class="fa fa-television"></i><span>&nbsp;BẢNG THÔNG TIN</span></a></li>
-                    <li><a href="#"><i class="glyphicon glyphicon-star-empty"></i><span>&nbsp;SẢN PHẨM OHEO</span></a></li>                    
+                    <li><a href="#"><i class="fa fa-star-o"></i><span>&nbsp;SẢN PHẨM OHEO</span></a></li>                    
                     <li><a href="#"><i class="fa fa-file-text-o"></i><span>&nbsp;ĐƠN HÀNG</span></a></li>
                     <li><a href="#"><i class="fa fa-opencart"></i><span>&nbsp;GIỎ HÀNG</span></a></li>
                     <li><a href="#"><i class="fa fa-book"></i><span>&nbsp;SỔ NHẬT KÝ</span></a></li>

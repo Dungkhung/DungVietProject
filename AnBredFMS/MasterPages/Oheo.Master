@@ -227,14 +227,14 @@
                 <!-- Sidebar Menu -->
                 <ul class="sidebar-menu" data-widget="tree">
                     <li><a href="#"><i class="fa fa-television"></i><span>&nbsp;BẢNG THÔNG TIN</span></a></li>
-                    <li><a href="#"><i class="fa fa-folder-open"></i><span>&nbsp;KHÁCH HÀNG</span></a></li>
-                    <li><a href="#"><i class="glyphicon glyphicon-equalizer"></i><span>&nbsp;ĐƠN HÀNG</span></a></li>
-                    <li><a href="#"><i class="fa fa-list-alt"></i><span>&nbsp;XỬ LÝ ĐƠN HÀNG</span></a></li>
-                    <li><a href="#"><i class="fa fa-sitemap"></i><span>&nbsp;SẢN PHẨM OHEO</span></a></li>
-                    <li><a href="#"><i class="fa fa-sitemap"></i><span>&nbsp;XUẤT - NHẬP HÀNG HÓA</span></a></li>
+                    <li><a href="#"><i class="fa fa-users"></i><span>&nbsp;KHÁCH HÀNG</span></a></li>
+                    <li><a href="#"><i class="fa fa-copy"></i><span>&nbsp;ĐƠN HÀNG</span></a></li>
+                    <li><a href="#"><i class="fa fa-sliders"></i><span>&nbsp;XỬ LÝ ĐƠN HÀNG</span></a></li>
+                    <li><a href="#"><i class="fa fa-star-o"></i><span>&nbsp;SẢN PHẨM OHEO</span></a></li>
+                    <li><a href="#"><i class="fa fa-map-signs"></i><span>&nbsp;XUẤT - NHẬP HÀNG HÓA</span></a></li>
                     <li><a href="#"><i class="fa fa-line-chart"></i><span>&nbsp;BÁO CÁO TỒN KHO</span></a></li>
-                    <li><a href="#"><i class="fa fa-map-signs"></i><span>&nbsp;TỶ LỆ PHA LÓC</span></a></li>                    
-                    <li><a href="#"><i class="fa fa-usd"></i><span>&nbsp;BẢNG GIÁ</span></a></li>
+                    <li><a href="#"><i class="fa fa-pie-chart"></i><span>&nbsp;TỶ LỆ PHA LÓC</span></a></li>                    
+                    <li><a href="#"><i class="fa  fa-bitcoin"></i><span>&nbsp;BẢNG GIÁ</span></a></li>
                     <li><a href="#"><i class="fa fa-usd"></i><span>&nbsp;CÔNG NỢ</span></a></li>
                     <li><a href="#"><i class="fa fa-book"></i><span>&nbsp;NHẬT KÝ GIAO DỊCH</span></a></li>
                 </ul>
