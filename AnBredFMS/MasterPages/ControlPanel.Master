@@ -7,6 +7,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Anbred FMS</title>
+    <link rel="SHORTCUT ICON" href="http://oheo.vn/upload/hinhanh/favicon-32x325471_32x32.png" type="image/x-icon" />
     <!-- Tell the browser to be responsive to screen width -->
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
 
@@ -62,9 +63,9 @@
             <!-- Logo #e08e0b-->
             <a href="../Default.aspx" class="logo navbar-fixed-top anbred-logo-bg">
                 <!-- mini logo for sidebar mini 50x50 pixels -->
-                <span class="logo-mini"><b></b>AN</span>
+                <span class="logo-mini"><b></b>Oheo</span>
                 <!-- logo for regular state and mobile devices -->
-                <h3 style="margin: 13px 0px"><span class="logo-lg"><b>An</b>Bred FMS</span></h3>
+                <span class="logo-lg"><b>Oheo</b> FMS</span>
             </a>
             <!-- Header Navbar #f39c12-->
             <nav class="navbar navbar-fixed-top anbred-mini-sidebar-bg" role="navigation">
@@ -176,7 +177,7 @@
                                     <img src="../Scripts/AdminLTE-2.4.5/dist/img/avatar.jpg" class="img-circle" alt="User Image">
                                     <p>
                                         Nguyễn Văn Dũng
-                                        <small>Trưởng trại</small>
+                                        <small>Kỹ thuật</small>
                                     </p>
 
                                 </li>
@@ -225,12 +226,12 @@
                     <li><a href="#"><i class="fa fa-map-signs"></i><span>&nbsp;QUY TRÌNH</span></a></li>
                     <li><a href="#"><i class="fa fa-book"></i><span>&nbsp;SỔ NHẬT KÝ</span></a></li>
                     <li><a href="#"><i class="fa fa-usd"></i><span>&nbsp;GIAO DỊCH</span></a></li>
-                    <li class="bg-green">
+                    <!--li class="bg-green">
                         <a href="#" style="background-color: rgb(0, 166, 90);">
                             <i class="fa fa-star-o" style="color: rgb(255, 255, 255);"></i>
                             <span style="color: rgb(255, 255, 255);">&nbsp;Tài trợ <b>An</b>Bred FMS</span>
                         </a>
-                    </li>
+                    </li-->
                 </ul>
             </section>
         </aside>
@@ -247,10 +248,11 @@
             <!-- To the right -->
             
             <div class="pull-right hidden-xs">
-                <small>One health&nbsp;</small>
+                <small>Oheo Farm Management System</small>
             </div>
             <!-- Default to the left -->
-            <small><strong>Copyright &copy; <%: DateTime.Now.Year %> <a href="../Default.aspx">An Nhien</a>.</strong> All rights reserved.</small>
+            <small>&copy; 2017 - <%: DateTime.Now.Year %>: <strong><a href="http://oheo.vn/">Pig & Health</a>.</strong> All rights reserved.</small>
+            
         </footer>
     </div>
 </body>

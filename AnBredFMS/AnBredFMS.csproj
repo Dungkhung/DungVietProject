@@ -189,8 +189,10 @@
     <Content Include="Content\bootstrap-reboot.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\KSTstyler.css" />
     <Content Include="Content\Site.css" />
     <Content Include="Default.aspx" />
+    <Content Include="ErrorPage.html" />
     <Content Include="Farms\FarmAdd.aspx" />
     <Content Include="Farms\FarmDelete.aspx" />
     <Content Include="Farms\FarmDetails.aspx" />
@@ -228,7 +230,19 @@
     <Content Include="Herd\Weaning.aspx" />
     <Content Include="Manager\Dashboard.aspx" />
     <Content Include="MasterPages\ControlPanel.Master" />
+    <Content Include="MasterPages\Oheo.Master" />
+    <Content Include="MasterPages\Customer.Master" />
     <None Include="Properties\PublishProfiles\AnBredFMS - Web Deploy.pubxml" />
+    <Content Include="Oheo\Customers.aspx" />
+    <Content Include="Oheo\Handling.aspx" />
+    <Content Include="Oheo\Orders.aspx" />
+    <Content Include="Oheo\Products.aspx" />
+    <Content Include="Oheo\Stock.aspx" />
+    <Content Include="Ouser\Login.aspx" />
+    <Content Include="Ouser\OheoNews.aspx" />
+    <Content Include="Ouser\Profile.aspx" />
+    <Content Include="Ouser\Purchase.aspx" />
+    <Content Include="Ouser\testdemo.aspx" />
     <Content Include="ReportDaily\Overview.aspx" />
     <Content Include="ReportMonthly\Overview.aspx" />
     <Content Include="ReportMonthly\WorkingBoars.aspx" />
@@ -6583,12 +6597,14 @@
     <Content Include="Scripts\AdminLTE-2.4.5\dist\css\skins\skin-yellow.min.css" />
     <Content Include="Scripts\AdminLTE-2.4.5\dist\css\skins\_all-skins.css" />
     <Content Include="Scripts\AdminLTE-2.4.5\dist\css\skins\_all-skins.min.css" />
+    <Content Include="Scripts\AdminLTE-2.4.5\dist\img\256x256bb.jpg" />
     <Content Include="Scripts\AdminLTE-2.4.5\dist\img\avatar.jpg" />
     <Content Include="Scripts\AdminLTE-2.4.5\dist\img\avatar.png" />
     <Content Include="Scripts\AdminLTE-2.4.5\dist\img\avatar04.png" />
     <Content Include="Scripts\AdminLTE-2.4.5\dist\img\avatar2.png" />
     <Content Include="Scripts\AdminLTE-2.4.5\dist\img\avatar3.png" />
     <Content Include="Scripts\AdminLTE-2.4.5\dist\img\avatar5.png" />
+    <Content Include="Scripts\AdminLTE-2.4.5\dist\img\bhx-logo.png" />
     <Content Include="Scripts\AdminLTE-2.4.5\dist\img\bkg-blu.jpg" />
     <Content Include="Scripts\AdminLTE-2.4.5\dist\img\credit\american-express.png" />
     <Content Include="Scripts\AdminLTE-2.4.5\dist\img\credit\cirrus.png" />
@@ -6598,7 +6614,10 @@
     <Content Include="Scripts\AdminLTE-2.4.5\dist\img\credit\paypal2.png" />
     <Content Include="Scripts\AdminLTE-2.4.5\dist\img\credit\visa.png" />
     <Content Include="Scripts\AdminLTE-2.4.5\dist\img\default-50x50.gif" />
+    <Content Include="Scripts\AdminLTE-2.4.5\dist\img\faviconBHX.ico" />
+    <Content Include="Scripts\AdminLTE-2.4.5\dist\img\faviconOheoBMS.ico" />
     <Content Include="Scripts\AdminLTE-2.4.5\dist\img\icons.png" />
+    <Content Include="Scripts\AdminLTE-2.4.5\dist\img\oheo-icon-60x60.png" />
     <Content Include="Scripts\AdminLTE-2.4.5\dist\img\photo1.png" />
     <Content Include="Scripts\AdminLTE-2.4.5\dist\img\photo2.png" />
     <Content Include="Scripts\AdminLTE-2.4.5\dist\img\photo3.jpg" />
@@ -7490,6 +7509,10 @@
     <Content Include="Scripts\WebForms\WebParts.js" />
     <Content Include="Scripts\WebForms\WebUIValidation.js" />
     <Content Include="Site.Master" />
+    <Content Include="Upload\OheoBMS\20171204_170247.jpg" />
+    <Content Include="Upload\OheoBMS\apple-icon-60x60.png" />
+    <Content Include="Upload\OheoBMS\oheo-4174.png" />
+    <Content Include="Upload\OheoBMS\oheo-logo.png" />
     <Content Include="ViewSwitcher.ascx" />
     <Content Include="Web.config" />
     <Content Include="Bundle.config" />
@@ -7519,6 +7542,10 @@
     <Compile Include="Accounts\Register.aspx.designer.cs">
       <DependentUpon>Register.aspx</DependentUpon>
     </Compile>
+    <Compile Include="App_Code\BLL\CustomerBUS.cs" />
+    <Compile Include="App_Code\DAL\CustomerDAO.cs" />
+    <Compile Include="App_Code\DAL\dbConnection.cs" />
+    <Compile Include="App_Code\VO\CustomerVO.cs" />
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="About.aspx.cs">
       <DependentUpon>About.aspx</DependentUpon>
@@ -7747,6 +7774,90 @@
     </Compile>
     <Compile Include="MasterPages\ControlPanel.Master.designer.cs">
       <DependentUpon>ControlPanel.Master</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPages\Customer.Master.cs">
+      <DependentUpon>Customer.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPages\Customer.Master.designer.cs">
+      <DependentUpon>Customer.Master</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPages\Oheo.Master.cs">
+      <DependentUpon>Oheo.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPages\Oheo.Master.designer.cs">
+      <DependentUpon>Oheo.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Oheo\Customers.aspx.cs">
+      <DependentUpon>Customers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Oheo\Customers.aspx.designer.cs">
+      <DependentUpon>Customers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Oheo\Handling.aspx.cs">
+      <DependentUpon>Handling.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Oheo\Handling.aspx.designer.cs">
+      <DependentUpon>Handling.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Oheo\Orders.aspx.cs">
+      <DependentUpon>Orders.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Oheo\Orders.aspx.designer.cs">
+      <DependentUpon>Orders.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Oheo\Products.aspx.cs">
+      <DependentUpon>Products.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Oheo\Products.aspx.designer.cs">
+      <DependentUpon>Products.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Oheo\Stock.aspx.cs">
+      <DependentUpon>Stock.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Oheo\Stock.aspx.designer.cs">
+      <DependentUpon>Stock.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Ouser\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Ouser\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Ouser\OheoNews.aspx.cs">
+      <DependentUpon>OheoNews.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Ouser\OheoNews.aspx.designer.cs">
+      <DependentUpon>OheoNews.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Ouser\Profile.aspx.cs">
+      <DependentUpon>Profile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Ouser\Profile.aspx.designer.cs">
+      <DependentUpon>Profile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Ouser\Purchase.aspx.cs">
+      <DependentUpon>Purchase.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Ouser\Purchase.aspx.designer.cs">
+      <DependentUpon>Purchase.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Ouser\testdemo.aspx.cs">
+      <DependentUpon>testdemo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Ouser\testdemo.aspx.designer.cs">
+      <DependentUpon>testdemo.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ReportDaily\Overview.aspx.cs">

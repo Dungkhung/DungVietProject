@@ -1,7 +1,7 @@
 ﻿<%@ Page Title="Home Page" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="AnBredFMS._Default" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
-    <h2>Danh sách các trang demo: <b>An</b>Bread FMS</h2>
+    <h2>Danh sách các trang demo: <b>O</b>heo FMS</h2>
     <hr />
     <table style="width: 100%; vertical-align:top">
         <tr>
@@ -73,7 +73,7 @@
             </td>
         </tr>
     </table>
-    <h2>Hệ thống trại: <b>An</b>Bread FMS</h2>
+    <h2>Hệ thống trại: <b>O</b>heo FMS</h2>
     <hr />
     <table style="width: 100%;">
         <tr>

@@ -23,11 +23,23 @@ body {
 .anbred-cp-bkg {
     background-image: url('../Scripts/AdminLTE-2.4.5/dist/img/bkg-blu.jpg');
     background-size: cover;
-    position: relative;
 }
 
 .main-footer {
     background-color: #ecf0f5
+}
+
+.login-footer {
+    position: fixed;
+    margin-left: auto;
+    margin-right: auto;
+    left: auto;
+    right: auto;
+    bottom: 0;
+    height: 50px;
+    width: 100%;
+    background-color: #d2d6de;
+    text-align:center;
 }
 
 a.anbred-link-default {
@@ -139,7 +151,6 @@ sup.abfms-shortcut {
 .nav.navbar-nav.anbred-search-ear-tag {
     width: 250px !important;
     position: relative !important;
-    display: inline-block !important;
     padding-top: 9px !important;
     padding-right: 30px !important;
     padding-left: 15px !important
